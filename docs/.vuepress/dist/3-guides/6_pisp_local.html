@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>Trying out the Thirdparty API Locally</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.a3da3294.css" as="style"><link rel="preload" href="/assets/js/app.420e80db.js" as="script"><link rel="preload" href="/assets/js/4.ea6643aa.js" as="script"><link rel="preload" href="/assets/js/1.85953c67.js" as="script"><link rel="prefetch" href="/assets/js/10.864cadcd.js"><link rel="prefetch" href="/assets/js/11.9c136b3c.js"><link rel="prefetch" href="/assets/js/12.048ab12e.js"><link rel="prefetch" href="/assets/js/13.1237b211.js"><link rel="prefetch" href="/assets/js/14.675db571.js"><link rel="prefetch" href="/assets/js/15.92f5fa49.js"><link rel="prefetch" href="/assets/js/16.55b42a99.js"><link rel="prefetch" href="/assets/js/17.371b8d63.js"><link rel="prefetch" href="/assets/js/18.1bd7faed.js"><link rel="prefetch" href="/assets/js/19.9556c3ce.js"><link rel="prefetch" href="/assets/js/2.424551ed.js"><link rel="prefetch" href="/assets/js/20.6a5f05ac.js"><link rel="prefetch" href="/assets/js/21.b7986a4c.js"><link rel="prefetch" href="/assets/js/22.7c8e3754.js"><link rel="prefetch" href="/assets/js/23.f6b903ea.js"><link rel="prefetch" href="/assets/js/24.a4cbc2e4.js"><link rel="prefetch" href="/assets/js/25.49a95c3c.js"><link rel="prefetch" href="/assets/js/26.db28e329.js"><link rel="prefetch" href="/assets/js/27.3b17a2ea.js"><link rel="prefetch" href="/assets/js/5.d74b4548.js"><link rel="prefetch" href="/assets/js/6.afd6b14f.js"><link rel="prefetch" href="/assets/js/7.476f61f8.js"><link rel="prefetch" href="/assets/js/8.5487cb71.js"><link rel="prefetch" href="/assets/js/9.20d06d17.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a3da3294.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/mojaloop_logo_med.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">Getting Started</a></li><li><a href="/1-overview/" class="sidebar-link">Overview</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>APIs</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/2-apis/fspiop.html" class="sidebar-link">FSPIOP (Mojaloop API)</a></li><li><a href="/2-apis/admin.html" class="sidebar-link">Admin API</a></li><li><a href="/2-apis/settlement.html" class="sidebar-link">Settlement API</a></li><li><a href="/2-apis/thirdparty-dfsp.html" class="sidebar-link">Thirdparty-DFSP</a></li><li><a href="/2-apis/thirdparty-pisp.html" class="sidebar-link">Thirdparty-PISP</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guides</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/3-guides/1_dfsp_setup.html" class="sidebar-link">1. DFSP Setup</a></li><li><a href="/3-guides/2_dfsp_p2p.html" class="sidebar-link">2. P2P Transfer</a></li><li><a href="/3-guides/3_simulators.html" class="sidebar-link">3. DFSP Simulators</a></li><li><a href="/3-guides/5_ttk_p2p.html" class="sidebar-link">4. TTK P2P Transfer (Easy)</a></li><li><a href="/3-guides/6_pisp_local.html" aria-current="page" class="active sidebar-link">5. Thirdparty PISP API Local</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/3-guides/6_pisp_local.html#prerequisites" class="sidebar-link">Prerequisites</a></li><li class="sidebar-sub-header"><a href="/3-guides/6_pisp_local.html#_1-download-the-ttk-config-from-the-thirdparty-scheme-adapter-repo" class="sidebar-link">1. Download the TTK Config from the thirdparty-scheme-adapter repo</a></li><li class="sidebar-sub-header"><a href="/3-guides/6_pisp_local.html#_2-run-docker-compose-up" class="sidebar-link">2. Run docker-compose up</a></li><li class="sidebar-sub-header"><a href="/3-guides/6_pisp_local.html#_3-browse-the-locally-running-testing-toolkit" class="sidebar-link">3. Browse the Locally Running Testing Toolkit</a></li><li class="sidebar-sub-header"><a href="/3-guides/6_pisp_local.html#_4-configure-a-callback-server" class="sidebar-link">4. Configure a callback server</a></li><li class="sidebar-sub-header"><a href="/3-guides/6_pisp_local.html#_5-call-the-thirdparty-apis" class="sidebar-link">5. Call the Thirdparty APIs!</a></li></ul></li></ul></section></li><li><a href="/99-demos/" class="sidebar-link">Demos</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="trying-out-the-thirdparty-api-locally"><a href="#trying-out-the-thirdparty-api-locally" class="header-anchor">#</a> Trying out the Thirdparty API Locally</h1> <p>The Thirdparty API (PISP API) is still in preview mode, but that doesn't mean you can't use it to build against!</p> <p>This guide walks you through how to run the testing toolkit locally to support the Thirdparty API.</p> <h2 id="prerequisites"><a href="#prerequisites" class="header-anchor">#</a> Prerequisites</h2> <ul><li>Command line access on a machine</li> <li>A Browser</li> <li><code>docker</code> and <code>docker-compose</code>, any recent version should work</li></ul> <h2 id="_1-download-the-ttk-config-from-the-thirdparty-scheme-adapter-repo"><a href="#_1-download-the-ttk-config-from-the-thirdparty-scheme-adapter-repo" class="header-anchor">#</a> 1. Download the TTK Config from the thirdparty-scheme-adapter repo</h2> <p>Go to <a href="https://github.com/mojaloop/thirdparty-scheme-adapter" target="_blank" rel="noopener noreferrer">https://github.com/mojaloop/thirdparty-scheme-adapter<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>. This is where a lot of the in progress work for pisp is taking place.</p> <p>Clone the repo however you'd like, for example:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">git</span> clone https://github.com/mojaloop/thirdparty-scheme-adapter.git
+</code></pre></div><p>Once that is complete, cd into the <code>./docker/contract</code> directory</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token builtin class-name">cd</span> ./docker/contract
+</code></pre></div><h2 id="_2-run-docker-compose-up"><a href="#_2-run-docker-compose-up" class="header-anchor">#</a> 2. Run <code>docker-compose up</code></h2> <p>In this folder, we maintain a pre-configured testing toolkit that supports the PISP APIs that we run tests against.</p> <p>Start the containers like so</p> <div class="language-bash extra-class"><pre class="language-bash"><code>docker-compose up
+</code></pre></div><p><img src="/assets/img/pisp_dcu.c90299ae.png" alt=""></p> <p>And wait for docker to download and run the containers. This may take a little while depending on your connection speed.</p> <p>You should see some output similar to the following:</p> <p><img src="/assets/img/pisp_dcu_done.8d748930.png" alt=""></p> <h2 id="_3-browse-the-locally-running-testing-toolkit"><a href="#_3-browse-the-locally-running-testing-toolkit" class="header-anchor">#</a> 3. Browse the Locally Running Testing Toolkit</h2> <p>The Testing Toolkit UI will be up and running at <a href="http://localhost:6060" target="_blank" rel="noopener noreferrer">localhost:6060<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <p>Go to the &quot;monitoring&quot; tab to watch the requests as they come in.</p> <h2 id="_4-configure-a-callback-server"><a href="#_4-configure-a-callback-server" class="header-anchor">#</a> 4. Configure a callback server</h2> <p>We a way to inspect the callbacks from the Testing Toolkit. In your production app, this would be pointed to your application, but for this example we can just log the requests.</p> <p>We can use docker to run a simple web server which prints out its inbound requests.</p> <p>Open <code>docker-compose.yml</code>, and add a new service on line <code>8</code>:</p> <div class="language-yaml extra-class"><pre class="language-yaml"><code><span class="token punctuation">...</span>
+
+<span class="token key atrule">services</span><span class="token punctuation">:</span>
+  <span class="token key atrule">callback-server</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> mendhak/http<span class="token punctuation">-</span>https<span class="token punctuation">-</span>echo<span class="token punctuation">:</span><span class="token number">15</span>
+    <span class="token key atrule">networks</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> mojaloop<span class="token punctuation">-</span>pisp<span class="token punctuation">-</span>net
+    <span class="token key atrule">ports</span><span class="token punctuation">:</span>
+      <span class="token punctuation">-</span> 8081<span class="token punctuation">:</span><span class="token number">8080</span>
+
+  <span class="token key atrule">ml-testing-toolkit</span><span class="token punctuation">:</span>
+    <span class="token key atrule">image</span><span class="token punctuation">:</span> mojaloop/ml<span class="token punctuation">-</span>testing<span class="token punctuation">-</span>toolkit<span class="token punctuation">:</span>v11.2.2
+  <span class="token punctuation">...</span>
+
+</code></pre></div><p>Save and close the file, and restart your docker-compose:</p> <p><code>docker-compose up</code></p> <p>You can check the logs for the <code>callback-server</code> in a separate window with the following command:</p> <div class="language-bash extra-class"><pre class="language-bash"><code>docker-compose logs -f callback-server 
+</code></pre></div><p>Now we need to confgure the testing toolkit to use the correct callback url.</p> <p>Go to <a href="http://localhost:6060/admin/settings" target="_blank" rel="noopener noreferrer"><code>localhost:6060/admin/settings</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> and look for the <code>Callback URL</code> field.</p> <p>Change this to <code>http://callback-server:8080</code>.</p> <p>Next, untick the &quot;Enable Callback resource endpoints&quot; box, and hit &quot;Save&quot;</p> <p><img src="/assets/img/pisp_callback.8ea3cce2.png" alt=""></p> <h2 id="_5-call-the-thirdparty-apis"><a href="#_5-call-the-thirdparty-apis" class="header-anchor">#</a> 5. Call the Thirdparty APIs!</h2> <p>You can now start using the Thirdparty APIs</p> <p>The API is divided into 2 sections:</p> <ul><li><a href="http://beta.moja-lab.live/2-apis/thirdparty-pisp.html" target="_blank" rel="noopener noreferrer"><code>Thirdparty-PISP</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> for the PISP side of the transaction</li> <li><a href="http://beta.moja-lab.live/2-apis/thirdparty-dfsp.html" target="_blank" rel="noopener noreferrer"><code>Thirdparty-DFSP</code><span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> for an existing DFSP to support PISP's features</li></ul> <p>To start with, you most likely will want to be using the <code>Thirdparty-PISP</code> API.</p> <p>To understand how a PISP tranfer works, check out the <a href="https://github.com/mojaloop/pisp/blob/master/docs/transfer/README.md" target="_blank" rel="noopener noreferrer">PISP Transfer documentation here<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p> <h3 id="_5-1-party-lookup"><a href="#_5-1-party-lookup" class="header-anchor">#</a> 5.1 Party Lookup:</h3> <p><img src="/assets/img/pisp_lookup.438b3046.png" alt=""></p> <p>In this step, the PISP asks Mojaloop to look up the payee party that their user wants to send to.</p> <ul><li>Request: <code>GET /parties/{Type}/{ID}</code></li> <li>Async Callback: <code>PUT /parties/{Type}/{ID}</code></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> -X GET http://localhost:15000/parties/MSISDN/12345 <span class="token punctuation">\</span>
+  -H <span class="token string">'Accept: application/vnd.interoperability.parties+json;version=1.0'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'Content-Type: application/vnd.interoperability.parties+json;version=1.0'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'Date: Mon, 11 Jan 2021 00:00:00 GMT'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'FSPIOP-Source: pispa'</span>
+</code></pre></div><p>Example Logs in <code>callback-server</code>:</p> <div class="language- extra-class"><pre class="language-text"><code>-----------------
+{
+    &quot;path&quot;: &quot;/parties/MSISDN/12345&quot;,
+    &quot;headers&quot;: {
+        &quot;content-type&quot;: &quot;application/vnd.interoperability.parties+json;version=1.0&quot;,
+        &quot;date&quot;: &quot;Wed, 27 May 2020 11:13:34 GMT&quot;,
+        &quot;x-forwarded-for&quot;: &quot;sed eiusmod sunt&quot;,
+        &quot;fspiop-source&quot;: &quot;pisp&quot;,
+        &quot;fspiop-destination&quot;: &quot;dfspa&quot;,
+        &quot;fspiop-encryption&quot;: &quot;magna Excepteur dolore nisi fugiat&quot;,
+        &quot;fspiop-signature&quot;: &quot;nisi&quot;,
+        &quot;fspiop-uri&quot;: &quot;veniam reprehenderit anim ut&quot;,
+        &quot;fspiop-http-method&quot;: &quot;PUT&quot;,
+        &quot;content-length&quot;: &quot;276&quot;,
+        &quot;traceparent&quot;: &quot;00-ccddd97c01d76f8345331389690b33-0123456789abcdef0-00&quot;,
+        &quot;user-agent&quot;: &quot;axios/0.19.2&quot;,
+        &quot;host&quot;: &quot;callback-server:8080&quot;,
+        &quot;connection&quot;: &quot;close&quot;
+    },
+    &quot;method&quot;: &quot;PUT&quot;,
+    &quot;body&quot;: &quot;{\&quot;party\&quot;:{\&quot;partyIdInfo\&quot;:{\&quot;partyIdType\&quot;:\&quot;MSISDN\&quot;,\&quot;partyIdentifier\&quot;:\&quot;12345\&quot;,\&quot;fspId\&quot;:\&quot;pispA\&quot;},\&quot;merchantClassificationCode\&quot;:\&quot;4321\&quot;,\&quot;name\&quot;:\&quot;Justin Trudeau\&quot;,\&quot;personalInfo\&quot;:{\&quot;complexName\&quot;:{\&quot;firstName\&quot;:\&quot;Justin\&quot;,\&quot;middleName\&quot;:\&quot;Pierre\&quot;,\&quot;lastName\&quot;:\&quot;Trudeau\&quot;},\&quot;dateOfBirth\&quot;:\&quot;1980-01-01\&quot;}}}&quot;,
+    &quot;fresh&quot;: false,
+    &quot;hostname&quot;: &quot;callback-server&quot;,
+    &quot;ip&quot;: &quot;sed eiusmod sunt&quot;,
+    &quot;ips&quot;: [
+        &quot;sed eiusmod sunt&quot;
+    ],
+    &quot;protocol&quot;: &quot;http&quot;,
+    &quot;query&quot;: {},
+    &quot;subdomains&quot;: [],
+    &quot;xhr&quot;: false,
+    &quot;os&quot;: {
+        &quot;hostname&quot;: &quot;18409aa1c315&quot;
+    },
+    &quot;connection&quot;: {}
+}
+sed eiusmod sunt - - [15/Jan/2021:10:34:20 +0000] &quot;PUT /parties/MSISDN/12345 HTTP/1.1&quot; 200 1280 &quot;-&quot; &quot;axios/0.19.2&quot;
+
+</code></pre></div><h3 id="_5-2-post-thirdpartyrequests-transactions"><a href="#_5-2-post-thirdpartyrequests-transactions" class="header-anchor">#</a> 5.2 <code>POST /thirdpartyRequests/transactions</code></h3> <p>In this step, the PISP asks the DFSP to get a quote that it can</p> <ol><li>Display to their user</li> <li>Get the user to sign using a private key residing on their device</li></ol> <ul><li>Request: <code>POST /thirdpartyRequests/transactions</code></li> <li>Async Callback: <code>POST /authorizations</code></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> -X POST http://localhost:15000/thirdpartyRequests/transactions <span class="token punctuation">\</span>
+  -H <span class="token string">'Accept: application/vnd.thirdparty.transactions+json;version=1.0'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'Content-Type: application/vnd.thirdparty.transactions+json;version=1.0'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'Date: Mon, 11 Jan 2021 00:00:00 GMT'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'FSPIOP-Source: pispa'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'FSPIOP-Destination: dfspa'</span> <span class="token punctuation">\</span>
+  -d <span class="token string">'{
+  &quot;sourceAccountId&quot;: &quot;mats_account.dfspa.123&quot;,
+  &quot;consentId&quot;: &quot;387ee6b9-520d-4c51-a9e4-6eb2ef15123a&quot;,
+  &quot;transactionRequestId&quot;: &quot;387ee6b9-520d-4c51-a9e4-6eb2ef15887a&quot;,
+  &quot;payer&quot;: {
+    &quot;partyIdInfo&quot;: {
+      &quot;partyIdType&quot;: &quot;MSISDN&quot;,
+      &quot;partyIdentifier&quot;: &quot;947947947947&quot;,
+      &quot;fspId&quot;: &quot;applebank&quot;
+    },
+    &quot;personalInfo&quot;: {
+      &quot;complexName&quot;: {
+        &quot;firstName&quot;: &quot;Mats&quot;,
+        &quot;lastName&quot;: &quot;Hagman&quot;
+      },
+      &quot;dateOfBirth&quot;: &quot;1983-10-25&quot;
+    }
+  },
+  &quot;payee&quot;: {
+    &quot;partyIdInfo&quot;: {
+      &quot;partyIdType&quot;: &quot;MSISDN&quot;,
+      &quot;partyIdentifier&quot;: &quot;27713803912&quot;,
+      &quot;fspId&quot;: &quot;payeefsp&quot;
+    }
+  },
+  &quot;amountType&quot;: &quot;SEND&quot;,
+  &quot;amount&quot;: {
+    &quot;amount&quot;: &quot;10&quot;,
+    &quot;currency&quot;: &quot;USD&quot;
+  },
+  &quot;transactionType&quot;: {
+    &quot;scenario&quot;: &quot;TRANSFER&quot;,
+    &quot;initiator&quot;: &quot;PAYER&quot;,
+    &quot;initiatorType&quot;: &quot;CONSUMER&quot;
+  },
+  &quot;expiration&quot;: &quot;2021-01-30T00:00:00.000&quot;
+}'</span>
+</code></pre></div><p>Example Response (in <code>docker-compose logs -f callback-server</code>)</p> <div class="language- extra-class"><pre class="language-text"><code>{
+    &quot;path&quot;: &quot;/authorizations&quot;,
+    &quot;headers&quot;: {
+        &quot;content-type&quot;: &quot;application/vnd.interoperability.authorizations+json;version=1.0&quot;,
+        &quot;accept&quot;: &quot;application/vnd.interoperability.authorizations+json;version=1.0&quot;,
+        &quot;date&quot;: &quot;Wed, 27 May 2020 11:13:34 GMT&quot;,
+        &quot;fspiop-source&quot;: &quot;DFSPA&quot;,
+        &quot;traceparent&quot;: &quot;00-ccdd87fbd24d7dfc42d7b58e059dcc-0123456789abcdef0-00&quot;,
+        &quot;user-agent&quot;: &quot;axios/0.19.2&quot;,
+        &quot;content-length&quot;: &quot;775&quot;,
+        &quot;host&quot;: &quot;callback-server:8080&quot;,
+        &quot;connection&quot;: &quot;close&quot;
+    },
+    &quot;method&quot;: &quot;POST&quot;,
+    &quot;body&quot;: &quot;{\&quot;authenticationType\&quot;:\&quot;U2F\&quot;,\&quot;retriesLeft\&quot;:\&quot;1\&quot;,\&quot;amount\&quot;:{\&quot;currency\&quot;:\&quot;USD\&quot;,\&quot;amount\&quot;:\&quot;124.45\&quot;},\&quot;transactionId\&quot;:\&quot;2f169631-ef99-4cb1-96dc-91e8fc08f539\&quot;,\&quot;transactionRequestId\&quot;:\&quot;387ee6b9-520d-4c51-a9e4-6eb2ef15887a\&quot;,\&quot;quote\&quot;:{\&quot;transferAmount\&quot;:{\&quot;currency\&quot;:\&quot;USD\&quot;,\&quot;amount\&quot;:\&quot;124.45\&quot;},\&quot;payeeReceiveAmount\&quot;:{\&quot;currency\&quot;:\&quot;USD\&quot;,\&quot;amount\&quot;:\&quot;123.45\&quot;},\&quot;payeeFspFee\&quot;:{\&quot;currency\&quot;:\&quot;USD\&quot;,\&quot;amount\&quot;:\&quot;1\&quot;},\&quot;payeeFspCommission\&quot;:{\&quot;currency\&quot;:\&quot;USD\&quot;,\&quot;amount\&quot;:\&quot;0\&quot;},\&quot;expiration\&quot;:\&quot;2020-08-24T08:38:08.699-04:00\&quot;,\&quot;geoCode\&quot;:{\&quot;latitude\&quot;:\&quot;+45.4215\&quot;,\&quot;longitude\&quot;:\&quot;+75.6972\&quot;},\&quot;ilpPacket\&quot;:\&quot;AYIBgQAAAAAAAASwNGxldmVsb25lLmRmc3AxLm1lci45T2RTOF81MDdqUUZ\&quot;,\&quot;condition\&quot;:\&quot;f5sqb7tBTWPd5Y8BDFdMm9BJR_MNI4isf8p8n4D5pHA\&quot;,\&quot;extensionList\&quot;:{\&quot;extension\&quot;:[{\&quot;key\&quot;:\&quot;errorDescription\&quot;,\&quot;value\&quot;:\&quot;This is a more detailed error description\&quot;}]}}}&quot;,
+    &quot;fresh&quot;: false,
+    &quot;hostname&quot;: &quot;callback-server&quot;,
+    &quot;ip&quot;: &quot;::ffff:172.21.0.2&quot;,
+    &quot;ips&quot;: [],
+    &quot;protocol&quot;: &quot;http&quot;,
+    &quot;query&quot;: {},
+    &quot;subdomains&quot;: [],
+    &quot;xhr&quot;: false,
+    &quot;os&quot;: {
+        &quot;hostname&quot;: &quot;18409aa1c315&quot;
+    },
+    &quot;connection&quot;: {}
+}
+</code></pre></div><p>Example Body (parsed from the above response):</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;authenticationType&quot;</span><span class="token operator">:</span><span class="token string">&quot;U2F&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;retriesLeft&quot;</span><span class="token operator">:</span><span class="token string">&quot;1&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;amount&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span><span class="token property">&quot;currency&quot;</span><span class="token operator">:</span><span class="token string">&quot;USD&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;amount&quot;</span><span class="token operator">:</span><span class="token string">&quot;124.45&quot;</span><span class="token punctuation">}</span><span class="token punctuation">,</span><span class="token property">&quot;transactionId&quot;</span><span class="token operator">:</span><span class="token string">&quot;2f169631-ef99-4cb1-96dc-91e8fc08f539&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;transactionRequestId&quot;</span><span class="token operator">:</span><span class="token string">&quot;387ee6b9-520d-4c51-a9e4-6eb2ef15887a&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;quote&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+    <span class="token property">&quot;transferAmount&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+      <span class="token property">&quot;currency&quot;</span><span class="token operator">:</span><span class="token string">&quot;USD&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;amount&quot;</span><span class="token operator">:</span><span class="token string">&quot;124.45&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;payeeReceiveAmount&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+      <span class="token property">&quot;currency&quot;</span><span class="token operator">:</span><span class="token string">&quot;USD&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;amount&quot;</span><span class="token operator">:</span><span class="token string">&quot;123.45&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;payeeFspFee&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+      <span class="token property">&quot;currency&quot;</span><span class="token operator">:</span><span class="token string">&quot;USD&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;amount&quot;</span><span class="token operator">:</span><span class="token string">&quot;1&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;payeeFspCommission&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;currency&quot;</span><span class="token operator">:</span><span class="token string">&quot;USD&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;amount&quot;</span><span class="token operator">:</span><span class="token string">&quot;0&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;expiration&quot;</span><span class="token operator">:</span><span class="token string">&quot;2020-08-24T08:38:08.699-04:00&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;geoCode&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+      <span class="token property">&quot;latitude&quot;</span><span class="token operator">:</span><span class="token string">&quot;+45.4215&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;longitude&quot;</span><span class="token operator">:</span><span class="token string">&quot;+75.6972&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;ilpPacket&quot;</span><span class="token operator">:</span><span class="token string">&quot;AYIBgQAAAAAAAASwNGxldmVsb25lLmRmc3AxLm1lci45T2RTOF81MDdqUUZ&quot;</span><span class="token punctuation">,</span><span class="token property">&quot;condition&quot;</span><span class="token operator">:</span><span class="token string">&quot;f5sqb7tBTWPd5Y8BDFdMm9BJR_MNI4isf8p8n4D5pHA&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;extensionList&quot;</span><span class="token operator">:</span><span class="token punctuation">{</span>
+      <span class="token property">&quot;extension&quot;</span><span class="token operator">:</span><span class="token punctuation">[</span><span class="token null keyword">null</span><span class="token punctuation">]</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>You can see that the DFSP has issues the <code>POST /authorizations</code> to the PISP containing a Quote they can display to their end user.</p> <h3 id="_5-3-put-authorizations-id"><a href="#_5-3-put-authorizations-id" class="header-anchor">#</a> 5.3 <code>PUT/authorizations/{ID}</code></h3> <p><img src="/assets/img/pisp_put_auth.b0d3bd41.png" alt=""></p> <p>In this step, the PISP presents the quote to the user and asks them to sign it using the private key on their device. The PISP then sends this signed quote to the DFSP, who checks it, and if it approves, conducts the transfer.</p> <ul><li>Request: <code>PUT /authorizations/123</code></li> <li>Async Callback: <code>PATCH /thirdpartyRequests/transactions/123</code></li></ul> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> -X PUT http://localhost:15000/authorizations/123 <span class="token punctuation">\</span>
+  -H <span class="token string">'Accept: application/vnd.interoperability.thirdparty+json;version=1.0'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'Content-Type: application/vnd.interoperability.thirdparty+json;version=1.0'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'Date: Mon, 11 Jan 2021 00:00:00 GMT'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'FSPIOP-Source: pispa'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'FSPIOP-Destination: dfspa'</span> <span class="token punctuation">\</span>
+  -d <span class="token string">'{
+        &quot;authenticationInfo&quot;: {
+          &quot;authentication&quot;: &quot;U2F&quot;,
+          &quot;authenticationValue&quot;:{
+            &quot;pinValue&quot;: &quot;aaabbbcccddd&quot;,
+            &quot;counter&quot;: &quot;1&quot;
+          }
+        },
+        &quot;responseType&quot;: &quot;ENTERED&quot;
+      }'</span>
+</code></pre></div><p>Callback Response from TTK</p> <div class="language- extra-class"><pre class="language-text"><code>callback-server_1        | {
+callback-server_1        |     &quot;path&quot;: &quot;/thirdpartyRequests/transactions/123&quot;,
+callback-server_1        |     &quot;headers&quot;: {
+callback-server_1        |         &quot;content-type&quot;: &quot;application/vnd.interoperability.thirdparty+json;version=1.0&quot;,
+callback-server_1        |         &quot;fspiop-source&quot;: &quot;switch&quot;,
+callback-server_1        |         &quot;accept&quot;: &quot;application/vnd.interoperability.thirdparty+json;version=1.0&quot;,
+callback-server_1        |         &quot;date&quot;: &quot;Fri, 15 Jan 2021 12:54:53 GMT&quot;,
+callback-server_1        |         &quot;user-agent&quot;: &quot;axios/0.19.2&quot;,
+callback-server_1        |         &quot;content-length&quot;: &quot;93&quot;,
+callback-server_1        |         &quot;host&quot;: &quot;callback-server:8080&quot;,
+callback-server_1        |         &quot;connection&quot;: &quot;close&quot;
+callback-server_1        |     },
+callback-server_1        |     &quot;method&quot;: &quot;PATCH&quot;,
+callback-server_1        |     &quot;body&quot;: &quot;{\&quot;transactionId\&quot;:\&quot;b51ec534-ee48-4575-b6a9-ead2955b8069\&quot;,\&quot;transactionRequestState\&quot;:\&quot;ACCEPTED\&quot;}&quot;,
+callback-server_1        |     &quot;fresh&quot;: false,
+callback-server_1        |     &quot;hostname&quot;: &quot;callback-server&quot;,
+callback-server_1        |     &quot;ip&quot;: &quot;::ffff:172.21.0.4&quot;,
+callback-server_1        |     &quot;ips&quot;: [],
+callback-server_1        |     &quot;protocol&quot;: &quot;http&quot;,
+callback-server_1        |     &quot;query&quot;: {},
+callback-server_1        |     &quot;subdomains&quot;: [],
+callback-server_1        |     &quot;xhr&quot;: false,
+callback-server_1        |     &quot;os&quot;: {
+callback-server_1        |         &quot;hostname&quot;: &quot;18409aa1c315&quot;
+callback-server_1        |     },
+callback-server_1        |     &quot;connection&quot;: {}
+callback-server_1        | }
+</code></pre></div><p>parsed message</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;transactionId&quot;</span><span class="token operator">:</span><span class="token string">&quot;b51ec534-ee48-4575-b6a9-ead2955b8069&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;transactionRequestState&quot;</span><span class="token operator">:</span><span class="token string">&quot;ACCEPTED&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>This means that the Thirdparty transactionRequest <code>123</code> was completed sucessfully!</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/3-guides/5_ttk_p2p.html" class="prev">
+        4. TTK P2P Transfer (Easy)
+      </a></span> <span class="next"><a href="/99-demos/">
+        Demos
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.420e80db.js" defer></script><script src="/assets/js/4.ea6643aa.js" defer></script><script src="/assets/js/1.85953c67.js" defer></script>
+  </body>
+</html>

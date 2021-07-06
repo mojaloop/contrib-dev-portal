@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <title>2. Peer to Peer Transaction</title>
+    <meta name="generator" content="VuePress 1.7.1">
+    
+    <meta name="description" content="">
+    
+    <link rel="preload" href="/assets/css/0.styles.a3da3294.css" as="style"><link rel="preload" href="/assets/js/app.420e80db.js" as="script"><link rel="preload" href="/assets/js/4.ea6643aa.js" as="script"><link rel="preload" href="/assets/js/2.424551ed.js" as="script"><link rel="prefetch" href="/assets/js/1.85953c67.js"><link rel="prefetch" href="/assets/js/10.864cadcd.js"><link rel="prefetch" href="/assets/js/11.9c136b3c.js"><link rel="prefetch" href="/assets/js/12.048ab12e.js"><link rel="prefetch" href="/assets/js/13.1237b211.js"><link rel="prefetch" href="/assets/js/14.675db571.js"><link rel="prefetch" href="/assets/js/15.92f5fa49.js"><link rel="prefetch" href="/assets/js/16.55b42a99.js"><link rel="prefetch" href="/assets/js/17.371b8d63.js"><link rel="prefetch" href="/assets/js/18.1bd7faed.js"><link rel="prefetch" href="/assets/js/19.9556c3ce.js"><link rel="prefetch" href="/assets/js/20.6a5f05ac.js"><link rel="prefetch" href="/assets/js/21.b7986a4c.js"><link rel="prefetch" href="/assets/js/22.7c8e3754.js"><link rel="prefetch" href="/assets/js/23.f6b903ea.js"><link rel="prefetch" href="/assets/js/24.a4cbc2e4.js"><link rel="prefetch" href="/assets/js/25.49a95c3c.js"><link rel="prefetch" href="/assets/js/26.db28e329.js"><link rel="prefetch" href="/assets/js/27.3b17a2ea.js"><link rel="prefetch" href="/assets/js/5.d74b4548.js"><link rel="prefetch" href="/assets/js/6.afd6b14f.js"><link rel="prefetch" href="/assets/js/7.476f61f8.js"><link rel="prefetch" href="/assets/js/8.5487cb71.js"><link rel="prefetch" href="/assets/js/9.20d06d17.js">
+    <link rel="stylesheet" href="/assets/css/0.styles.a3da3294.css">
+  </head>
+  <body>
+    <div id="app" data-server-rendered="true"><div class="theme-container"><header class="navbar"><div class="sidebar-button"><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" role="img" viewBox="0 0 448 512" class="icon"><path fill="currentColor" d="M436 124H12c-6.627 0-12-5.373-12-12V80c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12zm0 160H12c-6.627 0-12-5.373-12-12v-32c0-6.627 5.373-12 12-12h424c6.627 0 12 5.373 12 12v32c0 6.627-5.373 12-12 12z"></path></svg></div> <a href="/" class="home-link router-link-active"><img src="/mojaloop_logo_med.png" alt="" class="logo"> <!----></a> <div class="links"><div class="search-box"><input aria-label="Search" autocomplete="off" spellcheck="false" value=""> <!----></div> <!----></div></header> <div class="sidebar-mask"></div> <aside class="sidebar"><!---->  <ul class="sidebar-links"><li><a href="/" aria-current="page" class="sidebar-link">Getting Started</a></li><li><a href="/1-overview/" class="sidebar-link">Overview</a></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading"><span>APIs</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/2-apis/fspiop.html" class="sidebar-link">FSPIOP (Mojaloop API)</a></li><li><a href="/2-apis/admin.html" class="sidebar-link">Admin API</a></li><li><a href="/2-apis/settlement.html" class="sidebar-link">Settlement API</a></li><li><a href="/2-apis/thirdparty-dfsp.html" class="sidebar-link">Thirdparty-DFSP</a></li><li><a href="/2-apis/thirdparty-pisp.html" class="sidebar-link">Thirdparty-PISP</a></li></ul></section></li><li><section class="sidebar-group depth-0"><p class="sidebar-heading open"><span>Guides</span> <!----></p> <ul class="sidebar-links sidebar-group-items"><li><a href="/3-guides/1_dfsp_setup.html" class="sidebar-link">1. DFSP Setup</a></li><li><a href="/3-guides/2_dfsp_p2p.html" aria-current="page" class="active sidebar-link">2. P2P Transfer</a><ul class="sidebar-sub-headers"><li class="sidebar-sub-header"><a href="/3-guides/2_dfsp_p2p.html#_1-prerequisites" class="sidebar-link">1. Prerequisites</a></li><li class="sidebar-sub-header"><a href="/3-guides/2_dfsp_p2p.html#_2-party-lookup" class="sidebar-link">2. Party Lookup</a></li><li class="sidebar-sub-header"><a href="/3-guides/2_dfsp_p2p.html#_3-quote" class="sidebar-link">3. Quote</a></li><li class="sidebar-sub-header"><a href="/3-guides/2_dfsp_p2p.html#_4-transfer" class="sidebar-link">4. Transfer</a></li></ul></li><li><a href="/3-guides/3_simulators.html" class="sidebar-link">3. DFSP Simulators</a></li><li><a href="/3-guides/5_ttk_p2p.html" class="sidebar-link">4. TTK P2P Transfer (Easy)</a></li><li><a href="/3-guides/6_pisp_local.html" class="sidebar-link">5. Thirdparty PISP API Local</a></li></ul></section></li><li><a href="/99-demos/" class="sidebar-link">Demos</a></li></ul> </aside> <main class="page"> <div class="theme-default-content content__default"><h1 id="_2-peer-to-peer-transaction"><a href="#_2-peer-to-peer-transaction" class="header-anchor">#</a> 2. Peer to Peer Transaction</h1> <p>This guide takes you through the process of issuing a Peer to Peer (P2P) transaction from your DFSP to another DFSP.</p> <p>A Mojaloop Transaction takes 3 distict phases:</p> <ol><li>Party Lookup</li> <li>Quoting</li> <li>Transfer</li></ol> <blockquote><p>Does this guide look too command line heavy for you? Try using the <a href="/3-guides/5_ttk_p2p/">Testing Toolkit</a> instead.</p></blockquote> <h2 id="_1-prerequisites"><a href="#_1-prerequisites" class="header-anchor">#</a> 1. Prerequisites</h2> <ul><li>Completed the <a href="/3-guides/1_dfsp_setup">DFSP setup guide</a> and are succesfully recieving callbacks from the Mojaloop Sandbox</li></ul> <h2 id="_2-party-lookup"><a href="#_2-party-lookup" class="header-anchor">#</a> 2. Party Lookup</h2> <div class="language- extra-class"><pre class="language-text"><code>GET /parties/{Type}/{ID}
+</code></pre></div><p>The party lookup phase is where we lookup an identifier provided by <em>your end user</em>, and find out more information about the person (party in Mojaloop speak) that your user wants to send funds to. In the real world after recieiving the <code>PUT /parties/{Type}/{ID}</code> callback response from the Mojaloop switch, you will confirm the data with your end user.</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> -v beta.moja-lab.live/api/fspiop/parties/MSISDN/4448483173 <span class="token punctuation">\</span>
+  -H <span class="token string">'Accept: application/vnd.interoperability.parties+json;version=1'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'Content-Type: application/vnd.interoperability.parties+json;version=1.0'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'FSPIOP-Source: lewbank'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'Date: 2021-01-01'</span>
+</code></pre></div><p><strong>Callback:</strong> <code>PUT /parties/MSISDN/4448483173</code></p> <div class="language-json extra-class"><pre class="language-json"><code># formatted body
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;party&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;partyIdInfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;partyIdType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MSISDN&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;partyIdentifier&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4448483173&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;fspId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;duriantech&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;personalInfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;complexName&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;firstName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Draco&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;middleName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;D&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;lastName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Dragon&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;dateOfBirth&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1970-01-01&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;name&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Draco Dragon&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><h2 id="_3-quote"><a href="#_3-quote" class="header-anchor">#</a> 3. Quote</h2> <div class="language- extra-class"><pre class="language-text"><code>POST /quotes
+</code></pre></div><p>After your user has confirmed the details of the end user, it's time to get a quote from the Payer DFSP about the fees associated with the transaction.</p> <p>You can ask your user either <em>&quot;How much money do you want to send?&quot;</em> or <em>&quot;How much money would you like the receiver to receive?&quot;</em>. In this example, we will the <code>RECEIVE_AMOUNT</code>, which is to say <em>&quot;How much money would you like the receiver to receive?&quot;</em>.</p> <p>After receiving the quote response callback at <code>PUT /quotes/{ID}</code>, you can then inform your user of the fees associated with the transaction, and ask them whether or not they would liike to continue.</p> <p>Referring to the <a href="https://docs.mojaloop.io/mojaloop-specification/documents/API%20Definition%20v1.0.html#6522-post-quotes" target="_blank" rel="noopener noreferrer">API Specification<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a>, we can build our example <code>POST /quotes</code> request.</p> <p>Here's a simple explanation of the key parameters we need to set:</p> <ul><li><p><code>headers.Accept</code> - <code>application/vnd.interoperability.quotes+json;version=1.0</code></p></li> <li><p><code>headers.Content-Type</code> - <code>application/vnd.interoperability.quotes+json;version=1.0</code></p></li> <li><p><code>headers.Date</code> - The RFC 2822 formatted date the request was made</p></li> <li><p><code>headers.FSPIOP-Source</code> - which DFSP is sending the request. In our example case, that is <code>lewbank</code></p></li> <li><p><code>headers.FSPIOP-Destination</code> - which DFSP we are sending the quote request to. We can find this by looking at the request body of the <code>PUT /parties</code> response. In our case, that is <code>duriantech</code></p></li> <li><p><code>body.quoteId</code> - a random UUID, generated by you.</p></li> <li><p><code>body.transactionId</code> - a random UUID, generated by you</p></li> <li><p><code>body.payer</code> - This complex object is the SENDER of the transfer, or your (as the sending DFSP's) customer</p></li> <li><p><code>body.payee</code> - The RECIEVE of the transfer. We can copy in the <code>PUT /parties</code> response callback for this field</p></li></ul> <blockquote><p><strong>Note: Generating a UUID</strong></p> <ul><li>For MacOS or Linux users, you can use <code>uuidgen</code> to make a UUID for you: <code>uuidgen | awk '{print tolower($0)}'</code></li> <li>https://www.uuidgenerator.net/version4 is also a good option for quickly and easily generating UUIDs
+Alternatively, you can copy and paste the UUIDs in this guide and change a few digits at random</li></ul></blockquote> <p>Here's an example quote:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;quoteId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;387ee6b9-520d-4c51-a9e4-6eb2ef15887a&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;transactionId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;387ee6b9-520d-4c51-a9e4-6eb2ef15887b&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;payer&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;partyIdInfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;partyIdType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MSISDN&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;partyIdentifier&quot;</span><span class="token operator">:</span> <span class="token string">&quot;947947947947&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;fspId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lewbank&quot;</span>
+    <span class="token punctuation">}</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;personalInfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;complexName&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+        <span class="token property">&quot;firstName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Mats&quot;</span><span class="token punctuation">,</span>
+        <span class="token property">&quot;lastName&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Hagman&quot;</span>
+      <span class="token punctuation">}</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;dateOfBirth&quot;</span><span class="token operator">:</span> <span class="token string">&quot;1983-10-25&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;payee&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;partyIdInfo&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+      <span class="token property">&quot;partyIdType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;MSISDN&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;partyIdentifier&quot;</span><span class="token operator">:</span> <span class="token string">&quot;4448483173&quot;</span><span class="token punctuation">,</span>
+      <span class="token property">&quot;fspId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;duriantech&quot;</span>
+    <span class="token punctuation">}</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;amountType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;SEND&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;amount&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;amount&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;currency&quot;</span><span class="token operator">:</span> <span class="token string">&quot;USD&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;transactionType&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;scenario&quot;</span><span class="token operator">:</span> <span class="token string">&quot;TRANSFER&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;initiator&quot;</span><span class="token operator">:</span> <span class="token string">&quot;PAYER&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;initiatorType&quot;</span><span class="token operator">:</span> <span class="token string">&quot;CONSUMER&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;note&quot;</span><span class="token operator">:</span> <span class="token string">&quot;Test p2p transfer&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>And as a full request:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> -X POST http://beta.moja-lab.live/api/fspiop/quotes <span class="token punctuation">\</span>
+  -H <span class="token string">'Accept: application/vnd.interoperability.quotes+json;version=1.0'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'Content-Type: application/vnd.interoperability.quotes+json;version=1.0'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'Date: Mon, 11 Jan 2021 00:00:00 GMT'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'FSPIOP-Source: lewbank'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'FSPIOP-Destination: duriantech'</span> <span class="token punctuation">\</span>
+  -d <span class="token string">'{
+  &quot;quoteId&quot;: &quot;387ee6b9-520d-4c51-a9e4-6eb2ef15887a&quot;,
+  &quot;transactionId&quot;: &quot;387ee6b9-520d-4c51-a9e4-6eb2ef15887b&quot;,
+  &quot;payer&quot;: {
+    &quot;partyIdInfo&quot;: {
+      &quot;partyIdType&quot;: &quot;MSISDN&quot;,
+      &quot;partyIdentifier&quot;: &quot;947947947947&quot;,
+      &quot;fspId&quot;: &quot;lewbank&quot;
+    },
+    &quot;personalInfo&quot;: {
+      &quot;complexName&quot;: {
+        &quot;firstName&quot;: &quot;Mats&quot;,
+        &quot;lastName&quot;: &quot;Hagman&quot;
+      },
+      &quot;dateOfBirth&quot;: &quot;1983-10-25&quot;
+    }
+  },
+  &quot;payee&quot;: {
+    &quot;partyIdInfo&quot;: {
+      &quot;partyIdType&quot;: &quot;MSISDN&quot;,
+      &quot;partyIdentifier&quot;: &quot;4448483173&quot;,
+      &quot;fspId&quot;: &quot;duriantech&quot;
+    }
+  },
+  &quot;amountType&quot;: &quot;SEND&quot;,
+  &quot;amount&quot;: {
+    &quot;amount&quot;: &quot;10&quot;,
+    &quot;currency&quot;: &quot;USD&quot;
+  },
+  &quot;transactionType&quot;: {
+    &quot;scenario&quot;: &quot;TRANSFER&quot;,
+    &quot;initiator&quot;: &quot;PAYER&quot;,
+    &quot;initiatorType&quot;: &quot;CONSUMER&quot;
+  },
+  &quot;note&quot;: &quot;Test p2p transfer&quot;
+}'</span>
+</code></pre></div><p><strong>Callback:</strong> <code>PUT /quotes/387ee6b9-520d-4c51-a9e4-6eb2ef15887a</code></p> <div class="language-json extra-class"><pre class="language-json"><code># formatted body
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;transferAmount&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;amount&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;currency&quot;</span><span class="token operator">:</span> <span class="token string">&quot;USD&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;expiration&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2021-01-11T05:46:41.943Z&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;ilpPacket&quot;</span><span class="token operator">:</span> <span class="token string">&quot;AYIC9gAAAAAAAAPoHWcucGF5ZWVmc3AubXNpc2RuLjI3NzEzODAzOTEyggLMZXlKMGNtRnVjMkZqZEdsdmJrbGtJam9pTXpnM1pXVTJZamt0TlRJd1pDMDBZelV4TFdFNVpUUXRObVZpTW1WbU1UVTRPRGRpSWl3aWNYVnZkR1ZKWkNJNklqTTROMlZsTm1JNUxUVXlNR1F0TkdNMU1TMWhPV1UwTFRabFlqSmxaakUxT0RnM1lTSXNJbkJoZVdWbElqcDdJbkJoY25SNVNXUkpibVp2SWpwN0luQmhjblI1U1dSVWVYQmxJam9pVFZOSlUwUk9JaXdpY0dGeWRIbEpaR1Z1ZEdsbWFXVnlJam9pTWpjM01UTTRNRE01TVRJaUxDSm1jM0JKWkNJNkluQmhlV1ZsWm5Od0luMTlMQ0p3WVhsbGNpSTZleUp3WVhKMGVVbGtTVzVtYnlJNmV5SndZWEowZVVsa1ZIbHdaU0k2SWsxVFNWTkVUaUlzSW5CaGNuUjVTV1JsYm5ScFptbGxjaUk2SWprME56azBOemswTnprME55SXNJbVp6Y0Vsa0lqb2lZWEJ3YkdWaVlXNXJJbjBzSW5CbGNuTnZibUZzU1c1bWJ5STZleUpqYjIxd2JHVjRUbUZ0WlNJNmV5Sm1hWEp6ZEU1aGJXVWlPaUpOWVhSeklpd2liR0Z6ZEU1aGJXVWlPaUpJWVdkdFlXNGlmU3dpWkdGMFpVOW1RbWx5ZEdnaU9pSXhPVGd6TFRFd0xUSTFJbjE5TENKaGJXOTFiblFpT25zaVlXMXZkVzUwSWpvaU1UQWlMQ0pqZFhKeVpXNWplU0k2SWxWVFJDSjlMQ0owY21GdWMyRmpkR2x2YmxSNWNHVWlPbnNpYzJObGJtRnlhVzhpT2lKVVVrRk9VMFpGVWlJc0ltbHVhWFJwWVhSdmNpSTZJbEJCV1VWU0lpd2lhVzVwZEdsaGRHOXlWSGx3WlNJNklrTlBUbE5WVFVWU0luMTkA&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;condition&quot;</span><span class="token operator">:</span> <span class="token string">&quot;il1Z7j26cQt8WeIDHjadZaYKDKavNiUFXsaESeW558E&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;payeeFspFee&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;amount&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;currency&quot;</span><span class="token operator">:</span> <span class="token string">&quot;USD&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;payeeFspCommission&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;amount&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;currency&quot;</span><span class="token operator">:</span> <span class="token string">&quot;USD&quot;</span>
+  <span class="token punctuation">}</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>If all went well, you will recieve a callback similar to the above. Check out <a href="https://docs.mojaloop.io/mojaloop-specification/documents/API%20Definition%20v1.0.html#6531-put-quotesid" target="_blank" rel="noopener noreferrer">this section of the API Definition<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> for an explainer of what these fields mean.</p> <h2 id="_4-transfer"><a href="#_4-transfer" class="header-anchor">#</a> 4. Transfer</h2> <div class="language- extra-class"><pre class="language-text"><code>POST /transfers
+</code></pre></div><p>Once you have confirmed the transaction details with your end user, and they have confirmed they would like to proceed with the transaction, you can issue a <code>POST /tranfers</code>.</p> <p>This request moves the funds from your users account to the Payee user.</p> <p>Take a look at <a href="https://docs.mojaloop.io/mojaloop-specification/documents/API%20Definition%20v1.0.html#6722-post-transfers" target="_blank" rel="noopener noreferrer">this section of the API Specification<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> for a detailed look at how to form the transfer request, but in short:</p> <ul><li><p><code>headers.Accept</code> - <code>application/vnd.interoperability.transfers+json;version=1.0</code></p></li> <li><p><code>headers.Content-Type</code> - <code>application/vnd.interoperability.transfers+json;version=1.0</code></p></li> <li><p><code>headers.Date</code> - The RFC 2822 formatted date the request was made</p></li> <li><p><code>FSPIOP-Source</code> - which DFSP is sending the request. In our example case, that is <code>lewbank</code></p></li> <li><p><code>FSPIOP-Destination</code> - which DFSP we are sending the quote request to. We can find this by looking at the request body of the <code>PUT /parties</code> response. In our case, that is <code>duriantech</code></p></li> <li><p><code>body.transferId</code> - a random UUID, generated by you</p></li> <li><p><code>body.payerFsp</code> - Your DFSP_ID, in this case <code>lewbank</code></p></li> <li><p><code>body.payeeFsp</code> - The destination FSP, in this case <code>duriantech</code></p></li> <li><p><code>body.amount</code> - The same amount field from the <code>POST /quotes</code> request</p></li> <li><p><code>body.expiration</code> - ISO Formatted string - when the transfer request will expire and be rolled back. This must be set to some time in the future.</p></li> <li><p><code>body.ilpPacket</code> - The <code>ilpPacket</code> specified by the Payee DFSP in the <code>PUT /quotes</code> callback.</p></li> <li><p><code>body.condition</code> - The <code>condition</code> specified by the Payee DFSP in the <code>PUT /quotes</code> callback.</p></li></ul> <blockquote><p>Note: Read more about the condition and fulfillment <a href="https://docs.mojaloop.io/mojaloop-specification/documents/API%20Definition%20v1.0.html#44-conditional-transfers" target="_blank" rel="noopener noreferrer">here<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a></p></blockquote> <p>Here's an example Transfer request body:</p> <div class="language-json extra-class"><pre class="language-json"><code><span class="token punctuation">{</span>
+  <span class="token property">&quot;transferId&quot;</span><span class="token operator">:</span> <span class="token string">&quot;387ee6b9-520d-4c51-a9e4-6eb2ef15887e&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;payerFsp&quot;</span><span class="token operator">:</span> <span class="token string">&quot;lewbank&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;payeeFsp&quot;</span><span class="token operator">:</span> <span class="token string">&quot;duriantech&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;amount&quot;</span><span class="token operator">:</span> <span class="token punctuation">{</span>
+    <span class="token property">&quot;amount&quot;</span><span class="token operator">:</span> <span class="token string">&quot;10&quot;</span><span class="token punctuation">,</span>
+    <span class="token property">&quot;currency&quot;</span><span class="token operator">:</span> <span class="token string">&quot;USD&quot;</span>
+  <span class="token punctuation">}</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;expiration&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2021-01-25T00:00:00.000Z&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;ilpPacket&quot;</span><span class="token operator">:</span> <span class="token string">&quot;AYIC9gAAAAAAAAPoHWcucGF5ZWVmc3AubXNpc2RuLjI3NzEzODAzOTEyggLMZXlKMGNtRnVjMkZqZEdsdmJrbGtJam9pTXpnM1pXVTJZamt0TlRJd1pDMDBZelV4TFdFNVpUUXRObVZpTW1WbU1UVTRPRGRpSWl3aWNYVnZkR1ZKWkNJNklqTTROMlZsTm1JNUxUVXlNR1F0TkdNMU1TMWhPV1UwTFRabFlqSmxaakUxT0RnM1lTSXNJbkJoZVdWbElqcDdJbkJoY25SNVNXUkpibVp2SWpwN0luQmhjblI1U1dSVWVYQmxJam9pVFZOSlUwUk9JaXdpY0dGeWRIbEpaR1Z1ZEdsbWFXVnlJam9pTWpjM01UTTRNRE01TVRJaUxDSm1jM0JKWkNJNkluQmhlV1ZsWm5Od0luMTlMQ0p3WVhsbGNpSTZleUp3WVhKMGVVbGtTVzVtYnlJNmV5SndZWEowZVVsa1ZIbHdaU0k2SWsxVFNWTkVUaUlzSW5CaGNuUjVTV1JsYm5ScFptbGxjaUk2SWprME56azBOemswTnprME55SXNJbVp6Y0Vsa0lqb2lZWEJ3YkdWaVlXNXJJbjBzSW5CbGNuTnZibUZzU1c1bWJ5STZleUpqYjIxd2JHVjRUbUZ0WlNJNmV5Sm1hWEp6ZEU1aGJXVWlPaUpOWVhSeklpd2liR0Z6ZEU1aGJXVWlPaUpJWVdkdFlXNGlmU3dpWkdGMFpVOW1RbWx5ZEdnaU9pSXhPVGd6TFRFd0xUSTFJbjE5TENKaGJXOTFiblFpT25zaVlXMXZkVzUwSWpvaU1UQWlMQ0pqZFhKeVpXNWplU0k2SWxWVFJDSjlMQ0owY21GdWMyRmpkR2x2YmxSNWNHVWlPbnNpYzJObGJtRnlhVzhpT2lKVVVrRk9VMFpGVWlJc0ltbHVhWFJwWVhSdmNpSTZJbEJCV1VWU0lpd2lhVzVwZEdsaGRHOXlWSGx3WlNJNklrTlBUbE5WVFVWU0luMTkA&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;condition&quot;</span><span class="token operator">:</span> <span class="token string">&quot;il1Z7j26cQt8WeIDHjadZaYKDKavNiUFXsaESeW558E&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>And an example full request:</p> <div class="language-bash extra-class"><pre class="language-bash"><code><span class="token function">curl</span> -X POST http://beta.moja-lab.live/api/fspiop/transfers <span class="token punctuation">\</span>
+  -H <span class="token string">'Accept: application/vnd.interoperability.transfers+json;version=1.0'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'Content-Type: application/vnd.interoperability.transfers+json;version=1.0'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'Date: Mon, 11 Jan 2021 00:00:00 GMT'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'FSPIOP-Source: lewbank'</span> <span class="token punctuation">\</span>
+  -H <span class="token string">'FSPIOP-Destination: duriantech'</span> <span class="token punctuation">\</span>
+  -d <span class="token string">'{
+    &quot;transferId&quot;: &quot;387ee6b9-520d-4c51-a9e4-6eb2ef15887e&quot;,
+    &quot;payerFsp&quot;: &quot;lewbank&quot;,
+    &quot;payeeFsp&quot;: &quot;duriantech&quot;,
+    &quot;amount&quot;: {
+      &quot;amount&quot;: &quot;10&quot;,
+      &quot;currency&quot;: &quot;USD&quot;
+    },
+    &quot;expiration&quot;: &quot;2021-01-25T00:00:00.000Z&quot;,
+    &quot;ilpPacket&quot;: &quot;AYIC9gAAAAAAAAPoHWcucGF5ZWVmc3AubXNpc2RuLjI3NzEzODAzOTEyggLMZXlKMGNtRnVjMkZqZEdsdmJrbGtJam9pTXpnM1pXVTJZamt0TlRJd1pDMDBZelV4TFdFNVpUUXRObVZpTW1WbU1UVTRPRGRpSWl3aWNYVnZkR1ZKWkNJNklqTTROMlZsTm1JNUxUVXlNR1F0TkdNMU1TMWhPV1UwTFRabFlqSmxaakUxT0RnM1lTSXNJbkJoZVdWbElqcDdJbkJoY25SNVNXUkpibVp2SWpwN0luQmhjblI1U1dSVWVYQmxJam9pVFZOSlUwUk9JaXdpY0dGeWRIbEpaR1Z1ZEdsbWFXVnlJam9pTWpjM01UTTRNRE01TVRJaUxDSm1jM0JKWkNJNkluQmhlV1ZsWm5Od0luMTlMQ0p3WVhsbGNpSTZleUp3WVhKMGVVbGtTVzVtYnlJNmV5SndZWEowZVVsa1ZIbHdaU0k2SWsxVFNWTkVUaUlzSW5CaGNuUjVTV1JsYm5ScFptbGxjaUk2SWprME56azBOemswTnprME55SXNJbVp6Y0Vsa0lqb2lZWEJ3YkdWaVlXNXJJbjBzSW5CbGNuTnZibUZzU1c1bWJ5STZleUpqYjIxd2JHVjRUbUZ0WlNJNmV5Sm1hWEp6ZEU1aGJXVWlPaUpOWVhSeklpd2liR0Z6ZEU1aGJXVWlPaUpJWVdkdFlXNGlmU3dpWkdGMFpVOW1RbWx5ZEdnaU9pSXhPVGd6TFRFd0xUSTFJbjE5TENKaGJXOTFiblFpT25zaVlXMXZkVzUwSWpvaU1UQWlMQ0pqZFhKeVpXNWplU0k2SWxWVFJDSjlMQ0owY21GdWMyRmpkR2x2YmxSNWNHVWlPbnNpYzJObGJtRnlhVzhpT2lKVVVrRk9VMFpGVWlJc0ltbHVhWFJwWVhSdmNpSTZJbEJCV1VWU0lpd2lhVzVwZEdsaGRHOXlWSGx3WlNJNklrTlBUbE5WVFVWU0luMTkA&quot;,
+    &quot;condition&quot;: &quot;il1Z7j26cQt8WeIDHjadZaYKDKavNiUFXsaESeW558E&quot;
+  }'</span>
+</code></pre></div><blockquote><p>There are a few common gotchas at this point:</p> <ul><li><code>body.expiration</code> - Make sure to set this date to be some time in the future, otherwise you will recieve an error callback like so: <code>eneric validation error - Expiration date ... is already in the past</code></li> <li>The <code>header.Date</code> format for this request is quite fiddly, and requires a different format for the expiration field. Make sure you use an RFC 2822 formatted date.
+Make sure to check the transaction callbacks in your docker window to see what is going on. Often you will receive a <code>/error</code> callback with a useful description that can help you debug.</li></ul></blockquote> <p><strong>Callback:</strong> <code>PUT /transfers/{ID}</code></p> <div class="language-json extra-class"><pre class="language-json"><code># formatted response
+<span class="token punctuation">{</span>
+  <span class="token property">&quot;completedTimestamp&quot;</span><span class="token operator">:</span> <span class="token string">&quot;2021-01-11T06:04:44.144Z&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;transferState&quot;</span><span class="token operator">:</span> <span class="token string">&quot;COMMITTED&quot;</span><span class="token punctuation">,</span>
+  <span class="token property">&quot;fulfilment&quot;</span><span class="token operator">:</span> <span class="token string">&quot;0zd54QZIdAqqtpTzb-JvkavFCoBHeNHxoDT1IB-8KwA&quot;</span>
+<span class="token punctuation">}</span>
+</code></pre></div><p>And that's it! The transaction has cleared with Mojaloop. You can now inform your customer that the funds have been sent. Check out <a href="https://docs.mojaloop.io/mojaloop-specification/documents/API%20Definition%20v1.0.html#6731-put-transfersid" target="_blank" rel="noopener noreferrer">this section of the API spec<span><svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" focusable="false" x="0px" y="0px" viewBox="0 0 100 100" width="15" height="15" class="icon outbound"><path fill="currentColor" d="M18.8,85.1h56l0,0c2.2,0,4-1.8,4-4v-32h-8v28h-48v-48h28v-8h-32l0,0c-2.2,0-4,1.8-4,4v56C14.8,83.3,16.6,85.1,18.8,85.1z"></path> <polygon fill="currentColor" points="45.7,48.7 51.3,54.3 77.2,28.5 77.2,37.2 85.2,37.2 85.2,14.9 62.8,14.9 62.8,22.9 71.5,22.9"></polygon></svg> <span class="sr-only">(opens new window)</span></span></a> for an explanation of these fields.</p></div> <footer class="page-edit"><!----> <!----></footer> <div class="page-nav"><p class="inner"><span class="prev">
+      ←
+      <a href="/3-guides/1_dfsp_setup.html" class="prev">
+        1. DFSP Setup
+      </a></span> <span class="next"><a href="/3-guides/3_simulators.html">
+        3. DFSP Simulators
+      </a>
+      →
+    </span></p></div> </main></div><div class="global-ui"></div></div>
+    <script src="/assets/js/app.420e80db.js" defer></script><script src="/assets/js/4.ea6643aa.js" defer></script><script src="/assets/js/2.424551ed.js" defer></script>
+  </body>
+</html>
