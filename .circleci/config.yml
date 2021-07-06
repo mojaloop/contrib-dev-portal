@@ -170,12 +170,8 @@ jobs:
             ssh-keyscan -p 443 ssh.github.com >> ~/.ssh/known_hosts
             ssh-keyscan github.com >> ~/.ssh/known_hosts
       - run:
-        # TODO: depending on if next or not, run as prerelease
           name: Generate changelog and bump package version
-          command: npm run release-new
-      # - run:
-      #     name: Push the release
-      #     command: git push --follow-tags origin ${CIRCLE_BRANCH}
+          command: ./scripts/_release.sh
 
   github-release:
     executor: default-machine
@@ -194,7 +190,6 @@ jobs:
             git fetch origin
             git checkout origin/${CIRCLE_BRANCH}
       - run:
-          # Note: this is rather imperfect, but will do for now
           name: Format the changelog into the github release body and get release tag
           command: |
             git diff --no-indent-heuristic master~1 HEAD CHANGELOG.md | sed -n '/^+[^+]/ s/^+//p' > /tmp/changes
@@ -210,9 +205,9 @@ jobs:
           title: v${RELEASE_TAG} Release
           description: ${RELEASE_CHANGES}
           file-path: CHANGELOG.md
-      - slack/status:
-          webhook: "$SLACK_WEBHOOK_ANNOUNCEMENT"
-          success_message: '*"${CIRCLE_PROJECT_REPONAME}"* - Release \`"v${RELEASE_TAG}"\` \nhttps://github.com/mojaloop/"${CIRCLE_PROJECT_REPONAME}"/releases/tag/"v${RELEASE_TAG}"'
+      # - slack/status:
+      #     webhook: "$SLACK_WEBHOOK_ANNOUNCEMENT"
+      #     success_message: '*"${CIRCLE_PROJECT_REPONAME}"* - Release \`"v${RELEASE_TAG}"\` \nhttps://github.com/mojaloop/"${CIRCLE_PROJECT_REPONAME}"/releases/tag/"v${RELEASE_TAG}"'
 
   publish:
     executor: default-machine
