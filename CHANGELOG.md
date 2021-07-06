@@ -1,4 +1,25 @@
-# Changelog: [mojaloop/ml-operator/image-watcher](https://github.com/mojaloop/ml-operator)
+# Changelog
+
+All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
+
+### [0.1.7](https://github.com/mojaloop/contrib-dev-portal/compare/v0.1.6...v0.1.7) (2021-07-06)
+
+### 0.1.6 (2021-07-06)
+
+
+### Features
+
+* add audit resolve config ([70d0996](https://github.com/mojaloop/contrib-dev-portal/commit/70d099639688c93a94ed5c8c9582e0534d71cb60))
+* add initial ci config ([e502936](https://github.com/mojaloop/contrib-dev-portal/commit/e502936b8c9a5dc7e5a94daffa0a24cfc16985e5))
+* initial commit from older repo ([accd8f3](https://github.com/mojaloop/contrib-dev-portal/commit/accd8f3ad9b79db498a99323c1193743a4483912))
+
+
+### Bug Fixes
+
+* **ci:** release script ([cdb5271](https://github.com/mojaloop/contrib-dev-portal/commit/cdb527100ab840d19cfa0edd15f2b998c9499027))
+* **ci:** release script ([890bbd8](https://github.com/mojaloop/contrib-dev-portal/commit/890bbd8f61a8563b87a9650b910c56d62d7c28c6))
+* **ci:** release script ([0d3615a](https://github.com/mojaloop/contrib-dev-portal/commit/0d3615ace6921d78448fad0f7f4759c80c1c9939))
+
 ### [0.1.5](https://github.com/mojaloop/hackathon-docs/compare/v0.1.4...v0.1.5) (2021-07-05)
 
 
