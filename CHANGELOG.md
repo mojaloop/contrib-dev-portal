@@ -2,6 +2,19 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.8](https://github.com/mojaloop/contrib-dev-portal/compare/v0.1.7...v0.1.8) (2021-07-06)
+
+
+### Features
+
+* change readme to test ml-operator ([da5dfc7](https://github.com/mojaloop/contrib-dev-portal/commit/da5dfc7445b462e6fc8393257836ee829ffeb5e3))
+
+
+### Bug Fixes
+
+* **ci:** release script ([6cb0b25](https://github.com/mojaloop/contrib-dev-portal/commit/6cb0b25e8753f1113bc894a81e5026a4fb31676e))
+* **ci:** release script ([5c6c43f](https://github.com/mojaloop/contrib-dev-portal/commit/5c6c43f3cbec73d052cacef70be0e8e909ab17b3))
+
 ### [0.1.7](https://github.com/mojaloop/contrib-dev-portal/compare/v0.1.6...v0.1.7) (2021-07-06)
 
 ### 0.1.6 (2021-07-06)
