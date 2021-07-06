@@ -320,7 +320,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - main
 
       - github-release:
           context: org-global
@@ -329,7 +329,7 @@ workflows:
           filters:
             branches:
               only:
-                - master
+                - main
 
       # New Tags are built and deployed as docker artifacts
       - publish:
