@@ -13,7 +13,7 @@ case ${CIRCLE_BRANCH} in
   # mainline release
   main)
     ./node_modules/.bin/standard-version \
-      --releaseCommitMessageFormat ${RELEASE_COMMIT_MESSAGE_FORMAT}
+      --releaseCommitMessageFormat "${RELEASE_COMMIT_MESSAGE_FORMAT}"
   ;;
 
   # prerelease
