@@ -11,7 +11,7 @@ echo "RELEASE_COMMIT_MESSAGE_FORMAT is: ${RELEASE_COMMIT_MESSAGE_FORMAT}"
 
 case ${CIRCLE_BRANCH} in
   # mainline release
-  master)
+  main)
     ./node_modules/.bin/standard-version \
       --releaseCommitMessageFormat ${RELEASE_COMMIT_MESSAGE_FORMAT}
   ;;
