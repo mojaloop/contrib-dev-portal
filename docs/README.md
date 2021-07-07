@@ -8,15 +8,16 @@ footer: Open Source on [GitHub](https://github.com/sqrthree/vuepress-theme-api),
 
 ![](/logo_main.png)
 
-## Explore our guides and examples to integrate with the Mojaloop Sandbox
+### Explore our guides and examples to integrate with the Mojaloop Sandbox
 
+
+<HomepageHeader />
 
 ### Payments
 Integrate your application directly with the Mojaloop Sandbox to demonstrate a number of Real Time Payment use cases
 
 
-
-
+![](/business_ops.png)
 ### Business Operations
 Explore how Hub Operators interact with Mojaloops APIs to onboard DFSPs and PISPs
 
@@ -24,7 +25,7 @@ Explore how Hub Operators interact with Mojaloops APIs to onboard DFSPs and PISP
 - Onboarding new participants to a Mojaloop Hub
 - Running Settlement operations
 
-
+![](/als.png)
 ### Account Lookup
 See how DFSPs use the Account Lookup Service to register identifiers with Mojaloop
 
@@ -36,14 +37,17 @@ See how DFSPs use the Account Lookup Service to register identifiers with Mojalo
 
 ## Learn more about the Mojaloop Sandbox
 
+![](/icon-code.png)
 ### Developer Tools
 Get up and running with our libraries and toolkits to speed up your development process.
 
+![](/icon-key.png)
 ### Security
 Learn more about the 3 levels of security Mojaloop offers and how to implement and secure ...
 
+![](/icon-settings.png)
 ### Account
-Coming Soon! Manage your account with the 
+_Coming Soon! Manage your sandbox account to generate API Keys, and more!_
 
 
 ## Explore Mojaloop APIs
