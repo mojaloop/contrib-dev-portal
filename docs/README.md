@@ -6,9 +6,10 @@ actionLink: /0-getting-started/
 footer: Open Source on [GitHub](https://github.com/sqrthree/vuepress-theme-api), Made by [@sqrthree](https://github.com/sqrthree), Power by [vuepress](https://github.com/vuejs/vuepress).
 ---
 
-<!-- ![](/logo_main.png) -->
+<!-- <div class="header-logo"> -->
+  <img class="header-logo" src="logo_main.png"/>
+<!-- </div> -->
 
-# Getting Started
 __Explore our guides and examples to integrate with the Mojaloop Sandbox__
 
 </br>
