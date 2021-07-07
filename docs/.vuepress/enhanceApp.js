@@ -1,5 +1,6 @@
 import Buefy from 'buefy'
-import 'buefy/dist/buefy.css'
+import './styles/buefy.sass'
+// import 'buefy/dist/buefy.css'
 
 export default ({ 
   Vue,
@@ -7,7 +8,7 @@ export default ({
 }) => {
 
   Vue.use(Buefy);
-  
+
   if (typeof window === 'undefined') {
     return;
   }
