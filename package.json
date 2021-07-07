@@ -21,6 +21,7 @@
     "serve": "^11.1.0"
   },
   "devDependencies": {
+    "buefy": "^0.9.8",
     "npm-audit-resolver": "2.2.1",
     "standard-version": "^9.3.0",
     "swagger-ui": "^3.35.1",

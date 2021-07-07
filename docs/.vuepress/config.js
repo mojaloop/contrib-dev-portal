@@ -2,6 +2,12 @@ module.exports = {
   // theme: 'api',
   // base: '/home/',
   base: '/',
+  //     <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
+  // head: [
+  //   ['link', { rel: 'stylesheet', href: 'https://unpkg.com/buefy/dist/buefy.min.css' }],
+  //   ['script', { src: 'https://unpkg.com/buefy/dist/buefy.min.js' }],
+  // ],
+  title: 'Mojaloop Sandbox',
   themeConfig: {
     logo: '/mojaloop_logo_med.png',
     sidebar: [
