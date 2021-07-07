@@ -1,5 +1,5 @@
 import Buefy from 'buefy'
-import './styles/buefy.sass'
+import './styles/buefy.scss'
 // import 'buefy/dist/buefy.css'
 
 export default ({ 
