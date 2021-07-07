@@ -9,7 +9,7 @@ module.exports = {
   // ],
   title: 'Mojaloop Sandbox',
   themeConfig: {
-    logo: '/mojaloop_logo_med.png',
+    logo: '/logo_main.png',
     sidebar: [
       {
         title: 'Getting Started',
