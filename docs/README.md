@@ -6,7 +6,7 @@ actionLink: /0-getting-started/
 footer: Open Source on [GitHub](https://github.com/sqrthree/vuepress-theme-api), Made by [@sqrthree](https://github.com/sqrthree), Power by [vuepress](https://github.com/vuejs/vuepress).
 ---
 
-![](/mojaloop_logo_med.png)
+![](/logo_main.png)
 
 ## Explore our guides and examples to integrate with the Mojaloop Sandbox
 
@@ -26,7 +26,7 @@ Explore how Hub Operators interact with Mojaloops APIs to onboard DFSPs and PISP
 
 
 ### Account Lookup
-See how DFSPs use the Account Lookup Service to register
+See how DFSPs use the Account Lookup Service to register identifiers with Mojaloop
 
 
 #### IN THIS SECTION
