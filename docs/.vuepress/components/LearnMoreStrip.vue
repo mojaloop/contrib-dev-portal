@@ -1,39 +1,57 @@
 <template>
-  <div class="columns">
+  <div class="columns pb-6">
     <div class="column">
-        <img src="icon-code.png"/>
-        <h3>Developer Tools</h3>
-        <p>Get up and running with our libraries and toolkits to 
-           speed up your development process.</p>
+      <a href="/">
+        <figure class="image is-48x48 block">
+          <img src="icon-code.png" />
+        </figure>
+        <h3 class="title is-5 is-primary">Developer Tools</h3>
+        <p class="subtitle is-5">
+          Get up and running with our libraries and toolkits to speed up your
+          development process.
+        </p>
+      </a>
     </div>
     <div class="column">
-        <img src="icon-key.png"/>
-        <h3>Security</h3>
-        <p>Learn more about the 3 levels of security Mojaloop 
-           offers and how to implement and secure ...</p>
+      <a href="/">
+        <figure class="image is-48x48 block">
+          <img src="icon-key.png" />
+        </figure>
+        <h3 class="title is-5 is-primary">Security</h3>
+        <p class="subtitle is-5">
+          Learn more about the 3 levels of security Mojaloop offers and how to
+          implement and secure ...
+        </p>
+      </a>
     </div>
     <div class="column">
-        <img src="icon-settings.png"/>
-        <h3>Developer Account</h3>
-        <p><i><strong>Coming Soon!</strong> Manage your sandbox account 
-           to generate API Keys, and more!</i></p>
+      <a href="/">
+        <figure class="image is-48x48 block">
+          <img src="icon-settings.png" />
+        </figure>
+        <h3 class="title is-5 is-primary">Developer Account</h3>
+        <p class="subtitle is-5">
+          <i>Coming Soon!</i> Manage your sandbox account to generate API Keys,
+          and more!
+        </p>
+      </a>
     </div>
   </div>
 </template>
 
 <script>
 export default {
-  props: ['displayText'],
+  props: ["displayText"],
   methods: {
     testAlert() {
-      alert('Test Alert');
-    }
-  }
-}
+      alert("Test Alert");
+    },
+  },
+};
 </script>
 
 <style scoped>
 button {
-  background-color: #4CAF50;
+  background-color: #4caf50;
 }
 </style>
