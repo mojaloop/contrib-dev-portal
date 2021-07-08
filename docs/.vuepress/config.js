@@ -3,10 +3,11 @@ module.exports = {
   // base: '/home/',
   base: '/',
   //     <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
-  // head: [
-  //   ['link', { rel: 'stylesheet', href: 'https://unpkg.com/buefy/dist/buefy.min.css' }],
-  //   ['script', { src: 'https://unpkg.com/buefy/dist/buefy.min.js' }],
-  // ],
+  head: [
+    // ['link', { rel: 'stylesheet', href: 'https://unpkg.com/buefy/dist/buefy.min.css' }],
+    // ['script', { src: 'https://unpkg.com/buefy/dist/buefy.min.js' }],
+    ['link', { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css" } ],
+  ],
   title: 'Mojaloop Sandbox',
   themeConfig: {
     logo: '/logo_main.png',
