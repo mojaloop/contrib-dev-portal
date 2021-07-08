@@ -32,8 +32,15 @@ module.exports = {
               ['/usecases/p2p', 'P2P Payments'],
               ['/usecases/bulk', 'Bulk (G2P)'],
               ['/usecases/request-to-pay', 'Merchant Request to Pay'],
-              ['/usecases/3ppi', '3PPI'],
+              ['/usecases/3ppi-transfer', '3rd Party Initiated Payment'],
             ]
+          },
+          {
+            title: 'Overlay Services',
+            collapsable: false,
+            children: [
+              ['/usecases/3ppi-account-linking', '3PPI Account Linking'],
+            ],
           },
           {
             title: 'Business Operations',
@@ -70,14 +77,34 @@ module.exports = {
         children: [ 
           // No access token at the moment - maybe that's just easy for now
           // ['/3-guides/0_access_token', '0. Access Token'],
-          ['/3-guides/1_dfsp_setup', '1. DFSP Setup'],
-          ['/3-guides/2_dfsp_p2p', '2. P2P Transfer'],
-          ['/3-guides/3_simulators', '3. DFSP Simulators'],
-          ['/3-guides/5_ttk_p2p', '4. TTK P2P Transfer (Easy)'],
-          ['/3-guides/6_pisp_local', '5. Thirdparty PISP API Local'],
+         
+           // TODO: We should deprecate this guide
+          // ['/3-guides/6_pisp_local', '5. Thirdparty PISP API Local'],
+          {
+            title: 'Payments',
+            collapsable: false,
+            children: [
+              ['/3-guides/1_dfsp_setup', '1. P2P Transfer'],
+              ['/3-guides/1_dfsp_setup', '2. 3PPI Transfer'],
+
+            ]
+          },
+          {
+            title: 'Onboarding',
+            collapsable: false,
+            children: [
+              ['/3-guides/1_dfsp_setup', '1. DFSP Setup'],
+
+
+            ]
+          },
           {
             title: 'Developer Tooling',
+            collapsable: false,
             children: [
+              ['/3-guides/5_ttk_p2p', '1. TTK P2P Transfer (Easy)'],
+              ['/3-guides/3_simulators', '2. DFSP Simulators'],
+
 
             ]
           },
