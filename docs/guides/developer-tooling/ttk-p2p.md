@@ -11,7 +11,7 @@ For this demo, we will pretend to be the `figmm` DFSP.
 
 Go to the [figmm testing toolkit page](http://figmm-ttk.beta.moja-lab.live)
 
-![](./ttk_welcome.png)
+![](../assets/ttk_welcome.png)
 
 In the left side bar, select "Outbound Request". This mode lets us import and run sets of Mojaloop API Calls.
 
@@ -21,11 +21,11 @@ Up the top, select "Load Sample" to load a set of sample requests.
 
 Select "DFSP" on the popup window, and select "p2p_happy_path.json". This file contains a simple Lookup, Quote and Transfer set of requests.
 
-![](./ttk_sample.png)
+![](../assets/ttk_sample.png)
 
 Select "OK" to import these requests, and select the "examples" folder on the left popup. 
 
-![](./ttk_examples.png)
+![](../assets/ ttk_examples.png)
 
 
 ## 3. Setting up the Environment File

@@ -112,7 +112,7 @@ module.exports = {
       },
       {
         title: 'Demos',
-        path: '/99-demos/',
+        path: '/demos/',
         collapsable: false,
 
       },
@@ -142,8 +142,9 @@ module.exports = {
           { 
             text: 'Business Operations', 
             items: [
-              { text: 'Participant Onboarding and Management', link: '/apis/ops-admin'},
-              { text: 'Hub Onboarding', link: '/apis/ops-admin'},
+              // TODO: hmm I'm not sure which I mean here... do I mean ALS stuff? Or participant stuff?
+              { text: 'Participant Onboarding and Management', link: '/apis/ops-als'},
+              { text: 'Hub Onboarding', link: '/apis/ops-onboarding'},
               { text: 'Settlement', link: '/apis/ops-settlement'},
             ]
           },
