@@ -43,7 +43,7 @@ Now you can navigate back to the list of users, and reload your browser. You sho
 2. Leave the editor in "Simple Mode"
 
 
-3. Leave all the fields the same except for the last, and change this to be a MSISDN you can find in [the users list here](/1-overview/#what-s-included-in-environment). For this example, let's enter `32929423`.
+3. Leave all the fields the same except for the last, and change this to be a MSISDN you can find in [the users list here](/overview/#what-s-included-in-environment). For this example, let's enter `32929423`.
 
 4. Select "Send Transfer"
 
@@ -123,7 +123,7 @@ Let's issue this request "from" the `figmm` DFSP, and look in the TTK for the ca
 
 > Note:
 > Feel free to change the `FSPIOP-Source` field to get the sandbox talking to your own DFSP!
-> Follow the [DFSP Setup Guide](/3-guides/1_dfsp_setup/) for instructions on how to do that. 
+> Follow the [DFSP Setup Guide](/guides/1_dfsp_setup/) for instructions on how to do that. 
 
 ```bash
 curl -v beta.moja-lab.live/api/fspiop/parties/MSISDN/639563943094 \

@@ -15,11 +15,11 @@ module.exports = {
       {
         title: 'Getting Started',
         path: '/',        
-      }, 
+      },
       {
         //TODO: can we make this so it's always expanded?
         title: 'Sandbox Overview',
-        path: '/1-overview/',
+        path: '/overview/',
       },
       {
         title: 'Use Cases',
@@ -32,7 +32,7 @@ module.exports = {
               ['/usecases/p2p', 'P2P Payments'],
               ['/usecases/bulk', 'Bulk (G2P)'],
               ['/usecases/request-to-pay', 'Merchant Request to Pay'],
-              ['/usecases/3ppi-transfer', '3rd Party Initiated Payment'],
+              ['/usecases/3ppi-transfer', '3rd Party Initiated Payments'],
             ]
           },
           {
@@ -76,16 +76,16 @@ module.exports = {
         collapsable: false,
         children: [ 
           // No access token at the moment - maybe that's just easy for now
-          // ['/3-guides/0_access_token', '0. Access Token'],
+          // ['/guides/0_access_token', '0. Access Token'],
          
            // TODO: We should deprecate this guide
-          // ['/3-guides/6_pisp_local', '5. Thirdparty PISP API Local'],
+          // ['/guides/6_pisp_local', '5. Thirdparty PISP API Local'],
           {
             title: 'Payments',
             collapsable: false,
             children: [
-              ['/3-guides/1_dfsp_setup', '1. P2P Transfer'],
-              ['/3-guides/1_dfsp_setup', '2. 3PPI Transfer'],
+              ['/guides/payments/dfsp-p2p', '1. P2P Transfer'],
+              ['/guides/payments/pisp-local', '2. 3PPI Transfer'],
 
             ]
           },
@@ -93,7 +93,7 @@ module.exports = {
             title: 'Onboarding',
             collapsable: false,
             children: [
-              ['/3-guides/1_dfsp_setup', '1. DFSP Setup'],
+              ['/guides/onboarding/dfsp-setup', '1. DFSP Setup'],
 
 
             ]
@@ -102,8 +102,8 @@ module.exports = {
             title: 'Developer Tooling',
             collapsable: false,
             children: [
-              ['/3-guides/5_ttk_p2p', '1. TTK P2P Transfer (Easy)'],
-              ['/3-guides/3_simulators', '2. DFSP Simulators'],
+              ['/guides/developer-tooling/ttk-p2p', '1. Testing Toolkit (TTK) P2P'],
+              ['/guides/developer-tooling/simulators', '2. DFSP Simulators'],
 
 
             ]
@@ -125,25 +125,26 @@ module.exports = {
           { 
             text: 'Sync APIs', 
             items: [
-              { text: 'P2P Payments', link: '/2-apis/fspiop'},
-              { text: '3PPI Payments', link: '/2-apis/fspiop'},
-              { text: 'SDK-Scheme-Adapter', link: '/2-apis/fspiop'},
-              { text: '3rd Party Scheme-Adapter', link: '/2-apis/fspiop'},
+              { text: 'P2P Payments', link: '/apis/sync-p2p'},
+              { text: '3PPI Payments', link: '/apis/sync-3ppi'},
+              { text: 'SDK-Scheme-Adapter', link: '/apis/sync-sdk'},
+              { text: '3rd Party Scheme-Adapter', link: '/apis/sync-thirdparty'},
             ]
           },
           { 
             text: 'Async APIs', 
             items: [
-              { text: 'FSPIOP (Mojaloop API)', link: '/2-apis/fspiop'},
-              { text: 'ThirdParty API', link: '/2-apis/fspiop'},
+              { text: 'FSPIOP (Mojaloop API)', link: '/apis/async-fspiop'},
+              { text: 'ThirdParty API - PISP', link: '/apis/async-thirdparty-pisp'},
+              { text: 'ThirdParty API - DFSP', link: '/apis/async-thirdparty-dfsp'},
             ]
           },
           { 
             text: 'Business Operations', 
             items: [
-              { text: 'Participant Onboarding and Management', link: '/2-apis/fspiop'},
-              { text: 'Hub Onboarding', link: '/2-apis/fspiop'},
-              { text: 'Settlement', link: '/2-apis/fspiop'},
+              { text: 'Participant Onboarding and Management', link: '/apis/ops-admin'},
+              { text: 'Hub Onboarding', link: '/apis/ops-admin'},
+              { text: 'Settlement', link: '/apis/ops-settlement'},
             ]
           },
         ]
