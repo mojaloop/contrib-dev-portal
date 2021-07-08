@@ -34,13 +34,13 @@ Start the containers like so
 ```bash
 docker-compose up
 ```
-![](./pisp_dcu.png)
+![](../assets/pisp_dcu.png)
 
 And wait for docker to download and run the containers. This may take a little while depending on your connection speed.
 
 You should see some output similar to the following:
 
-![](./pisp_dcu_done.png)
+![](../assets/pisp_dcu_done.png)
 
 
 ## 3. Browse the Locally Running Testing Toolkit
@@ -296,7 +296,7 @@ You can see that the DFSP has issues the `POST /authorizations` to the PISP cont
 
 
 ### 5.3 `PUT/authorizations/{ID}`
-![](./pisp_put_auth.png)
+![](../assets/pisp_put_auth.png)
 
 In this step, the PISP presents the quote to the user and asks them to sign it using the private key on their device. The PISP then sends this signed quote to the DFSP, who checks it, and if it approves, conducts the transfer.
 - Request: `PUT /authorizations/123`

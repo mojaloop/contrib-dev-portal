@@ -9,7 +9,7 @@ This guide will help you set up your own bare-bones DFSP server to send and rece
 - `jq`
 - `docker`
 
-> Does this guide look too command line heavy for you? Try using the [Testing Toolkit](/guides/5_ttk_p2p/) instead. 
+> Does this guide look too command line heavy for you? Try using the [Testing Toolkit](/guides/developer-tooling/ttk-p2p) instead. 
 
 ## 2. Run a Mock server to listen to async callbacks
 
@@ -86,7 +86,7 @@ Once again you should see some logging in the docker container.
 
 Now that we have a server ready to listen to callbacks from the Mojaloop Switch, we can go ahead and register our new DFSP.
 
-For this purpose we use the [Admin API](/2-apis/admin/), which is for Mojaloop Hub Operators and DFSPs. 
+For this purpose we use the [Admin API](/apis/ops-onboarding/), which is for Mojaloop Hub Operators and DFSPs. 
 
 In this example I will use a `DFSP_ID` of `lewbank`, but you should replace this with a `DFSP_ID` of your choosing.
 
@@ -246,7 +246,7 @@ curl -H 'Content-Type: application/json' http://beta.moja-lab.live/api/admin/cen
 
 ## 6. Perform a Party Lookup and Check the Docker Logs:
 
-Now that you have registered your mock server with the Mojaloop switch, you can perform a party lookup using the Mojaloop [FSPIOP API](/2-apis/fspiop/).
+Now that you have registered your mock server with the Mojaloop switch, you can perform a party lookup using the Mojaloop [FSPIOP API](/apis/async-fspiop).
 
 You can look up any of the pre-registered parties in [this list of users](/overview/#users). For this example, let's lookup `MSISDN/4448483173`, who we should expect to belong to `duriantech`, and have a name of `Draco Dragon`.
 
@@ -349,6 +349,6 @@ When we inspect the `body` field of the request, we can indeed see
 Congratulations on getting here! You have successfully registered your DFSP and recieved callbacks from the Mojaloop Sandbox. 
 
 From here, you can:
-1. [Perform a Peer to Peer Transaction](/guides/2_dfsp_p2p/)
-2. [Browse the FSPIOP API](/2-apis/fspiop/)
-3. [Access and use the DFSP simulator](/guides/3_simulators/)
+1. [Perform a Peer to Peer Transaction](/guides/payments/dfsp-p2p)
+2. [Browse the FSPIOP API](/apis/async-fspiop)
+3. [Access and use the DFSP simulator](/guides/developer-tooling/simulators)
