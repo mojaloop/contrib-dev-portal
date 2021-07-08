@@ -21,10 +21,13 @@
     "serve": "^11.1.0"
   },
   "devDependencies": {
+    "buefy": "^0.9.8",
+    "node-sass": "4.14.1",
     "npm-audit-resolver": "2.2.1",
+    "sass-loader": "7.3.1",
     "standard-version": "^9.3.0",
     "swagger-ui": "^3.35.1",
-    "vuepress": "^1.3.1",
+    "vuepress": "^1.8.2",
     "vuepress-theme-api": "^1.0.1"
   }
 }

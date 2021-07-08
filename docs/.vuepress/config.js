@@ -2,8 +2,15 @@ module.exports = {
   // theme: 'api',
   // base: '/home/',
   base: '/',
+  //     <link rel="stylesheet" href="https://unpkg.com/buefy/dist/buefy.min.css">
+  head: [
+    // ['link', { rel: 'stylesheet', href: 'https://unpkg.com/buefy/dist/buefy.min.css' }],
+    // ['script', { src: 'https://unpkg.com/buefy/dist/buefy.min.js' }],
+    ['link', { rel: "stylesheet", href: "https://cdn.jsdelivr.net/npm/@mdi/font@5.8.55/css/materialdesignicons.min.css" } ],
+  ],
+  title: 'Mojaloop Sandbox',
   themeConfig: {
-    logo: '/mojaloop_logo_med.png',
+    logo: '/logo_main.png',
     sidebar: [
       {
         title: 'Getting Started',
