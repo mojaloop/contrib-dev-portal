@@ -109,3 +109,12 @@ ul {
 .stealth-link {
     color: $grey-dark;
 }
+
+
+// Bulma disagrees with things named title...
+.dropdown-title {
+    .title {
+        color: $grey-dark;
+        font-size: 16px;
+    }
+}

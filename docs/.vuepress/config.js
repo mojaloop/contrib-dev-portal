@@ -19,22 +19,50 @@ module.exports = {
       }, 
       {
         //TODO: can we make this so it's always expanded?
-        title: 'Overview',
+        title: 'Sandbox Overview',
         path: '/1-overview/',
       },
       {
-        title: 'APIs',
+        title: 'Use Cases',
         collapsable: false,
         children: [
-          ['/2-apis/fspiop', 'FSPIOP (Mojaloop API)'], 
-          ['/2-apis/admin', 'Admin API'],
-          ['/2-apis/settlement', 'Settlement API'],
-          ['/2-apis/thirdparty-dfsp','Thirdparty-DFSP'],
-          ['/2-apis/thirdparty-pisp','Thirdparty-PISP']
+          {
+            title: 'Payments',
+            children: [
+              ['/usecases/p2p', 'P2P Payments'],
+              // ['/usecases/bulk/', 'Bulk (G2P)'],
+              // ['/usecases/request-to-pay/', 'Merchant Request to Pay'],
+              // ['/usecases/3ppi/', '3PPI'],
+            ]
+          },
+          {
+            title: 'Business Operations',
+            children: [
 
-        ],
-        initialOpenGroupIndex: 1
+            ]
+          },
+          {
+            title: 'Account Lookup',
+            children: [
+              []
+            ]
+          },
+        ]
       },
+
+      // {
+      //   title: 'APIs',
+      //   collapsable: false,
+      //   children: [
+      //     ['/2-apis/fspiop', 'FSPIOP (Mojaloop API)'], 
+      //     ['/2-apis/admin', 'Admin API'],
+      //     ['/2-apis/settlement', 'Settlement API'],
+      //     ['/2-apis/thirdparty-dfsp','Thirdparty-DFSP'],
+      //     ['/2-apis/thirdparty-pisp','Thirdparty-PISP']
+
+      //   ],
+      //   initialOpenGroupIndex: 1
+      // },
       {
         title: 'Guides',
         collapsable: false,
@@ -46,12 +74,51 @@ module.exports = {
           ['/3-guides/3_simulators', '3. DFSP Simulators'],
           ['/3-guides/5_ttk_p2p', '4. TTK P2P Transfer (Easy)'],
           ['/3-guides/6_pisp_local', '5. Thirdparty PISP API Local'],
+          {
+            title: 'Developer Tooling',
+            children: [
+
+            ]
+          },
         ],
       },
       {
         title: 'Demos',
         path: '/99-demos/'
       },
+    ],
+    nav: [
+      // TODO: update API Links
+      { 
+        text: 'APIs',
+        items: [
+          { 
+            text: 'Sync APIs', 
+            items: [
+              { text: 'P2P Payments', link: '/2-apis/fspiop'},
+              { text: '3PPI Payments', link: '/2-apis/fspiop'},
+              { text: 'SDK-Scheme-Adapter', link: '/2-apis/fspiop'},
+              { text: '3rd Party Scheme-Adapter', link: '/2-apis/fspiop'},
+            ]
+          },
+          { 
+            text: 'Async APIs', 
+            items: [
+              { text: 'FSPIOP (Mojaloop API)', link: '/2-apis/fspiop'},
+              { text: 'ThirdParty API', link: '/2-apis/fspiop'},
+            ]
+          },
+          { 
+            text: 'Business Operations', 
+            items: [
+              { text: 'Participant Onboarding and Management', link: '/2-apis/fspiop'},
+              { text: 'Hub Onboarding', link: '/2-apis/fspiop'},
+              { text: 'Settlement', link: '/2-apis/fspiop'},
+            ]
+          },
+        ]
+      },
+      { text: 'Docs', link: 'https://docs.mojaloop.io/documentation/' }
     ]
   }
 }
