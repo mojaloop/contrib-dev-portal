@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.10](https://github.com/mojaloop/contrib-dev-portal/compare/v0.1.9...v0.1.10) (2021-07-08)
+
+
+### Features
+
+* restructure nav bar and sidebar, set up page templates ([#3](https://github.com/mojaloop/contrib-dev-portal/issues/3)) ([c74f20c](https://github.com/mojaloop/contrib-dev-portal/commit/c74f20c472af573c3773af261742d3df06a704dd))
+
 ### [0.1.9](https://github.com/mojaloop/contrib-dev-portal/compare/v0.1.8...v0.1.9) (2021-07-08)
 
 
