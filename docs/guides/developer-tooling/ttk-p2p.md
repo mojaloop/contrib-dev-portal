@@ -11,7 +11,7 @@ For this demo, we will pretend to be the `figmm` DFSP.
 
 Go to the [figmm testing toolkit page](http://figmm-ttk.beta.moja-lab.live)
 
-![](./ttk_welcome.png)
+![](../assets/ttk_welcome.png)
 
 In the left side bar, select "Outbound Request". This mode lets us import and run sets of Mojaloop API Calls.
 
@@ -21,11 +21,11 @@ Up the top, select "Load Sample" to load a set of sample requests.
 
 Select "DFSP" on the popup window, and select "p2p_happy_path.json". This file contains a simple Lookup, Quote and Transfer set of requests.
 
-![](./ttk_sample.png)
+![](../assets/ttk_sample.png)
 
 Select "OK" to import these requests, and select the "examples" folder on the left popup. 
 
-![](./ttk_examples.png)
+![](../assets/ttk_examples.png)
 
 
 ## 3. Setting up the Environment File
@@ -36,14 +36,14 @@ Again, click into "Load Sample".
 
 This time, open the "Environments" dropdown, and select `examples/environments/dfsp_local_environment.json`
 
-![](./ttk_environments.png)
+![](../assets/ttk_environments.png)
 
 
 Follow the same steps, and your base environments file will be imported.
 
 On the same page, select "Input Values", this is where we can configure some of the settings for our example.
 
-![](./ttk_config.png)
+![](../assets/ttk_config.png)
 
 
 Do the same with the following input values:
@@ -59,11 +59,11 @@ Before we send the requests, we need to fix a minor issue in the template.
 
 Back in the "Test Cases" tab, click the "Edit" button:
 
-![](./ttk_edit.png)
+![](../assets/ttk_edit.png)
 
 Underneath "post /quotes" select "Editor":
 
-![](./ttk_edit_quotes.png)
+![](../assets/ttk_edit_quotes.png)
 
 Scroll to the **"Headers"** section, and click "Add Custom Header"
 
@@ -77,7 +77,7 @@ value: payeefsp
 
 In the top right, click "Send", and view the results!
 
-![](./ttk_result.png)
+![](../assets/ttk_result.png)
 
 If everything is configured correctly, you should see all of the tests passing correctly.
 
@@ -89,4 +89,4 @@ If everything is configured correctly, you should see all of the tests passing c
 
 If you open up the [monitoring page](http://figmm-ttk.beta.moja-lab.live/admin/monitoring) in a different browser window, you will be able to see all of the requests coming in and out of your DFSP in real time. Pretty neat, isn't it?
 
-![](./ttk_requests.png)
+![](../assets/ttk_requests.png)

@@ -17,7 +17,7 @@ The Simulator UI page talks to a DFSP Simulator Backend behind the scenes.
 
 Before we go any further, we need to tell the simulator UI to connect to a specific Simulator Backend
 
-![](./register_config.png)
+![](../assets/register_config.png)
 
 For example, you can register the Applebank Simulator Backend
 
@@ -30,11 +30,11 @@ And hit "Save"
 
 Once you've created that config, make sure to select it in the "Current Setting" in the dropdown
 
-![](./select_config.png)
+![](../assets/select_config.png)
 
 Now you can navigate back to the list of users, and reload your browser. You should see a user list similar to the following:
 
-![](./user_list.png)
+![](../assets/user_list.png)
 
 ## 3. Send a Transfer
 
@@ -54,7 +54,7 @@ Behind the scenes, the DFSP Simulator uses the sdk-scheme-adapter to talk the As
 Here's a screenshot of an example response from the Simulator Backend:
 
 
-![the transfer response](./transfer_result.png)
+![the transfer response](../assets/transfer_result.png)
 
 ## Handy Snippets:
 ### Listing all of the users for a given simulator:
@@ -123,7 +123,7 @@ Let's issue this request "from" the `figmm` DFSP, and look in the TTK for the ca
 
 > Note:
 > Feel free to change the `FSPIOP-Source` field to get the sandbox talking to your own DFSP!
-> Follow the [DFSP Setup Guide](/3-guides/1_dfsp_setup/) for instructions on how to do that. 
+> Follow the [DFSP Setup Guide](/guides/onboarding/dfsp-setup/) for instructions on how to do that. 
 
 ```bash
 curl -v beta.moja-lab.live/api/fspiop/parties/MSISDN/639563943094 \
@@ -135,4 +135,4 @@ curl -v beta.moja-lab.live/api/fspiop/parties/MSISDN/639563943094 \
 
 And the callback in the TTK:
 
-![](./simulators_ttk_callback.png)
+![](../assets/simulators_ttk_callback.png)

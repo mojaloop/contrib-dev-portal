@@ -45,7 +45,7 @@ And the current users (Parties in Mojaloop-speak) are registered and available f
 | `duriantech` | `MSISDN` | `410283497`   | Dobby Elf    |
 | `duriantech` | `MSISDN` | `4448483173`  | Draco Dragon |
 
-You can play around with the existing DFSPs by using the [Simulator UI](http://simulator-ui.beta.moja-lab.live). Check out the [Simulator Guide](/3-guides/3_simulators/) for details on how to use the simulator UI.
+You can play around with the existing DFSPs by using the [Simulator UI](http://simulator-ui.beta.moja-lab.live). Check out the [Simulator Guide](/guides/3_simulators/) for details on how to use the simulator UI.
 
 
 ## APIs
@@ -66,8 +66,8 @@ The following Use Cases are supported in this lab:
 
 |    | Name | Description | Status | Links |
 |--- | ---- | ---- | ---- | ---- |
-| 🟢 | P2P  | Peer To Peer transaction, from one party to another | Available | [P2P Transfer (Easy)](/3-guides/5_ttk_p2p.html) |
-| 🟡 | PISP P2P | Peer To Peer transaction, initiated from 3rd party | Available (Locally) | [Thirdparty PISP API Local](/3-guides/6_pisp_local.html) |
+| 🟢 | P2P  | Peer To Peer transaction, from one party to another | Available | [P2P Transfer (Easy)](/guides/5_ttk_p2p.html) |
+| 🟡 | PISP P2P | Peer To Peer transaction, initiated from 3rd party | Available (Locally) | [Thirdparty PISP API Local](/guides/6_pisp_local.html) |
 | 🔴 | SEPA  | Cross Network, Outside Mojaloop into Mojaloop - Will be added with MIFOS Payment Hub | Coming Soon | _link coming soon!_|
 | 🔴 | OTT Thirdparty (UK Open Banking Model) | P2P, PISP PSD2 approach - will be added with MIFOS Payment Hub | Coming Soon | _link coming soon!_|
 | 🔴 | Refund | DFSP Initiated Refund Scenario - included with MIFOS Payment Hub | Coming Soon | _link coming soon!_|
@@ -115,7 +115,7 @@ See:
   > Hint: Click "Load Sample" to look through the sample test cases available and load one
 
 
-Check out the [Testing Toolkit P2P Guide](/3-guides/5_ttk_p2p/) to use the testing to send a peer to peer transfer.
+Check out the [Testing Toolkit P2P Guide](/guides/5_ttk_p2p/) to use the testing to send a peer to peer transfer.
 
 ### MIFOS Payment Hub
 
