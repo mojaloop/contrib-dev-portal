@@ -14,8 +14,7 @@ module.exports = {
     sidebar: [
       {
         title: 'Getting Started',
-        path: '/',
-        collapsable: false,
+        path: '/',        
       }, 
       {
         //TODO: can we make this so it's always expanded?
@@ -28,24 +27,26 @@ module.exports = {
         children: [
           {
             title: 'Payments',
+            collapsable: false,
             children: [
               ['/usecases/p2p', 'P2P Payments'],
-              // ['/usecases/bulk/', 'Bulk (G2P)'],
-              // ['/usecases/request-to-pay/', 'Merchant Request to Pay'],
-              // ['/usecases/3ppi/', '3PPI'],
+              ['/usecases/bulk', 'Bulk (G2P)'],
+              ['/usecases/request-to-pay', 'Merchant Request to Pay'],
+              ['/usecases/3ppi', '3PPI'],
             ]
           },
           {
             title: 'Business Operations',
-            children: [
+            collapsable: false,
 
-            ]
+            children: [
+              ['/usecases/participant-onboarding', 'Participant Onboarding'],
+              ['/usecases/settlement', 'Settlement'],
+            ],
           },
           {
             title: 'Account Lookup',
-            children: [
-              []
-            ]
+            path: '/usecases/account-lookup'
           },
         ]
       },
@@ -84,7 +85,9 @@ module.exports = {
       },
       {
         title: 'Demos',
-        path: '/99-demos/'
+        path: '/99-demos/',
+        collapsable: false,
+
       },
     ],
     nav: [
