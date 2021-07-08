@@ -94,7 +94,7 @@ Change this to `http://callback-server:8080`.
 
 Next, untick the "Enable Callback resource endpoints" box, and hit "Save"
 
-![](./pisp_callback.png)
+![](../assets/pisp_callback.png)
 
 ## 5. Call the Thirdparty APIs!
 
@@ -109,7 +109,7 @@ To start with, you most likely will want to be using the `Thirdparty-PISP` API.
 To understand how a PISP tranfer works, check out the [PISP Transfer documentation here](https://github.com/mojaloop/pisp/blob/master/docs/transfer/README.md) 
 
 ### 5.1 Party Lookup:
-![](./pisp_lookup.png)
+![](../assets/pisp_lookup.png)
 
 
 In this step, the PISP asks Mojaloop to look up the payee party that their user wants to send to.
