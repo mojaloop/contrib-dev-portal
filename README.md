@@ -12,4 +12,8 @@ npm i
 npm run dev
 ```
 
-## Building
+## Building and testing locally
+
+```bash
+npm run start
+```

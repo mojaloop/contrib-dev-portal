@@ -19,7 +19,7 @@
     <div class="custom-divider"></div>
 
     <div class="columns">
-      <div class="column pr-6">
+      <div class="column ph-2">
         <img class="pb-5" src="business_ops.png" />
         <h3 class="title is-4">Business Operations</h3>
         <p class="subtitle is-6">
@@ -34,7 +34,7 @@
         <br/>
         <a href="/">- Running Settlement operations</a>
       </div>
-      <div class="column pl-6">
+      <div class="column ph-2">
         <img class="pb-5" src="als.png" />
         <h3 class="title is-4">Account Lookup</h3>
         <p class="subtitle is-6">
