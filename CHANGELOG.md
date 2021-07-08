@@ -2,6 +2,33 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.1.9](https://github.com/mojaloop/contrib-dev-portal/compare/v0.1.8...v0.1.9) (2021-07-08)
+
+
+### Features
+
+* add new icons/logos to the readme ([6210d0e](https://github.com/mojaloop/contrib-dev-portal/commit/6210d0e18d57a6eeb8064a01e2539734d4f801c9))
+* add shadows to image ([70c1286](https://github.com/mojaloop/contrib-dev-portal/commit/70c128682537eda6c206363e10c4c97ec7cf47dc))
+* add shadows to image ([d1163c5](https://github.com/mojaloop/contrib-dev-portal/commit/d1163c511683adc537949022798fc1de4bcfc308))
+* add shadows to image ([e9c7c37](https://github.com/mojaloop/contrib-dev-portal/commit/e9c7c3723c222830ff7607b13cf9568052bbb36c))
+* basic homepage revamp done ([8d5437c](https://github.com/mojaloop/contrib-dev-portal/commit/8d5437c72d9c44665a9337f84331754813532499))
+* finish intial restyle of homepage ([d5ce5d2](https://github.com/mojaloop/contrib-dev-portal/commit/d5ce5d268f9bef60ab5acdcbb4465e6265db93da))
+* make corners less round ([a0fb8f3](https://github.com/mojaloop/contrib-dev-portal/commit/a0fb8f37b0b0758e74c8f4cc60b2883455563ed6))
+* start revamp of the homepage ([e9dfb6b](https://github.com/mojaloop/contrib-dev-portal/commit/e9dfb6bfa3c215b22ca61f06735a1b184a47821a))
+* styling of top stuff ([17be038](https://github.com/mojaloop/contrib-dev-portal/commit/17be038bd0cd01d29d6d3f2c2215b031b9c9ca29))
+* working on custom styling ([104194c](https://github.com/mojaloop/contrib-dev-portal/commit/104194c56e2218e2e8c2a1b46ba64326e1497d41))
+* working on custom styling ([640a3ea](https://github.com/mojaloop/contrib-dev-portal/commit/640a3ea8a4bac508f5ee4302365a4f06d0522fba))
+* working on nice homepage layout ([1a051bb](https://github.com/mojaloop/contrib-dev-portal/commit/1a051bbba233e354287c0ba8773b599857eb07bd))
+* working on nice homepage layout ([ad3b9ab](https://github.com/mojaloop/contrib-dev-portal/commit/ad3b9abef32b4961f29149f9812f42eed9ffa3d7))
+* working on nice homepage layout ([812c6aa](https://github.com/mojaloop/contrib-dev-portal/commit/812c6aa9389ad219709f6c244e80716bfdfe9a55))
+* working on nice homepage layout ([546f0ed](https://github.com/mojaloop/contrib-dev-portal/commit/546f0ed583f67222031fc5ea66a02859ccd02b52))
+* working on nice homepage layout ([a5266d5](https://github.com/mojaloop/contrib-dev-portal/commit/a5266d51b7eba0b8f4e270b7b4ddbffb14d79f36))
+
+
+### Bug Fixes
+
+* minor layout issues ([b6849ad](https://github.com/mojaloop/contrib-dev-portal/commit/b6849ad172eeff5843afec356c9b58529487b612))
+
 ### [0.1.8](https://github.com/mojaloop/contrib-dev-portal/compare/v0.1.7...v0.1.8) (2021-07-06)
 
 
