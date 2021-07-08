@@ -99,3 +99,13 @@ $link-focus-border: $primary;
 .homepage-header {
     padding-bottom: 3rem;
 }
+
+
+// bulma for some reason resets list styles
+ul {
+    list-style: circle inside none;
+}
+
+.stealth-link {
+    color: $grey-dark;
+}

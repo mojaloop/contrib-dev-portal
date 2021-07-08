@@ -1,5 +1,5 @@
 <template>
-  <div class=block>
+  <div class="block pb-6">
     <div class="columns">
       <div class="column">
         <!-- <button @click="testAlert">{{ displayText }}</button> -->
