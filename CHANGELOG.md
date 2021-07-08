@@ -2,6 +2,17 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+## [0.2.0](https://github.com/mojaloop/contrib-dev-portal/compare/v0.1.10...v0.2.0) (2021-07-08)
+
+
+### ⚠ BREAKING CHANGES
+
+* add basic version number (#4)
+
+### Features
+
+* add basic version number ([#4](https://github.com/mojaloop/contrib-dev-portal/issues/4)) ([45d66d9](https://github.com/mojaloop/contrib-dev-portal/commit/45d66d971d55175d5cfe3d8536f4bb6347d6bce8))
+
 ### [0.1.10](https://github.com/mojaloop/contrib-dev-portal/compare/v0.1.9...v0.1.10) (2021-07-08)
 
 

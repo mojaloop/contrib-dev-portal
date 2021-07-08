@@ -1,6 +1,6 @@
 {
   "name": "@mojaloop/contrib-dev-portal",
-  "version": "0.1.10",
+  "version": "0.2.0",
   "description": "A simple developer portal for Mojaloop Environments",
   "private": true,
   "scripts": {
