@@ -1,13 +1,21 @@
 import Buefy from 'buefy'
 import './styles/buefy.scss'
-// import 'buefy/dist/buefy.css'
+const { version } = require('../../package')
 
 export default ({ 
   Vue,
   router 
 }) => {
 
+  // Add Buefy Components
   Vue.use(Buefy);
+
+  // Add a mixin that let's us refer to the package version
+  Vue.mixin({
+    computed: {
+      $version: () => (version)
+    }
+  })
 
   if (typeof window === 'undefined') {
     return;

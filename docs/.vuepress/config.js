@@ -57,20 +57,6 @@ module.exports = {
           },
         ]
       },
-
-      // {
-      //   title: 'APIs',
-      //   collapsable: false,
-      //   children: [
-      //     ['/2-apis/fspiop', 'FSPIOP (Mojaloop API)'], 
-      //     ['/2-apis/admin', 'Admin API'],
-      //     ['/2-apis/settlement', 'Settlement API'],
-      //     ['/2-apis/thirdparty-dfsp','Thirdparty-DFSP'],
-      //     ['/2-apis/thirdparty-pisp','Thirdparty-PISP']
-
-      //   ],
-      //   initialOpenGroupIndex: 1
-      // },
       {
         title: 'Guides',
         collapsable: false,
