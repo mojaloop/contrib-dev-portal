@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.1](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.0...v0.2.1) (2021-07-09)
+
+
+### Features
+
+* first pass at p2p pisp use case ([#5](https://github.com/mojaloop/contrib-dev-portal/issues/5)) ([6fbd1ac](https://github.com/mojaloop/contrib-dev-portal/commit/6fbd1aca643a3a63d2819b807763c25721ee5332))
+
 ## [0.2.0](https://github.com/mojaloop/contrib-dev-portal/compare/v0.1.10...v0.2.0) (2021-07-08)
 
 
