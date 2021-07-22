@@ -6,4 +6,6 @@ showToc: false
 ---
 
 <!-- TODO replace with sdk-scheme-adapter api -->
-<ClientOnly><ApiDocWrapper src="https://raw.githubusercontent.com/mojaloop/central-ledger/master/src/api/interface/swagger.json"></ApiDocWrapper></ClientOnly>
+<ClientOnly>
+  <ApiDocWrapper src="3p-scheme-adapter-outbound.yaml"/></ApiDocWrapper>
+</ClientOnly>

@@ -19,7 +19,12 @@
         let spec, url
         // If user puts in a full url, just load that with SwaggerUI instead of 'requiring' it.
         if (domNode.dataset.src.indexOf('http') < 0) {
-          const spec = require('@source/' + domNode.dataset.src);
+          // TODO: Adding a yaml parser to vue seems kinda hard
+          // This solution just means we need to put the apis in /public
+          url = `${window.location.origin}/${domNode.dataset.src}`
+
+          // this is the more 'correct' way:
+          // const spec = require('@source/' + domNode.dataset.src);
         } else {
           url = domNode.dataset.src
         }
