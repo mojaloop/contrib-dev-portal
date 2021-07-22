@@ -158,7 +158,7 @@ paths:
       responses:
         '200':
           $ref: '#/components/responses/ThirdpartyRequestsTransactionsIDAuthzResponse'
-       'default':
+        'default':
           $ref: '#/components/responses/400'
   /linking/providers:
     get:
