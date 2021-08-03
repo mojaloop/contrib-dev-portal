@@ -139,31 +139,32 @@ paths:
           $ref: '#/components/responses/ThirdpartyTransactionIDApproveResponse'
         'default':
           $ref: '#/components/responses/400'
-  '/thirdpartyRequests/transactions/{ID}/authorizations':
-    post:
-      operationId: VerifyThirdPartyAuthorization
-      summary: VerifyThirdPartyAuthorization
-      description: >
-        The HTTP request `POST
-        /thirdpartyRequests/transactions/{ID}/authorizations` is used by the
-        DFSP to verify a third party authorization.
-      tags:
-        - thirdpartyRequests
-      parameters:
-        - $ref: '#/components/parameters/ID'
-      requestBody:
-        description: The thirdparty authorization details to verify
-        required: true
-        content:
-          application/json:
-            schema:
-              $ref: >-
-                #/components/schemas/ThirdpartyRequestsTransactionsIDAuthorizationsPostRequest
-      responses:
-        '200':
-          $ref: '#/components/responses/ThirdpartyRequestsTransactionsIDAuthzResponse'
-        'default':
-          $ref: '#/components/responses/400'
+  # I don't think this is required anymore
+  # '/thirdpartyRequests/transactions/{ID}/authorizations':
+  #   post:
+  #     operationId: VerifyThirdPartyAuthorization
+  #     summary: VerifyThirdPartyAuthorization
+  #     description: >
+  #       The HTTP request `POST
+  #       /thirdpartyRequests/transactions/{ID}/authorizations` is used by the
+  #       DFSP to verify a third party authorization.
+  #     tags:
+  #       - thirdpartyRequests
+  #     parameters:
+  #       - $ref: '#/components/parameters/ID'
+  #     requestBody:
+  #       description: The thirdparty authorization details to verify
+  #       required: true
+  #       content:
+  #         application/json:
+  #           schema:
+  #             $ref: >-
+  #               #/components/schemas/ThirdpartyRequestsTransactionsIDAuthorizationsPostRequest
+  #     responses:
+  #       '200':
+  #         $ref: '#/components/responses/ThirdpartyRequestsTransactionsIDAuthzResponse'
+  #       'default':
+  #         $ref: '#/components/responses/400'
   /linking/providers:
     get:
       operationId: GetLinkingProviders
@@ -418,9 +419,8 @@ components:
               partyIdInfo:
                 partyIdType: MSISDN
                 partyIdentifier: '16135551212'
-                fspId: dfspa
+                fspId: dfspb
               name: "Bob bobbington"
-              # personalInfo:
 
     ThirdpartyTransactionIDInitiateResponse:
       description: ThirdpartyTransactionIDInitiate response
@@ -454,6 +454,11 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/ThirdpartyTransactionIDApproveResponse'
+          example:
+            transactionStatus:
+              transactionId: '8f6b2a9c-df32-4248-b115-799beada85ec'
+              transactionRequestState: 'ACCEPTED'
+            currentState: 'transactionStatusReceived'
     ThirdpartyRequestsTransactionsIDAuthzResponse:
       description: Thirdparty requests transactions authorizations response
       content:
@@ -468,6 +473,11 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/LinkingProvidersResponse'
+          example:
+            providers: 
+              - dfspa
+              - dfspb
+            currentState: providersLookupSuccess
     AccountsByUserIdResponse:
       description: >
         response body of GET /accounts/{ID} 
@@ -492,18 +502,50 @@ components:
         application/json:
           schema:
             $ref: '#/components/schemas/LinkingRequestConsentResponse'
+          example:
+            channelResponse:
+              consentRequestId: f6ab43b0-71cc-49f9-b763-2ac3f05ac8c1
+              scopes: 
+                - accountId: 'dfspa.username.1234'
+                  actions:
+                    - accounts.getBalance
+                    - accounts.transfer
+                - accountId: 'dfspa.username.5678'
+                  actions:
+                    - accounts.getBalance
+                    - accounts.transfer
+              authChannels: 
+                - OTP
+              callbackUri: 'pisp-app://callback...'
+            currentState: OTPAuthenticationChannelResponseReceived
+
     LinkingRequestConsentIDAuthenticateResponse:
       description: Linking request consent authenticate response
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/LinkingRequestConsentIDAuthenticateResponse'
+          example:
+            consent:
+              consentId: 76059a0a-684f-4002-a880-b01159afe119
+              consentRequestId: f6ab43b0-71cc-49f9-b763-2ac3f05ac8c1
+              scopes:
+                - accountId: dfspa.username.5678
+                  actions:
+                    - accounts.transfer
+            challenge: c4adabb33e9306b038088132affcde556c50d82f603f47711a9510bf3beef6d6
+            currentState: consentReceivedAwaitingCredential
+
     LinkingRequestConsentIDPassCredentialResponse:
       description: Linking request consent pass credential response
       content:
         application/json:
           schema:
             $ref: '#/components/schemas/LinkingRequestConsentIDPassCredentialResponse'
+          example:
+            credential:
+              status: VERIFIED
+            currentState: accountsLinked
   headers:
     Content-Length:
       required: false
