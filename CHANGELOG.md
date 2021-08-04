@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.2](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.1...v0.2.2) (2021-08-04)
+
+
+### Features
+
+* **api:** first pass at 3p api ([#6](https://github.com/mojaloop/contrib-dev-portal/issues/6)) ([39f8a59](https://github.com/mojaloop/contrib-dev-portal/commit/39f8a59332206d8e4f12a53490118907e50dbabd))
+
 ### [0.2.1](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.0...v0.2.1) (2021-07-09)
 
 
