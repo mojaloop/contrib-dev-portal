@@ -29,9 +29,9 @@ module.exports = {
             title: 'Payments',
             collapsable: false,
             children: [
-              ['/usecases/p2p', 'P2P Payments'],
-              ['/usecases/bulk', 'Bulk (G2P)'],
-              ['/usecases/request-to-pay', 'Merchant Request to Pay'],
+              // ['/usecases/p2p', 'P2P Payments'],
+              // ['/usecases/bulk', 'Bulk (G2P)'],
+              // ['/usecases/request-to-pay', 'Merchant Request to Pay'],
               ['/usecases/3ppi-transfer', '3rd Party Initiated Payments'],
             ]
           },
@@ -39,7 +39,7 @@ module.exports = {
             title: 'Overlay Services',
             collapsable: false,
             children: [
-              ['/usecases/3ppi-account-linking', '3PPI Account Linking'],
+              // ['/usecases/3ppi-account-linking', '3PPI Account Linking'],
             ],
           },
           {
@@ -47,14 +47,14 @@ module.exports = {
             collapsable: false,
 
             children: [
-              ['/usecases/participant-onboarding', 'Participant Onboarding'],
-              ['/usecases/settlement', 'Settlement'],
+              // ['/usecases/participant-onboarding', 'Participant Onboarding'],
+              // ['/usecases/settlement', 'Settlement'],
             ],
           },
-          {
-            title: 'Account Lookup',
-            path: '/usecases/account-lookup'
-          },
+          // {
+          //   title: 'Account Lookup',
+          //   path: '/usecases/account-lookup'
+          // },
         ]
       },
       {
@@ -71,7 +71,7 @@ module.exports = {
             collapsable: false,
             children: [
               ['/guides/payments/dfsp-p2p', '1. P2P Transfer'],
-              ['/guides/payments/pisp-local', '2. 3PPI Transfer'],
+              ['/guides/payments/pisp-local', '2. 3PPI Transfer (Local)'],
 
             ]
           },
@@ -113,23 +113,23 @@ module.exports = {
             items: [
               { text: 'P2P Payments', link: '/apis/sync-p2p'},
               { text: '3PPI Payments', link: '/apis/sync-3ppi'},
-              { text: 'SDK-Scheme-Adapter', link: '/apis/sync-sdk'},
-              { text: '3rd Party Scheme-Adapter', link: '/apis/sync-thirdparty'},
+              // { text: 'SDK-Scheme-Adapter', link: '/apis/sync-sdk'},
+              // { text: '3rd Party Scheme-Adapter', link: '/apis/sync-thirdparty'},
             ]
           },
           { 
             text: 'Async APIs', 
             items: [
               { text: 'FSPIOP (Mojaloop API)', link: '/apis/async-fspiop'},
-              { text: 'ThirdParty API - PISP', link: '/apis/async-thirdparty-pisp'},
-              { text: 'ThirdParty API - DFSP', link: '/apis/async-thirdparty-dfsp'},
+              { text: 'Third Party API - PISP', link: '/apis/async-thirdparty-pisp'},
+              { text: 'Third Party API - DFSP', link: '/apis/async-thirdparty-dfsp'},
             ]
           },
           { 
             text: 'Business Operations', 
             items: [
               // TODO: hmm I'm not sure which I mean here... do I mean ALS stuff? Or participant stuff?
-              { text: 'Participant Onboarding and Management', link: '/apis/ops-als'},
+              // { text: 'Participant Onboarding and Management', link: '/apis/ops-als'},
               { text: 'Hub Onboarding', link: '/apis/ops-onboarding'},
               { text: 'Settlement', link: '/apis/ops-settlement'},
             ]
