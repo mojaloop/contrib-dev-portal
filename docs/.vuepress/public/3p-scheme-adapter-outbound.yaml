@@ -20,8 +20,10 @@ info:
     url: TBD
   version: 0.1.0
 servers:
-  - url: http://switch-ttk-backend-fspiop.beta.moja-lab.live
-    description: The mock 3p-scheme-adapter server running in the Mojaloop Sandbox
+  # - url: http://switch-ttk-backend-fspiop.beta.moja-lab.live
+    # description: The mock 3p-scheme-adapter server running in the Mojaloop Sandbox
+  - url: http://sandbox.mojaloop.io/switch-ttk-backend
+    description: Same origin example of Mojaloop switch
 paths:
   # Skipping these for now, they will just confuse users
   # /health:
