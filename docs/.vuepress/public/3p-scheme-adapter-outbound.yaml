@@ -7,23 +7,20 @@ openapi: 3.0.1
 info:
   title: Mojaloop Thirdparty Outbound Scheme Adapter
   description: >
-    Specification for the Thirdparty Outbound Scheme Adapter API
+    Specification for the Thirdparty Outbound Scheme Adapter API.
+
+    This API is a synchronous API which makes integrating with the Mojaloop 3rd Party API easier. 
 
     Please see other documentation on
     https://github.com/mojaloop/thirdparty-scheme-adapter for more information.
-
-
-    **Note on terminology:** The term "Switch" is equal to the term "Hub", and
-    the term "FSP" is equal to the term "DFSP".
   license:
-    name: TBD
-    url: TBD
+    name: Apache 2.0
   version: 0.1.0
 servers:
-  # - url: http://switch-ttk-backend-fspiop.beta.moja-lab.live
-    # description: The mock 3p-scheme-adapter server running in the Mojaloop Sandbox
   - url: http://sandbox.mojaloop.io/switch-ttk-backend
-    description: Same origin example of Mojaloop switch
+    description: The mock 3p-scheme-adapter server running in the Mojaloop Sandbox
+  - url: http://localhost:15000
+    description: A locally running TTK instance
 paths:
   # Skipping these for now, they will just confuse users
   # /health:
@@ -88,6 +85,11 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/ThirdpartyTransactionPartyLookupRequest'
+            example:
+              transactionRequestId: b51ec534-ee48-4575-b6a9-ead2955b8069
+              payee:
+                partyIdType: MSISDN
+                partyIdentifier: '16135551212'
       responses:
         '200':
           $ref: '#/components/responses/ThirdpartyTransactionPartyLookupResponse'
@@ -111,6 +113,26 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/ThirdpartyTransactionIDInitiateRequest'
+            example:
+              payee:
+                name: 'Bob bobbington'
+                partyIdInfo:
+                  fspId: 'dfspb'
+                  partyIdType: 'MSISDN'
+                  partyIdentifier: '16135551212'
+              payer:
+                partyIdType: 'THIRD_PARTY_LINK'
+                partyIdentifier: '16135551212'
+                fspId: 'dfspa'
+              amountType: 'RECEIVE'
+              amount:
+                currency: 'USD'
+                amount: '123.47'
+              transactionType: 
+                scenario: 'DEPOSIT'
+                initiator: 'PAYER'
+                initiatorType: 'CONSUMER'
+              expiration: '2021-05-24T08:38:08.699-04:00'
       responses:
         '200':
           $ref: '#/components/responses/ThirdpartyTransactionIDInitiateResponse'
@@ -136,12 +158,20 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/ThirdpartyTransactionIDApproveRequest'
+            example:
+               authorizationResponse:
+                authenticationInfo:
+                  authentication: 'U2F'
+                  authenticationValue:
+                    pinValue: 'xxxxxxxxxxx'
+                    counter: '1'
+                responseType: 'ENTERED'
       responses:
         '200':
           $ref: '#/components/responses/ThirdpartyTransactionIDApproveResponse'
         'default':
           $ref: '#/components/responses/400'
-  # I don't think this is required anymore
+  # No longer required. Should be removed
   # '/thirdpartyRequests/transactions/{ID}/authorizations':
   #   post:
   #     operationId: VerifyThirdPartyAuthorization
@@ -232,6 +262,15 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/LinkingRequestConsentPostRequest'
+            example:
+              consentRequestId: f6ab43b0-71cc-49f9-b763-2ac3f05ac8c1
+              toParticipantId: dfspa
+              accounts:
+                - accountNickname: SpeXXXXXXXXnt
+                  id: dfspa.username.5678
+                  currency: USD
+              userId: username1234
+              callbackUri: pisp-app://callback
       responses:
         '200':
           $ref: '#/components/responses/LinkingRequestConsentResponse'
@@ -261,6 +300,8 @@ paths:
           application/json:
             schema:
               $ref: '#/components/schemas/LinkingRequestConsentIDAuthenticateRequest'
+            example:
+              authToken: '123456'
       responses:
         '200':
           $ref: '#/components/responses/LinkingRequestConsentIDAuthenticateResponse'
@@ -291,6 +332,17 @@ paths:
             schema:
               $ref: >-
                 #/components/schemas/LinkingRequestConsentIDPassCredentialRequest
+            example:
+              credential:
+                credentialType: FIDO
+                status: PENDING
+                payload:
+                  id: HskU2gw4np09IUtYNHnxMM696jJHqvccUdBmd0xP6XEWwH0xLei1PUzDJCM19SZ3A2Ex0fNLw0nc2hrIlFnAtw
+                  rawId: HskU2gw4np09IUtYNHnxMM696jJHqvccUdBmd0xP6XEWwH0xLei1PUzDJCM19SZ3A2Ex0fNLw0nc2hrIlFnAtw==
+                  response: 
+                    clientDataJSON: eyJ0eXBlIjoid2ViYXV0aG4uY3JlYXRlIiwiY2hhbGxlbmdlIjoiWXpSaFpHRmlZak16WlRrek1EWmlNRE00TURnNE1UTXlZV1ptWTJSbE5UVTJZelV3WkRneVpqWXdNMlkwTnpjeE1XRTVOVEV3WW1ZelltVmxaalprTmciLCJvcmlnaW4iOiJodHRwOi8vbG9jYWxob3N0OjQyMTgxIiwiY3Jvc3NPcmlnaW4iOmZhbHNlfQ==
+                    attestationObject: o2NmbXRmcGFja2VkZ2F0dFN0bXSjY2FsZyZjc2lnWEcwRQIhAN2JDPPTse/45EHSqSpEJiiok5sns+HqdJch3+gsL09VAiAh7W7ZhQC8gMIkgwcA+S4rQkaHoHnP9AkkohaKCuuA62N4NWOBWQLBMIICvTCCAaWgAwIBAgIECwXNUzANBgkqhkiG9w0BAQsFADAuMSwwKgYDVQQDEyNZdWJpY28gVTJGIFJvb3QgQ0EgU2VyaWFsIDQ1NzIwMDYzMTAgFw0xNDA4MDEwMDAwMDBaGA8yMDUwMDkwNDAwMDAwMFowbjELMAkGA1UEBhMCU0UxEjAQBgNVBAoMCVl1YmljbyBBQjEiMCAGA1UECwwZQXV0aGVudGljYXRvciBBdHRlc3RhdGlvbjEnMCUGA1UEAwweWXViaWNvIFUyRiBFRSBTZXJpYWwgMTg0OTI5NjE5MFkwEwYHKoZIzj0CAQYIKoZIzj0DAQcDQgAEIRpvsbWJJcsKwRhffCrjqLSIEBR5sR7/9VXgfZdRvSsXaiUt7lns44WZIFuz6ii/j9f8fadcBUJyrkhY5ZH8WqNsMGowIgYJKwYBBAGCxAoCBBUxLjMuNi4xLjQuMS40MTQ4Mi4xLjEwEwYLKwYBBAGC5RwCAQEEBAMCBDAwIQYLKwYBBAGC5RwBAQQEEgQQFJogIY72QTOWuIH41bfx9TAMBgNVHRMBAf8EAjAAMA0GCSqGSIb3DQEBCwUAA4IBAQA+/qPfPSrgclePfgTQ3VpLaNsBr+hjLhi04LhzQxiRGWwYS+vB1TOiPXeLsQQIwbmqQU51doVbCTaXGLNIr1zvbLAwhnLWH7i9m4ahCqaCzowtTvCQ7VBUGP5T1M4eYnoo83IDCVjQj/pZG8QYgOGOigztGoWAf5CWcUF6C0UyFbONwUcqJEl2QLToa/7E8VRjm4W46IAUljYkODVZASv8h3wLROx9p5TSBlSymtwdulxQe/DKbfNSvM3edA0up+EIJKLOOU+QTR2ZQV46fEW1/ih6m8vcaY6L3NW0eYpc7TXeijUJAgoUtya/vzmnRAecuY9bncoJt8PrvL2ir2kDaGF1dGhEYXRhWMRJlg3liA6MaHQ0Fw9kdmBbj+SuuaKGMseZXPO6gx2XY0EAAAAEFJogIY72QTOWuIH41bfx9QBAHskU2gw4np09IUtYNHnxMM696jJHqvccUdBmd0xP6XEWwH0xLei1PUzDJCM19SZ3A2Ex0fNLw0nc2hrIlFnAt6UBAgMmIAEhWCBYz+SV6fSy7ZjFzdj+SWxaMbfaw4ZT+wYgClN3v93kVSJYIGSzY41DNLrh1jXp4J53qCnq4+b9HYXud/0UEsZquDeV
+                  type: public-key
       responses:
         '200':
           $ref: '#/components/responses/LinkingRequestConsentIDPassCredentialResponse'
