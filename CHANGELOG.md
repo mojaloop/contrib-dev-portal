@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.4](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.3...v0.2.4) (2021-08-04)
+
+
+### Features
+
+* **api:** update 3p scheme adapter api  ([#8](https://github.com/mojaloop/contrib-dev-portal/issues/8)) ([d8492af](https://github.com/mojaloop/contrib-dev-portal/commit/d8492afe9a48db2de0a6105569e9a47b47372e41))
+
 ### [0.2.3](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.2...v0.2.3) (2021-08-04)
 
 
