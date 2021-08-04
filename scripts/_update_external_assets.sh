@@ -4,7 +4,7 @@ DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 # Updates any external assets we have copied into this repo.
 
-
+# TODO: we should really get this from api-snippets...
 wget https://raw.githubusercontent.com/mojaloop/thirdparty-scheme-adapter/master/src/interface/api-outbound.yaml\
   -O ${DIR}/../docs/apis/3p-scheme-adapter-outbound.yaml
 
