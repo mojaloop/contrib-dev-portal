@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.5](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.4...v0.2.5) (2021-08-04)
+
+
+### Bug Fixes
+
+* bad api rendering ([#9](https://github.com/mojaloop/contrib-dev-portal/issues/9)) ([6f1f59b](https://github.com/mojaloop/contrib-dev-portal/commit/6f1f59bd52df1ecb4f24593cf958e2288571c863))
+
 ### [0.2.4](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.3...v0.2.4) (2021-08-04)
 
 
