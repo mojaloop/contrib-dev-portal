@@ -71,7 +71,7 @@ module.exports = {
             collapsable: false,
             children: [
               ['/guides/payments/dfsp-p2p', '1. P2P Transfer'],
-              ['/guides/payments/pisp-local', '2. 3PPI Transfer (Local)'],
+              ['/guides/payments/3ppi-p2p', '2. 3PPI P2P Transfer'],
 
             ]
           },
@@ -90,8 +90,7 @@ module.exports = {
             children: [
               ['/guides/developer-tooling/ttk-p2p', '1. Testing Toolkit (TTK) P2P'],
               ['/guides/developer-tooling/simulators', '2. DFSP Simulators'],
-
-
+              ['/guides/payments/pisp-local', '3. Local 3PPI with TTK'],
             ]
           },
         ],
