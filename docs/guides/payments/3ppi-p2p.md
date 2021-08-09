@@ -1,6 +1,6 @@
 # 3PPI Payments
 
-![3ppi transfer overview](./assets/3ppi-transfer-header.png)
+![3ppi transfer overview](../assets/3ppi-transfer-header.png)
 > Reference: [3PPI-2021-whitepaper](https://static.googleusercontent.com/media/nextbillionusers.google/en//tools/3PPI-2021-whitepaper.pdf)
 
 
@@ -21,8 +21,7 @@ In this guide we make the following assumptions:
 
 ## 1. Party Lookup
 
-<!-- TODO: sequence highlight -->
-
+![3ppi transfer overview](../assets/3ppi_p2p_flow.png)
 
 ```
 POST /thirdpartyTransaction/partyLookup
@@ -79,6 +78,9 @@ that this is the intended recipient.
 
 
 ## 2. Initiate 
+
+![3ppi transfer overview](../assets/3ppi_initiate.png)
+
 
 Once Ayeesha confirms that this is the intended receipient of the funds, 
 you can ask her how much she wants to send, and whether she wants Bob to
@@ -183,6 +185,9 @@ From this response, your app should show Ayeesha any fees associated with her tr
 ask if she wants to proceed.
 
 ## 3. Approve
+
+![3ppi transfer overview](../assets/3ppi_approve.png)
+
 
 If she consents to the transfer, you can then ask Ayeesha to digitally sign the challenge using
 the credential she registered earlier.
