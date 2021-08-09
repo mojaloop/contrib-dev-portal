@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.6](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.5...v0.2.6) (2021-08-09)
+
+
+### Features
+
+* **guides:** add 3ppi p2p guide with pretty pictures ([#10](https://github.com/mojaloop/contrib-dev-portal/issues/10)) ([0ff2ab8](https://github.com/mojaloop/contrib-dev-portal/commit/0ff2ab8558390d3729bbc777568888a1f3b5ba96))
+
 ### [0.2.5](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.4...v0.2.5) (2021-08-04)
 
 
