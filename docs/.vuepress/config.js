@@ -22,6 +22,11 @@ module.exports = {
         path: '/overview/',
       },
       {
+        //TODO: can we make this so it's always expanded?
+        title: 'Global FinTech Hackcelerator 2021',
+        path: '/cdbc_hack',
+      },
+      {
         title: 'Use Cases',
         collapsable: false,
         children: [
