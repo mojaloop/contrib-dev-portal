@@ -6,8 +6,12 @@ actionLink: /0-getting-started/
 footer: Open Source on [GitHub](https://github.com/sqrthree/vuepress-theme-api), Made by [@sqrthree](https://github.com/sqrthree), Power by [vuepress](https://github.com/vuejs/vuepress).
 ---
 
-> Here for the CDBC Hackathon?
-> [Learn more](/cdbc_hack) about how using Mojaloop Sandbox specifically for the CDBC Hackathon event! 
+<div class="container pb-5">
+  <div class="notification is-primary">
+    <p><strong>Here for the CDBC Hackathon?</strong><p>
+    <p><a href="/cdbc_hack">Learn More</a> about how using Mojaloop Sandbox specifically for the CDBC Hackathon event!</p>
+  </div>
+</div>
 
 <HomepageHeader />
 <HomepageTop />
