@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.7](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.6...v0.2.7) (2021-08-12)
+
+
+### Features
+
+* **docs:** add cdbc hack landing page ([#11](https://github.com/mojaloop/contrib-dev-portal/issues/11)) ([8538c63](https://github.com/mojaloop/contrib-dev-portal/commit/8538c6325f02ce7136af2281dc5e1df9e3c530c0))
+
 ### [0.2.6](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.5...v0.2.6) (2021-08-09)
 
 
