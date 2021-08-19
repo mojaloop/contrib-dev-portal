@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.8](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.7...v0.2.8) (2021-08-19)
+
+
+### Features
+
+* add link to the BankOne account setup page ([#12](https://github.com/mojaloop/contrib-dev-portal/issues/12)) ([d4b75d3](https://github.com/mojaloop/contrib-dev-portal/commit/d4b75d3f5e07545dfa62e3af0258b4017b6c6c3b))
+
 ### [0.2.7](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.6...v0.2.7) (2021-08-12)
 
 
