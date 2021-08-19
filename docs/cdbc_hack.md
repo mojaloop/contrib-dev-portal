@@ -13,8 +13,11 @@ This Sandbox Environment is here and ready to help you build your Proof-of-Conce
 
 
 ## Then:
-1. Register a phone number with our account simulator for you to register a 3PPI Link
-2. Set up beneficaries with our bank simulators. These will be accounts that you test sending payments to.
+1. [Sign up for a DFSP Demo Account with BankOne](http://sandbox.mojaloop.io/bankone)
+  - BankOne is a simulator that you will be interacting with to initiate payments from with the 3PPI API.
+  - This process also registers a phone number which will let you simulate an OTP-based login 
+
+2. Set up beneficaries with our bank simulators. These will be accounts that you test sending payments to. [todo]
 3. Follow the [G2P Account Linking Guide](todo) to link an account you will be sending funds from with your fintech.
 4. Build out your solution with the [3ppi Payments API](/apis/sync-3ppi) using your account link you set up
 
