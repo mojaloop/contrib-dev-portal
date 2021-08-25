@@ -124,7 +124,7 @@ curl -X POST "http://sandbox.mojaloop.io/switch-ttk-backend/thirdpartyTransactio
 ```
 
 
-Let's examine each of these fields so we can understand 's going on:
+Let's examine each of these fields so we can understand what's going on:
 
 - `payee` - The intended recipient of the transfer. This section can be copied from the `partyLookup` response
 - `payer` - The details of the `THIRD_PARTY_LINK` that were established between your app and Ayeesha's DFSP when performing the account link. [Read more about the linking process.](https://github.com/mojaloop/pisp-project/tree/master/docs/linking#16-credential-registration)

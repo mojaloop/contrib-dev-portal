@@ -85,8 +85,13 @@ module.exports = {
             collapsable: false,
             children: [
               ['/guides/onboarding/dfsp-setup', '1. DFSP Setup'],
-
-
+            ]
+          },
+          {
+            title: 'Overlay Services',
+            collapsable: false,
+            children: [
+              ['/guides/overlay/g2p-3ppi-account-linking', '1. G2P 3PPI Linking'],
             ]
           },
           {
