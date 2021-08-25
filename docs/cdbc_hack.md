@@ -18,11 +18,7 @@ This Sandbox Environment is here and ready to help you build your Proof-of-Conce
   - This process also registers a phone number which will let you simulate an OTP-based login 
 
 2. Set up beneficaries with our bank simulators. These will be accounts that you test sending payments to. [todo]
-<<<<<<< HEAD
 3. Follow the [G2P Account Linking Guide](/guides/overlay/g2p-3ppi-account-linking) to link an account you will be sending funds from with your fintech.
-=======
-3. Follow the [G2P Account Linking Guide](todo) to link an account you will be sending funds from with your fintech.
->>>>>>> 53baf97949fa26361abc05c6f35377bd52f4b58b
 4. Build out your solution with the [3ppi Payments API](/apis/sync-3ppi) using your account link you set up
 
 
