@@ -30,32 +30,37 @@ module.exports = {
         title: 'Use Cases',
         collapsable: false,
         children: [
-          {
-            title: 'Payments',
-            collapsable: false,
-            children: [
-              // ['/usecases/p2p', 'P2P Payments'],
-              // ['/usecases/bulk', 'Bulk (G2P)'],
-              // ['/usecases/request-to-pay', 'Merchant Request to Pay'],
-              ['/usecases/3ppi-transfer', '3rd Party Initiated Payments'],
-            ]
-          },
-          {
-            title: 'Overlay Services',
-            collapsable: false,
-            children: [
-              // ['/usecases/3ppi-account-linking', '3PPI Account Linking'],
-            ],
-          },
-          {
-            title: 'Business Operations',
-            collapsable: false,
+          ['/usecases/p2p', 'P2P Payments'],
+          ['/usecases/bulk', 'Bulk (G2P)'],
+          ['/usecases/request-to-pay', 'Merchant Request to Pay'],
+          ['/usecases/3ppi-transfer', '3rd Party Initiated Payments'],
+          ['/usecases/g2p-3ppi', '3rd Party Initiated Payments - G2P'],
+          // {
+          //   title: 'Payments',
+          //   collapsable: false,
+          //   children: [
+          //     ['/usecases/p2p', 'P2P Payments'],
+          //     ['/usecases/bulk', 'Bulk (G2P)'],
+          //     ['/usecases/request-to-pay', 'Merchant Request to Pay'],
+          //     ['/usecases/3ppi-transfer', '3rd Party Initiated Payments'],
+          //   ]
+          // },
+          // {
+          //   title: 'Overlay Services',
+          //   collapsable: false,
+          //   children: [
+          //     // ['/usecases/3ppi-account-linking', '3PPI Account Linking'],
+          //   ],
+          // },
+          // {
+          //   title: 'Business Operations',
+          //   collapsable: false,
 
-            children: [
-              // ['/usecases/participant-onboarding', 'Participant Onboarding'],
-              // ['/usecases/settlement', 'Settlement'],
-            ],
-          },
+          //   children: [
+          //     // ['/usecases/participant-onboarding', 'Participant Onboarding'],
+          //     // ['/usecases/settlement', 'Settlement'],
+          //   ],
+          // },
           // {
           //   title: 'Account Lookup',
           //   path: '/usecases/account-lookup'

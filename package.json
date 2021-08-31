@@ -6,7 +6,7 @@
   "scripts": {
     "audit:resolve": "SHELL=sh resolve-audit --production",
     "audit:check": "SHELL=sh check-audit --production",
-    "dev": "vuepress dev docs",
+    "dev": "vuepress dev docs --host 0.0.0.0",
     "start": "npm run build && npm run serve",
     "build": "vuepress build docs",
     "serve": "serve ./docs/.vuepress/dist"
