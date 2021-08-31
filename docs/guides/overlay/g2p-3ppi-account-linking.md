@@ -1,5 +1,10 @@
 # 3PPI Account Linking Guide
 
+<!-- TODO: explain difference between API reference and 'real'  -->
+<!-- make this one more real with the demo -->
+<!-- There's an API reference, you can play with this -->
+<!-- when you're ready to make your own -->
+
 ![3ppi linking](../assets/3ppi-link-header.png)
 > Reference: [3PPI-2021-whitepaper](https://static.googleusercontent.com/media/nextbillionusers.google/en//tools/3PPI-2021-whitepaper.pdf)
 

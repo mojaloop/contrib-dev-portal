@@ -10,8 +10,17 @@ This Mojaloop Sandbox is an open environment for playing around with Mojaloop.
 All services use the base url `http://beta.moja-lab.live`
 
 
+
+## The Model Village
+
+Chosen a fictional village in the Ph... todo 
+
+Currency
+- PHP 
+
 ## What's included in The Environment?
 
+//TODO: update image
 ![Lab Overview](./sandbox-overview.png)
 
 Out of the box, this environment includes the following simulated DFSPs.
@@ -32,6 +41,9 @@ These simulated DFSPs are able to send and recieve funds, and the Testing Toolki
 
 
 ### Users
+<!-- TODO: loads more users, 
+merchant ids
+realistic looking names -->
 And the current users (Parties in Mojaloop-speak) are registered and available for lookup in the Account Lookup Service
 
 | dfspId | Id Type | Id Value | Display Name |
@@ -60,7 +72,9 @@ Mojaloop has a variety of APIs you can interact with:
 | [Thirdparty-DFSP](/2-apis/thirdparty-dfsp)  | `v0.1` | DFSPs             | (Coming Soon) |
 | [Thirdparty-PISP](/2-apis/thirdparty-pisp)  | `v0.1` | PISPs             | (Coming Soon) | 
 
-## Use Cases 
+<!-- ## Use Cases  -->
+
+<!-- 
 
 The following Use Cases are supported in this lab:
 
@@ -70,7 +84,7 @@ The following Use Cases are supported in this lab:
 | 🟡 | PISP P2P | Peer To Peer transaction, initiated from 3rd party | Available (Locally) | [Thirdparty PISP API Local](/guides/6_pisp_local.html) |
 | 🔴 | SEPA  | Cross Network, Outside Mojaloop into Mojaloop - Will be added with MIFOS Payment Hub | Coming Soon | _link coming soon!_|
 | 🔴 | OTT Thirdparty (UK Open Banking Model) | P2P, PISP PSD2 approach - will be added with MIFOS Payment Hub | Coming Soon | _link coming soon!_|
-| 🔴 | Refund | DFSP Initiated Refund Scenario - included with MIFOS Payment Hub | Coming Soon | _link coming soon!_|
+| 🔴 | Refund | DFSP Initiated Refund Scenario - included with MIFOS Payment Hub | Coming Soon | _link coming soon!_| -->
 
 
 ### Roadmap
@@ -117,11 +131,11 @@ See:
 
 Check out the [Testing Toolkit P2P Guide](/guides/5_ttk_p2p/) to use the testing to send a peer to peer transfer.
 
-### MIFOS Payment Hub
+<!-- ### MIFOS Payment Hub
 
 This lab is soon to be connected with the MIFOS Payment Hub, which will demonstrate the MIFOS and Mojaloop ecosystems working together, and let you test out a whole bunch of DFSP-based features.
 
-**Check back soon for more information about the Mojaloop OSS Lab + MIFOS Payment Hub**
+**Check back soon for more information about the Mojaloop OSS Lab + MIFOS Payment Hub** -->
 
 
 <!-- I commented the below out, since the MB Lab was retired after the hackathon -->

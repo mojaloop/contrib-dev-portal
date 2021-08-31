@@ -20,6 +20,7 @@ module.exports = {
         //TODO: can we make this so it's always expanded?
         title: 'Sandbox Overview',
         path: '/overview/',
+        // Add glossary to this section
       },
       {
         //TODO: can we make this so it's always expanded?
@@ -34,7 +35,7 @@ module.exports = {
           ['/usecases/bulk', 'Bulk (G2P)'],
           ['/usecases/request-to-pay', 'Merchant Request to Pay'],
           ['/usecases/3ppi-transfer', '3rd Party Initiated Payments'],
-          ['/usecases/g2p-3ppi', '3rd Party Initiated Payments - G2P'],
+          ['/usecases/3ppi-transfer', '3rd Party Initiated Payments - G2P'],
           // {
           //   title: 'Payments',
           //   collapsable: false,
