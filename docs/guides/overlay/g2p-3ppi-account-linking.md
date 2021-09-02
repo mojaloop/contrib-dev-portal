@@ -1,5 +1,10 @@
 # 3PPI Account Linking Guide
 
+<!-- TODO: explain difference between API reference and 'real'  -->
+<!-- make this one more real with the demo -->
+<!-- There's an API reference, you can play with this -->
+<!-- when you're ready to make your own -->
+
 ![3ppi linking](../assets/3ppi-link-header.png)
 > Reference: [3PPI-2021-whitepaper](https://static.googleusercontent.com/media/nextbillionusers.google/en//tools/3PPI-2021-whitepaper.pdf)
 
@@ -11,7 +16,7 @@ Learn how to use the [Synchronous 3PPI API](/apis/sync-3ppi.html) to establish a
 > which returns simulated data.
 >
 > You may want to use the baseUrl of a live 3PPI, such as 
-> `http://pispa-thirdparty-scheme-adapter-outbound.sandbox.mojaloop.io` or even run your own instance of the 3PPI and connect it to the Mojaloop Sandbox.
+> `http://paynow-thirdparty-scheme-adapter-outbound.sandbox.mojaloop.io` or even run your own instance of the 3PPI and connect it to the Mojaloop Sandbox.
 
 ## 1. List Available DFSPs
 
@@ -79,7 +84,7 @@ And here's an example response from the server:
   {
     "accountNickname": "dfspa.user.nickname2",
     "id": "dfspa.username.5678",
-    "currency": "USD"
+    "currency": "PHP"
   }
 ]
 ```
@@ -119,7 +124,7 @@ curl -X POST "http://sandbox.mojaloop.io/switch-ttk-backend/linking/request-cons
         "accounts":[{
           "accountNickname":"SpeXXXXXXXXnt",
           "id":"dfspa.username.5678",
-          "currency":"USD"
+          "currency":"PHP"
         }],
         "actions":["accounts.transfer"],
         "userId":"username1234",

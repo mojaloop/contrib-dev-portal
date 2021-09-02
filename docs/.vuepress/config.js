@@ -20,6 +20,7 @@ module.exports = {
         //TODO: can we make this so it's always expanded?
         title: 'Sandbox Overview',
         path: '/overview/',
+        // Add glossary to this section
       },
       {
         //TODO: can we make this so it's always expanded?
@@ -30,32 +31,38 @@ module.exports = {
         title: 'Use Cases',
         collapsable: false,
         children: [
-          {
-            title: 'Payments',
-            collapsable: false,
-            children: [
-              // ['/usecases/p2p', 'P2P Payments'],
-              // ['/usecases/bulk', 'Bulk (G2P)'],
-              // ['/usecases/request-to-pay', 'Merchant Request to Pay'],
-              ['/usecases/3ppi-transfer', '3rd Party Initiated Payments'],
-            ]
-          },
-          {
-            title: 'Overlay Services',
-            collapsable: false,
-            children: [
-              // ['/usecases/3ppi-account-linking', '3PPI Account Linking'],
-            ],
-          },
-          {
-            title: 'Business Operations',
-            collapsable: false,
+          // ['/usecases/p2p', 'P2P Payments'],
+          // ['/usecases/bulk', 'Bulk (G2P)'],
+          // ['/usecases/request-to-pay', 'Merchant Request to Pay'],
+          ['/usecases/3ppi-account-linking', '3rd Party Account Linking'],
+          ['/usecases/3ppi-transfer', '3rd Party Initiated Payments'],
+          // ['/usecases/3ppi-transfer', '3rd Party Initiated Payments - G2P'],
+          // {
+          //   title: 'Payments',
+          //   collapsable: false,
+          //   children: [
+          //     ['/usecases/p2p', 'P2P Payments'],
+          //     ['/usecases/bulk', 'Bulk (G2P)'],
+          //     ['/usecases/request-to-pay', 'Merchant Request to Pay'],
+          //     ['/usecases/3ppi-transfer', '3rd Party Initiated Payments'],
+          //   ]
+          // },
+          // {
+          //   title: 'Overlay Services',
+          //   collapsable: false,
+          //   children: [
+          //     // ['/usecases/3ppi-account-linking', '3PPI Account Linking'],
+          //   ],
+          // },
+          // {
+          //   title: 'Business Operations',
+          //   collapsable: false,
 
-            children: [
-              // ['/usecases/participant-onboarding', 'Participant Onboarding'],
-              // ['/usecases/settlement', 'Settlement'],
-            ],
-          },
+          //   children: [
+          //     // ['/usecases/participant-onboarding', 'Participant Onboarding'],
+          //     // ['/usecases/settlement', 'Settlement'],
+          //   ],
+          // },
           // {
           //   title: 'Account Lookup',
           //   path: '/usecases/account-lookup'
@@ -81,7 +88,7 @@ module.exports = {
             ]
           },
           {
-            title: 'Onboarding',
+            title: 'Hub Onboarding',
             collapsable: false,
             children: [
               ['/guides/onboarding/dfsp-setup', '1. DFSP Setup'],
@@ -100,7 +107,7 @@ module.exports = {
             children: [
               ['/guides/developer-tooling/ttk-p2p', '1. Testing Toolkit (TTK) P2P'],
               ['/guides/developer-tooling/simulators', '2. DFSP Simulators'],
-              ['/guides/payments/pisp-local', '3. Local 3PPI with TTK'],
+              // ['/guides/payments/pisp-local', '3. Local 3PPI with TTK'],
             ]
           },
         ],

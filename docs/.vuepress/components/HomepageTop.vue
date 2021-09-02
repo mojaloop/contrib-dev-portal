@@ -8,7 +8,7 @@
           Integrate your application directly with the Mojaloop Sandbox to
           demonstrate a number of Real Time Payment use cases
         </p>
-         <b-button type="is-primary" icon-right="arrow-right">
+         <b-button tag="router-link" to="usecases/3ppi-transfer.html" type="is-primary" icon-right="arrow-right">
             Get Started
           </b-button>
       </div>
@@ -18,7 +18,8 @@
     </div>
     <div class="custom-divider"></div>
 
-    <div class="columns">
+  <!-- hiding for now, we don't have the content -->
+    <!-- <div class="columns">
       <div class="column ph-2">
         <img class="pb-5" src="business_ops.png" />
         <h3 class="title is-4">Business Operations</h3>
@@ -49,7 +50,7 @@
         <br/>
         <a href="/">- Look up a user from an identifie</a>
       </div>
-    </div>
+    </div> -->
   </div>
 </template>
 

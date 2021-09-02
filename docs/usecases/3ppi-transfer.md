@@ -1,7 +1,5 @@
 # 3PPI Transfer
 
->_[Note from Lewis - this is my first real use case guide I'm writing. It's rough, and I need help getting it to read smoothly and hit the right balance between ]_
-
 ![3ppi transfer overview](./assets/3ppi-transfer-header.png)
 > Reference: [3PPI-2021-whitepaper](https://static.googleusercontent.com/media/nextbillionusers.google/en//tools/3PPI-2021-whitepaper.pdf)
 
@@ -16,7 +14,7 @@
 - **Alice**: Alice holds an account with a DFSP that is connected to a Mojaloop Hub. She has the identifier `25423839138`
 ## Scenario
 
-- Ayeesha wants to send 18 USD to Alice using the PineapplePay App
+- Ayeesha wants to send 1800 PHP to Alice using the PineapplePay App
 - Ayeesha has already linked the account she holds with BankOne to her PineapplePay App. (See [3ppi Account Linking](./3ppi-account-linking))
 - Alice has provided Ayeesha with an identifier she wants to recieve funds at: `25423839138`
 
