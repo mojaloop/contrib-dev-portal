@@ -130,7 +130,7 @@ paths:
                 fspId: dfspa
               amountType: RECEIVE
               amount:
-                currency: USD
+                currency: PHP
                 amount: '123.47'
               transactionType:
                 scenario: DEPOSIT
@@ -246,7 +246,7 @@ paths:
               accounts:
                 - accountNickname: SpeXXXXXXXXnt
                   id: dfspa.username.5678
-                  currency: USD
+                  currency: PHP
               actions:
                 - accounts.transfer
               userId: username1234
@@ -450,13 +450,13 @@ components:
               authenticationType: U2F
               retriesLeft: '1'
               amount:
-                currency: USD
+                currency: PHP
                 amount: '10.00'
               transactionId: 1234-1234-1234-1234
               transactionRequestId: 1234-1234-1234-1234
               quote:
                 transferAmount:
-                  currency: USD
+                  currency: PHP
                   amount: '10.00'
                 expiration: '2022-01-01T08:38:08.699-04:00'
                 ilpPacket: >-
@@ -501,7 +501,7 @@ components:
               currency: ZAR
             - accountNickname: dfspa.user.nickname2
               id: dfspa.username.5678
-              currency: USD
+              currency: PHP
     LinkingRequestConsentResponse:
       description: |
         Response body of POST /linking/request-consent.

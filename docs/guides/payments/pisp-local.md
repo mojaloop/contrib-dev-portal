@@ -212,7 +212,7 @@ curl -X POST http://localhost:15000/thirdpartyRequests/transactions \
   "amountType": "SEND",
   "amount": {
     "amount": "10",
-    "currency": "USD"
+    "currency": "PHP"
   },
   "transactionType": {
     "scenario": "TRANSFER",
@@ -239,7 +239,7 @@ Example Response (in `docker-compose logs -f callback-server`)
         "connection": "close"
     },
     "method": "POST",
-    "body": "{\"authenticationType\":\"U2F\",\"retriesLeft\":\"1\",\"amount\":{\"currency\":\"USD\",\"amount\":\"124.45\"},\"transactionId\":\"2f169631-ef99-4cb1-96dc-91e8fc08f539\",\"transactionRequestId\":\"387ee6b9-520d-4c51-a9e4-6eb2ef15887a\",\"quote\":{\"transferAmount\":{\"currency\":\"USD\",\"amount\":\"124.45\"},\"payeeReceiveAmount\":{\"currency\":\"USD\",\"amount\":\"123.45\"},\"payeeFspFee\":{\"currency\":\"USD\",\"amount\":\"1\"},\"payeeFspCommission\":{\"currency\":\"USD\",\"amount\":\"0\"},\"expiration\":\"2020-08-24T08:38:08.699-04:00\",\"geoCode\":{\"latitude\":\"+45.4215\",\"longitude\":\"+75.6972\"},\"ilpPacket\":\"AYIBgQAAAAAAAASwNGxldmVsb25lLmRmc3AxLm1lci45T2RTOF81MDdqUUZ\",\"condition\":\"f5sqb7tBTWPd5Y8BDFdMm9BJR_MNI4isf8p8n4D5pHA\",\"extensionList\":{\"extension\":[{\"key\":\"errorDescription\",\"value\":\"This is a more detailed error description\"}]}}}",
+    "body": "{\"authenticationType\":\"U2F\",\"retriesLeft\":\"1\",\"amount\":{\"currency\":\"PHP\",\"amount\":\"124.45\"},\"transactionId\":\"2f169631-ef99-4cb1-96dc-91e8fc08f539\",\"transactionRequestId\":\"387ee6b9-520d-4c51-a9e4-6eb2ef15887a\",\"quote\":{\"transferAmount\":{\"currency\":\"PHP\",\"amount\":\"124.45\"},\"payeeReceiveAmount\":{\"currency\":\"PHP\",\"amount\":\"123.45\"},\"payeeFspFee\":{\"currency\":\"PHP\",\"amount\":\"1\"},\"payeeFspCommission\":{\"currency\":\"PHP\",\"amount\":\"0\"},\"expiration\":\"2020-08-24T08:38:08.699-04:00\",\"geoCode\":{\"latitude\":\"+45.4215\",\"longitude\":\"+75.6972\"},\"ilpPacket\":\"AYIBgQAAAAAAAASwNGxldmVsb25lLmRmc3AxLm1lci45T2RTOF81MDdqUUZ\",\"condition\":\"f5sqb7tBTWPd5Y8BDFdMm9BJR_MNI4isf8p8n4D5pHA\",\"extensionList\":{\"extension\":[{\"key\":\"errorDescription\",\"value\":\"This is a more detailed error description\"}]}}}",
     "fresh": false,
     "hostname": "callback-server",
     "ip": "::ffff:172.21.0.2",
@@ -260,22 +260,22 @@ Example Body (parsed from the above response):
 {
   "authenticationType":"U2F",
   "retriesLeft":"1",
-  "amount":{"currency":"USD","amount":"124.45"},"transactionId":"2f169631-ef99-4cb1-96dc-91e8fc08f539","transactionRequestId":"387ee6b9-520d-4c51-a9e4-6eb2ef15887a",
+  "amount":{"currency":"PHP","amount":"124.45"},"transactionId":"2f169631-ef99-4cb1-96dc-91e8fc08f539","transactionRequestId":"387ee6b9-520d-4c51-a9e4-6eb2ef15887a",
   "quote":{
     "transferAmount":{
-      "currency":"USD",
+      "currency":"PHP",
       "amount":"124.45"
     },
     "payeeReceiveAmount":{
-      "currency":"USD",
+      "currency":"PHP",
       "amount":"123.45"
     },
     "payeeFspFee":{
-      "currency":"USD",
+      "currency":"PHP",
       "amount":"1"
     },
     "payeeFspCommission": {
-      "currency":"USD",
+      "currency":"PHP",
       "amount":"0"
     },
     "expiration":"2020-08-24T08:38:08.699-04:00",

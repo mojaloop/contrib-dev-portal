@@ -111,7 +111,7 @@ curl -X POST "http://sandbox.mojaloop.io/switch-ttk-backend/thirdpartyTransactio
     },
     "amountType":"RECEIVE",
     "amount":{
-      "currency":"USD",
+      "currency":"PHP",
       "amount":"123.47"
     },
     "transactionType":{
@@ -148,15 +148,15 @@ And this is the response we recieve back from the above request:
     "quote": {
       "transferAmount": {
         "amount": "124.47",
-        "currency": "USD"
+        "currency": "PHP"
       },
       "payeeReceiveAmount": {
         "amount": "123.47",
-        "currency": "USD"
+        "currency": "PHP"
       },
       "payeeFspFee": {
         "amount": "1.00",
-        "currency": "USD"
+        "currency": "PHP"
       },
       "expiration": "2022-01-01T08:38:08.699-04:00",
       "ilpPacket": "AYIBgQAAAAAAAASwNGxldmVsb25lLmRmc3AxLm1lci45T2RTOF81MDdqUUZERmZlakgyOVc4bXFmNEpLMHlGTFGCAUBQU0svMS4wCk5vbmNlOiB1SXlweUYzY3pYSXBFdzVVc05TYWh3CkVuY3J5cHRpb246IG5vbmUKUGF5bWVudC1JZDogMTMyMzZhM2ItOGZhOC00MTYzLTg0NDctNGMzZWQzZGE5OGE3CgpDb250ZW50LUxlbmd0aDogMTM1CkNvbnRlbnQtVHlwZTogYXBwbGljYXRpb24vanNvbgpTZW5kZXItSWRlbnRpZmllcjogOTI4MDYzOTEKCiJ7XCJmZWVcIjowLFwidHJhbnNmZXJDb2RlXCI6XCJpbnZvaWNlXCIsXCJkZWJpdE5hbWVcIjpcImFsaWNlIGNvb3BlclwiLFwiY3JlZGl0TmFtZVwiOlwibWVyIGNoYW50XCIsXCJkZWJpdElkZW50aWZpZXJcIjpcIjkyODA2MzkxXCJ9IgA",
