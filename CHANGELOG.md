@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.9](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.8...v0.2.9) (2021-08-25)
+
+
+### Features
+
+* **guides:** g2p use case guide ([#13](https://github.com/mojaloop/contrib-dev-portal/issues/13)) ([31d88d8](https://github.com/mojaloop/contrib-dev-portal/commit/31d88d802e5686f7e9d3512ac4e1a40ac87fec7d))
+
 ### [0.2.8](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.7...v0.2.8) (2021-08-19)
 
 
