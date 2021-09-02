@@ -10,14 +10,12 @@ title: Overview
 
 | Term |  Meaning | More Information |
 |---|---|---|
-| `DFSP` | Digital Financial Service Provider | A generic term for a financial intitution. E.g. Bank, Mobile Money Operator, Microfinance Institute etc.  |
+| `DFSP` | Digital Financial Service Provider | A generic term for a financial intitution. E.g.  banks, credit unions, mobile money operators, microfinance organizations |
 | `FSP`  | Used interchangably with `DFSP` | |
 | `3PPI` | 3rd Party Payment Initiator | A type of Mojaloop Participant who doesn't hold any funds on behalf of users, but uses the 3PPI API to link accounts and make transfers. Most likely this is going to be a Fintech offering modern open banking services.    |
 | `Participant` | An institution who interacts with Mojaloop | |
 | `Party`| An end user, who interacts with a `DFSP` | A DFSP's customer. Usually a person, but it could be a Business or Merchant |
-| `Hub`  | | |
-| `Scheme` | | |
-| `Hub Operator` | | |
+| `Hub Operator` | The organization that runs the Mojaloop Hub | |
 
 ## The Model Village
 
@@ -33,8 +31,6 @@ The model village is full of different Users, Merchants, Banks, Microfinance Ins
 - **BaseUrl**: `http://sandbox.mojaloop.io`
 - **Supported PartyIdTypes**: `MSISDN`, `ALIAS`, `BUSINESS`
 
-
-//TODO: update image
 ![Lab Overview](./sandbox-overview.png)
 
 Out of the box, this environment includes the following simulated DFSPs.
@@ -72,7 +68,7 @@ While the Mojaloop API allows for a large number of PartyId Types, this Mojaloop
 - `ALIAS` - a generic Alias that can be determined by a Scheme
 - `BUSINESS` - a business identifier
 
-And the current users (Parties in Mojaloop-speak) are registered and available for lookup in the Account Lookup Service
+These parties are registered and available for lookup in the Account Lookup Service for this Sandbox.
 
 #### `MSISDN`
 | Id Type | Id Value | participantId |Display Name |
@@ -101,7 +97,7 @@ And the current users (Parties in Mojaloop-speak) are registered and available f
 | Id Type | Id Value | participantId |Display Name |
 | --- | --- | --- | --- |
 | `BUSINESS` | `001239`  | `jcash`   | Mr. Pandesal |
-| `BUSINESS` | `023923`  | `jcash`   | PinayPay |
+| `BUSINESS` | `023923`  | `jcash`   | Baboy King Pty. Ltd. |
 | `BUSINESS` | `499488`  | `skybank` | Outstanding Butanding |
 | `BUSINESS` | `049049`  | `skybank` | Voyage PH |
 

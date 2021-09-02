@@ -122,7 +122,7 @@ curl -X GET http://localhost:15000/parties/MSISDN/12345 \
   -H 'Accept: application/vnd.interoperability.parties+json;version=1.0' \
   -H 'Content-Type: application/vnd.interoperability.parties+json;version=1.0' \
   -H 'Date: Mon, 11 Jan 2021 00:00:00 GMT' \
-  -H 'FSPIOP-Source: pispa'
+  -H 'FSPIOP-Source: paynow'
 ```
 
 
@@ -182,7 +182,7 @@ curl -X POST http://localhost:15000/thirdpartyRequests/transactions \
   -H 'Accept: application/vnd.thirdparty.transactions+json;version=1.0' \
   -H 'Content-Type: application/vnd.thirdparty.transactions+json;version=1.0' \
   -H 'Date: Mon, 11 Jan 2021 00:00:00 GMT' \
-  -H 'FSPIOP-Source: pispa' \
+  -H 'FSPIOP-Source: paynow' \
   -H 'FSPIOP-Destination: dfspa' \
   -d '{
   "sourceAccountId": "mats_account.dfspa.123",
@@ -308,7 +308,7 @@ curl -X PUT http://localhost:15000/authorizations/123 \
   -H 'Accept: application/vnd.interoperability.thirdparty+json;version=1.0' \
   -H 'Content-Type: application/vnd.interoperability.thirdparty+json;version=1.0' \
   -H 'Date: Mon, 11 Jan 2021 00:00:00 GMT' \
-  -H 'FSPIOP-Source: pispa' \
+  -H 'FSPIOP-Source: paynow' \
   -H 'FSPIOP-Destination: dfspa' \
   -d '{
         "authenticationInfo": {

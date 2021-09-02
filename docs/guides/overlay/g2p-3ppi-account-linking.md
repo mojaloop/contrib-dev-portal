@@ -16,7 +16,7 @@ Learn how to use the [Synchronous 3PPI API](/apis/sync-3ppi.html) to establish a
 > which returns simulated data.
 >
 > You may want to use the baseUrl of a live 3PPI, such as 
-> `http://pispa-thirdparty-scheme-adapter-outbound.sandbox.mojaloop.io` or even run your own instance of the 3PPI and connect it to the Mojaloop Sandbox.
+> `http://paynow-thirdparty-scheme-adapter-outbound.sandbox.mojaloop.io` or even run your own instance of the 3PPI and connect it to the Mojaloop Sandbox.
 
 ## 1. List Available DFSPs
 
