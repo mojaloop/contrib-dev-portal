@@ -192,7 +192,7 @@ curl -X POST http://localhost:15000/thirdpartyRequests/transactions \
     "partyIdInfo": {
       "partyIdType": "MSISDN",
       "partyIdentifier": "947947947947",
-      "fspId": "applebank"
+      "fspId": "jcash"
     },
     "personalInfo": {
       "complexName": {

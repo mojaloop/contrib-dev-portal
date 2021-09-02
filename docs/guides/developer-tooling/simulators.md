@@ -21,9 +21,9 @@ Before we go any further, we need to tell the simulator UI to connect to a speci
 
 For example, you can register the Applebank Simulator Backend
 
-- name: `applebank1`
+- name: `jcash1`
 - protocol: `http`
-- host: `applebank-backend.beta.moja-lab.live`
+- host: `jcash-backend.beta.moja-lab.live`
 - port: `80`
 
 And hit "Save"
@@ -94,17 +94,17 @@ curl -X POST http://beta.moja-lab.live/api/fspiop/participants/MSISDN/6395639430
   -H "Accept: application/vnd.interoperability.participants+json;version=1" \
   -H "Content-Type: application/vnd.interoperability.participants+json;version=1.0" \
   -H 'Date: Fri, 15 Jan 2021 00:00:00 GMT' \
-  -H 'FSPIOP-Source: applebank' \
+  -H 'FSPIOP-Source: jcash' \
   -d '{ 
-    "fspId": "applebank", 
+    "fspId": "jcash", 
     "currency": "PHP" 
     }'
 ```
 
-Next, we can register the party information with the `applebank` DFSP simulator:
+Next, we can register the party information with the `jcash` DFSP simulator:
 
 ```bash
-curl -X POST http://applebank-backend.beta.moja-lab.live/repository/parties \
+curl -X POST http://jcash-backend.beta.moja-lab.live/repository/parties \
   -H "Content-Type: application/json" \
   -d '{
     "displayName": "Jose R.",
@@ -117,7 +117,7 @@ curl -X POST http://applebank-backend.beta.moja-lab.live/repository/parties \
   }'
 ```
 
-And that's it! You can issue a `GET /parties/MSISDN/639563943094` call to ask Mojaloop to look up this party, and then request more informaton from `applebank`:
+And that's it! You can issue a `GET /parties/MSISDN/639563943094` call to ask Mojaloop to look up this party, and then request more informaton from `jcash`:
 
 Let's issue this request "from" the `figmm` DFSP, and look in the TTK for the callback: [http://figmm-ttk.beta.moja-lab.live/admin/monitoring](here).
 
