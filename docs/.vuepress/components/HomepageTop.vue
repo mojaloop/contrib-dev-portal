@@ -8,7 +8,7 @@
           Integrate your application directly with the Mojaloop Sandbox to
           demonstrate a number of Real Time Payment use cases
         </p>
-         <b-button type="is-primary" icon-right="arrow-right">
+         <b-button tag="router-link" to="usecases/3ppi-transfer.html" type="is-primary" icon-right="arrow-right">
             Get Started
           </b-button>
       </div>

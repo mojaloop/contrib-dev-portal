@@ -1,4 +1,6 @@
 
+<CDBCBanner />
+
 # Mojaloop + Global Fintech Hackcelerator 2021
 
 Mojaloop is supporting the Monetary Authority of Singapore (MAS) for the [2021 Global Fintech Hackcelerator.](https://www.fintechfestival.sg/global-fintech-hackcelerator/)
@@ -7,9 +9,8 @@ We built this sandbox to help you get up and running with Mojaloop, and to explo
 
 ## First Steps
 
-1. Read about the different Mojaloop Use Cases - especially [3PPI Account Linking](todo) and [3PPI Payments](/usecases/3ppi-transfer.)
+1. Read about the different Mojaloop Use Cases - especially [3PPI Account Linking](/usecases/3ppi-account-linking) and [3PPI Payments](/usecases/3ppi-transfer).
 2. [Learn more about the Mojaloop Sandbox](/overview/) "Model Village", the different simulated DFSPs, 3PPIs and Users
-3. Understand the key terms and concepts in our [Glossary]()
 
 
 
@@ -22,21 +23,13 @@ We built this sandbox to help you get up and running with Mojaloop, and to explo
 
 ## Make it Real
 
-1. Once you've got a demo working with the example 3PPI fintech, we can spin up resources for your very own fintech on the Mojaloop Sandbox. Just fill in [this Google form]() to request your own 3PPI resources in the sandbox. We aim to do this within 24 hours - but feel free to ping us on our [Mojaloop Slack](https://mojaloop.io/slack) at `#cdbc-hack` if you think it's taking too long!
+1. Once you've got a demo working with the example 3PPI fintech, we can spin up resources for your very own fintech on the Mojaloop Sandbox. Just fill in [this form](https://coda.io/form/Request-3PPI-Resources-in-the-Mojaloop-Sandbox_d58trRE738q) to request your own 3PPI resources in the sandbox. We aim to do this within 24 hours - but feel free to ping us on our [Mojaloop Slack](https://mojaloop.io/slack) at `#cdbc-hack` if you think it's taking too long!
 2. Once we give you a `baseURL` for your 3PPI Fintech, you can get building
 3. Build out your solution with the [3ppi Payments API](/apis/sync-3ppi) using your account link you set up
 
 
 ## Have Any Questions?
 - Contact us at the `#cdbc-hack` channel on the [Mojaloop Slack](https://mojaloop.io/slack)
-
-## Then:
-1. [Sign up for a DFSP Demo Account with BankOne](http://sandbox.mojaloop.io/bankone)
-  - BankOne is a simulator that you will be interacting with to initiate payments from with the 3PPI API.
-  - This process also registers a phone number which will let you simulate an OTP-based login 
-
-3. Follow the [G2P Account Linking Guide](/guides/overlay/g2p-3ppi-account-linking) to link an account you will be sending funds from with your fintech.
-4. Build out your solution with the [3ppi Payments API](/apis/sync-3ppi) using your account link you set up
 
 
 ## Other Resources:

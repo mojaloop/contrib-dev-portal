@@ -6,17 +6,17 @@
         <div class="block">
           <h3 class="title is-6">Synchronous APIs</h3>
           <ul>
-            <li><a class="stealth-link" href="/">P2P Payments</a></li>
-            <li><a class="stealth-link" href="/">3PPI - Initiate payments from a user's account</a></li>
-            <li><a class="stealth-link" href="/">sdk-scheme-adapter: real time payments</a></li>
-            <li><a class="stealth-link" href="/">thirdparty-sync-api: link a user's account and initiate a real time payment</a></li>
+            <li><a class="stealth-link" href="/apis/sync-p2p.html"><strong>P2P Payments</strong></a></li>
+            <li><a class="stealth-link" href="/apis/sync-3ppi.html"><strong>3PPI</strong> - Link Accounts + Initiate Payments</a></li>
+            <!-- <li><a class="stealth-link" href="/">sdk-scheme-adapter: real time payments</a></li> -->
+            <!-- <li><a class="stealth-link" href="/">thirdparty-sync-api: link a user's account and initiate a real time payment</a></li> -->
           </ul>
         </div>
         <div class="block">
           <h3 class="title is-6">Asynchronous APIs</h3>
           <ul>
-            <li><a class="stealth-link" href="/">FSPIOP API - The core Mojaloop API for payments between DFSPs</a></li>
-            <li><a class="stealth-link" href="/">Overlay Services/3PPI API - The API for PISPs to ...</a></li>
+            <li><a class="stealth-link" href="/apis/async-fspiop.html"><strong>FSPIOP API</strong> - The core Mojaloop API for payments between DFSPs</a></li>
+            <li><a class="stealth-link" href="/apis/async-thirdparty-pisp.html"><strong>Overlay Services/3PPI API</strong> - The Async API for 3rd Party Fintechs to link accounts and initiate payments.</a></li>
           </ul>
         </div>
 
@@ -25,9 +25,9 @@
         <div class="block">
           <h3 class="title is-6">Business Operations</h3>
           <ul>
-            <li><a class="stealth-link" href="/">Participant Onboarding and Management - Create and register new DFSPs and PISPs</a></li>
-            <li><a class="stealth-link" href="/">Hub Onboarding - Set up a new Mojaloop Hub from scratch.</a></li>
-            <li><a class="stealth-link" href="/">Settlement - Run settlement functions.</a></li>
+            <li><a class="stealth-link" href="/apis/ops-onboarding.html"><strong>Participant Onboarding and Management</strong> - Create and register new DFSPs and PISPs</a></li>
+            <li><a class="stealth-link" href="/apis/ops-onboarding.html"><strong>Hub Onboarding</strong> - Set up a new Mojaloop Hub from scratch.</a></li>
+            <!-- <li><a class="stealth-link" href="/">Settlement - Run settlement functions.</a></li> -->
           </ul>
         </div>
       </div>
