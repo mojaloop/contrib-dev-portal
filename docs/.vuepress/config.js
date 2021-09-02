@@ -31,11 +31,12 @@ module.exports = {
         title: 'Use Cases',
         collapsable: false,
         children: [
-          ['/usecases/p2p', 'P2P Payments'],
-          ['/usecases/bulk', 'Bulk (G2P)'],
-          ['/usecases/request-to-pay', 'Merchant Request to Pay'],
+          // ['/usecases/p2p', 'P2P Payments'],
+          // ['/usecases/bulk', 'Bulk (G2P)'],
+          // ['/usecases/request-to-pay', 'Merchant Request to Pay'],
+          ['/usecases/3ppi-account-linking', '3rd Party Account Linking'],
           ['/usecases/3ppi-transfer', '3rd Party Initiated Payments'],
-          ['/usecases/3ppi-transfer', '3rd Party Initiated Payments - G2P'],
+          // ['/usecases/3ppi-transfer', '3rd Party Initiated Payments - G2P'],
           // {
           //   title: 'Payments',
           //   collapsable: false,
@@ -87,7 +88,7 @@ module.exports = {
             ]
           },
           {
-            title: 'Onboarding',
+            title: 'Hub Onboarding',
             collapsable: false,
             children: [
               ['/guides/onboarding/dfsp-setup', '1. DFSP Setup'],
@@ -106,7 +107,7 @@ module.exports = {
             children: [
               ['/guides/developer-tooling/ttk-p2p', '1. Testing Toolkit (TTK) P2P'],
               ['/guides/developer-tooling/simulators', '2. DFSP Simulators'],
-              ['/guides/payments/pisp-local', '3. Local 3PPI with TTK'],
+              // ['/guides/payments/pisp-local', '3. Local 3PPI with TTK'],
             ]
           },
         ],

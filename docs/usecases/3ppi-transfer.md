@@ -1,7 +1,5 @@
 # 3PPI Transfer
 
->_[Note from Lewis - this is my first real use case guide I'm writing. It's rough, and I need help getting it to read smoothly and hit the right balance between ]_
-
 ![3ppi transfer overview](./assets/3ppi-transfer-header.png)
 > Reference: [3PPI-2021-whitepaper](https://static.googleusercontent.com/media/nextbillionusers.google/en//tools/3PPI-2021-whitepaper.pdf)
 

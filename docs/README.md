@@ -8,8 +8,8 @@ footer: Open Source on [GitHub](https://github.com/sqrthree/vuepress-theme-api),
 
 <div class="container pb-5">
   <div class="notification is-primary">
-    <p><strong>Here for the CDBC Hackathon?</strong><p>
-    <p><a href="/cdbc_hack">Learn More</a> about how using Mojaloop Sandbox specifically for the CDBC Hackathon event!</p>
+    <p><strong>Here for the Global Fintech Hackcelerator?</strong><p>
+    <p><a href="/cdbc_hack">Learn More</a> about how using Mojaloop Sandbox specifically for the Global Fintech Hackcelerator!</p>
   </div>
 </div>
 
