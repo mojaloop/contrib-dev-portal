@@ -14,7 +14,7 @@
 - **Alice**: Alice holds an account with a DFSP that is connected to a Mojaloop Hub. She has the identifier `25423839138`
 ## Scenario
 
-- Ayeesha wants to send 18 USD to Alice using the PineapplePay App
+- Ayeesha wants to send 1800 PHP to Alice using the PineapplePay App
 - Ayeesha has already linked the account she holds with BankOne to her PineapplePay App. (See [3ppi Account Linking](./3ppi-account-linking))
 - Alice has provided Ayeesha with an identifier she wants to recieve funds at: `25423839138`
 

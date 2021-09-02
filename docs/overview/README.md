@@ -60,14 +60,14 @@ The Sandbox has a variety of DFSP simulators, which support different use cases 
 
 
 ### 3PPI Fintechs
-| Name | participantId | Description | URL (if applicable) |
+| Name | participantId | Description | URL |
 | --- | --- | --- | --- |
 | PineapplePay | `pineapplepay`  | A 3PPI App which lets you link accounts and make payments | [https://pineapplepay.moja-lab.live/](https://pineapplepay.moja-lab.live/) |
 | PayNOW  | `paynow`   | An example 3PPI which exposes the sync 3PPI API for you to build with! | [http://paynow-thirdparty-scheme-adapter-outbound.sandbox.mojaloop.io](http://paynow-thirdparty-scheme-adapter-outbound.sandbox.mojaloop.io/health) |
 
 ### Parties
 
-The Mojaloop supports Parties of 3 types:
+While the Mojaloop API allows for a large number of PartyId Types, this Mojaloop Sandbox supports Parties of 3 types:
 - `MSISDN` - ie. Phone Number
 - `ALIAS` - a generic Alias that can be determined by a Scheme
 - `BUSINESS` - a business identifier

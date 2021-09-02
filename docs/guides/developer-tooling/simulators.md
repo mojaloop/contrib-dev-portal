@@ -97,7 +97,7 @@ curl -X POST http://beta.moja-lab.live/api/fspiop/participants/MSISDN/6395639430
   -H 'FSPIOP-Source: applebank' \
   -d '{ 
     "fspId": "applebank", 
-    "currency": "USD" 
+    "currency": "PHP" 
     }'
 ```
 

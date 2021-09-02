@@ -84,7 +84,7 @@ And here's an example response from the server:
   {
     "accountNickname": "dfspa.user.nickname2",
     "id": "dfspa.username.5678",
-    "currency": "USD"
+    "currency": "PHP"
   }
 ]
 ```
@@ -124,7 +124,7 @@ curl -X POST "http://sandbox.mojaloop.io/switch-ttk-backend/linking/request-cons
         "accounts":[{
           "accountNickname":"SpeXXXXXXXXnt",
           "id":"dfspa.username.5678",
-          "currency":"USD"
+          "currency":"PHP"
         }],
         "actions":["accounts.transfer"],
         "userId":"username1234",

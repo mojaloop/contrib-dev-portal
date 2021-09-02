@@ -96,10 +96,10 @@ In this example I will use a `DFSP_ID` of `lewbank`, but you should replace this
 > to stop nefarious behavor.
 
 ```bash
-# create a new participant with a currency of USD
+# create a new participant with a currency of PHP
 curl -X POST http://beta.moja-lab.live/api/admin/central-ledger/participants \
     -H 'Content-Type: application/json' \
-    -d '{"name":"lewbank", "currency":"USD"}'
+    -d '{"name":"lewbank", "currency":"PHP"}'
 ```
 
 ## 4. Fund the DFSP's accounts 
@@ -110,7 +110,7 @@ Now that our DFSP has been created, we need to set up its internal accounts.
 # Set the initial position, and net debit cap
 curl -X POST http://beta.moja-lab.live/api/admin/central-ledger/participants/lewbank/initialPositionAndLimits \
     -H 'Content-Type: application/json' \
-    -d '{"currency":"USD", "limit": {"type":"NET_DEBIT_CAP", "value": 10000}, "initialPosition": 0}'
+    -d '{"currency":"PHP", "limit": {"type":"NET_DEBIT_CAP", "value": 10000}, "initialPosition": 0}'
 ```
 
 We can then get the `settlementAccountId` 
@@ -131,7 +131,7 @@ curl -H 'Content-Type: application/json' http://beta.moja-lab.live/api/admin/cen
 #     {
 #       "id": 17,
 #       "ledgerAccountType": "POSITION",
-#       "currency": "USD",
+#       "currency": "PHP",
 #       "isActive": 1,
 #       "createdDate": null,
 #       "createdBy": "unknown"
@@ -139,7 +139,7 @@ curl -H 'Content-Type: application/json' http://beta.moja-lab.live/api/admin/cen
 #     {
 #       "id": 18,
 #       "ledgerAccountType": "SETTLEMENT",
-#       "currency": "USD",
+#       "currency": "PHP",
 #       "isActive": 1,
 #       "createdDate": null,
 #       "createdBy": "unknown"
@@ -162,7 +162,7 @@ curl -X POST http://beta.moja-lab.live/api/admin/central-ledger/participants/lew
           "reason": "dfsp setup",
           "amount": {
             "amount": 5000,
-            "currency": "USD"
+            "currency": "PHP"
           }
         }'
 ``` 

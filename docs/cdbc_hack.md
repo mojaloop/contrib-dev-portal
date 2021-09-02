@@ -12,8 +12,6 @@ We built this sandbox to help you get up and running with Mojaloop, and to explo
 1. Read about the different Mojaloop Use Cases - especially [3PPI Account Linking](/usecases/3ppi-account-linking) and [3PPI Payments](/usecases/3ppi-transfer).
 2. [Learn more about the Mojaloop Sandbox](/overview/) "Model Village", the different simulated DFSPs, 3PPIs and Users
 
-
-
 ## Start Building!
 1. Learn about our APIs - expecially the [3PPI Sync API](/apis/sync-3ppi.html), which lets you (a fintech) link user's accout and initiate transfers on their behalf
 2. Create a demo DFSP account with one our our DFSP Simulators: [BankOne](http://sandbox.mojaloop.io/bankone) or [UnoMFI](http://sandbox.mojaloop.io/bankone)
@@ -39,3 +37,9 @@ We built this sandbox to help you get up and running with Mojaloop, and to explo
 - Check out demo code that shows P2P Payments with 3PPI:
   - Front-end client: [contrib-pisp-demo-ui](https://github.com/mojaloop/contrib-pisp-demo-ui)
   - Firebase-enabled backend: [contrib-pisp-demo-svc](https://github.com/mojaloop/contrib-pisp-demo-svc)
+
+
+
+
+
+  

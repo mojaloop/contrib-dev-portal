@@ -118,7 +118,7 @@ Here's an example quote:
   "amountType": "SEND",
   "amount": {
     "amount": "10",
-    "currency": "USD"
+    "currency": "PHP"
   },
   "transactionType": {
     "scenario": "TRANSFER",
@@ -165,7 +165,7 @@ curl -X POST http://beta.moja-lab.live/api/fspiop/quotes \
   "amountType": "SEND",
   "amount": {
     "amount": "10",
-    "currency": "USD"
+    "currency": "PHP"
   },
   "transactionType": {
     "scenario": "TRANSFER",
@@ -183,18 +183,18 @@ curl -X POST http://beta.moja-lab.live/api/fspiop/quotes \
 {
   "transferAmount": {
     "amount": "10",
-    "currency": "USD"
+    "currency": "PHP"
   },
   "expiration": "2021-01-11T05:46:41.943Z",
   "ilpPacket": "AYIC9gAAAAAAAAPoHWcucGF5ZWVmc3AubXNpc2RuLjI3NzEzODAzOTEyggLMZXlKMGNtRnVjMkZqZEdsdmJrbGtJam9pTXpnM1pXVTJZamt0TlRJd1pDMDBZelV4TFdFNVpUUXRObVZpTW1WbU1UVTRPRGRpSWl3aWNYVnZkR1ZKWkNJNklqTTROMlZsTm1JNUxUVXlNR1F0TkdNMU1TMWhPV1UwTFRabFlqSmxaakUxT0RnM1lTSXNJbkJoZVdWbElqcDdJbkJoY25SNVNXUkpibVp2SWpwN0luQmhjblI1U1dSVWVYQmxJam9pVFZOSlUwUk9JaXdpY0dGeWRIbEpaR1Z1ZEdsbWFXVnlJam9pTWpjM01UTTRNRE01TVRJaUxDSm1jM0JKWkNJNkluQmhlV1ZsWm5Od0luMTlMQ0p3WVhsbGNpSTZleUp3WVhKMGVVbGtTVzVtYnlJNmV5SndZWEowZVVsa1ZIbHdaU0k2SWsxVFNWTkVUaUlzSW5CaGNuUjVTV1JsYm5ScFptbGxjaUk2SWprME56azBOemswTnprME55SXNJbVp6Y0Vsa0lqb2lZWEJ3YkdWaVlXNXJJbjBzSW5CbGNuTnZibUZzU1c1bWJ5STZleUpqYjIxd2JHVjRUbUZ0WlNJNmV5Sm1hWEp6ZEU1aGJXVWlPaUpOWVhSeklpd2liR0Z6ZEU1aGJXVWlPaUpJWVdkdFlXNGlmU3dpWkdGMFpVOW1RbWx5ZEdnaU9pSXhPVGd6TFRFd0xUSTFJbjE5TENKaGJXOTFiblFpT25zaVlXMXZkVzUwSWpvaU1UQWlMQ0pqZFhKeVpXNWplU0k2SWxWVFJDSjlMQ0owY21GdWMyRmpkR2x2YmxSNWNHVWlPbnNpYzJObGJtRnlhVzhpT2lKVVVrRk9VMFpGVWlJc0ltbHVhWFJwWVhSdmNpSTZJbEJCV1VWU0lpd2lhVzVwZEdsaGRHOXlWSGx3WlNJNklrTlBUbE5WVFVWU0luMTkA",
   "condition": "il1Z7j26cQt8WeIDHjadZaYKDKavNiUFXsaESeW558E",
   "payeeFspFee": {
     "amount": "0",
-    "currency": "USD"
+    "currency": "PHP"
   },
   "payeeFspCommission": {
     "amount": "0",
-    "currency": "USD"
+    "currency": "PHP"
   }
 }
 ```
@@ -236,7 +236,7 @@ Here's an example Transfer request body:
   "payeeFsp": "duriantech",
   "amount": {
     "amount": "10",
-    "currency": "USD"
+    "currency": "PHP"
   },
   "expiration": "2021-01-25T00:00:00.000Z",
   "ilpPacket": "AYIC9gAAAAAAAAPoHWcucGF5ZWVmc3AubXNpc2RuLjI3NzEzODAzOTEyggLMZXlKMGNtRnVjMkZqZEdsdmJrbGtJam9pTXpnM1pXVTJZamt0TlRJd1pDMDBZelV4TFdFNVpUUXRObVZpTW1WbU1UVTRPRGRpSWl3aWNYVnZkR1ZKWkNJNklqTTROMlZsTm1JNUxUVXlNR1F0TkdNMU1TMWhPV1UwTFRabFlqSmxaakUxT0RnM1lTSXNJbkJoZVdWbElqcDdJbkJoY25SNVNXUkpibVp2SWpwN0luQmhjblI1U1dSVWVYQmxJam9pVFZOSlUwUk9JaXdpY0dGeWRIbEpaR1Z1ZEdsbWFXVnlJam9pTWpjM01UTTRNRE01TVRJaUxDSm1jM0JKWkNJNkluQmhlV1ZsWm5Od0luMTlMQ0p3WVhsbGNpSTZleUp3WVhKMGVVbGtTVzVtYnlJNmV5SndZWEowZVVsa1ZIbHdaU0k2SWsxVFNWTkVUaUlzSW5CaGNuUjVTV1JsYm5ScFptbGxjaUk2SWprME56azBOemswTnprME55SXNJbVp6Y0Vsa0lqb2lZWEJ3YkdWaVlXNXJJbjBzSW5CbGNuTnZibUZzU1c1bWJ5STZleUpqYjIxd2JHVjRUbUZ0WlNJNmV5Sm1hWEp6ZEU1aGJXVWlPaUpOWVhSeklpd2liR0Z6ZEU1aGJXVWlPaUpJWVdkdFlXNGlmU3dpWkdGMFpVOW1RbWx5ZEdnaU9pSXhPVGd6TFRFd0xUSTFJbjE5TENKaGJXOTFiblFpT25zaVlXMXZkVzUwSWpvaU1UQWlMQ0pqZFhKeVpXNWplU0k2SWxWVFJDSjlMQ0owY21GdWMyRmpkR2x2YmxSNWNHVWlPbnNpYzJObGJtRnlhVzhpT2lKVVVrRk9VMFpGVWlJc0ltbHVhWFJwWVhSdmNpSTZJbEJCV1VWU0lpd2lhVzVwZEdsaGRHOXlWSGx3WlNJNklrTlBUbE5WVFVWU0luMTkA",
@@ -258,7 +258,7 @@ curl -X POST http://beta.moja-lab.live/api/fspiop/transfers \
     "payeeFsp": "duriantech",
     "amount": {
       "amount": "10",
-      "currency": "USD"
+      "currency": "PHP"
     },
     "expiration": "2021-01-25T00:00:00.000Z",
     "ilpPacket": "AYIC9gAAAAAAAAPoHWcucGF5ZWVmc3AubXNpc2RuLjI3NzEzODAzOTEyggLMZXlKMGNtRnVjMkZqZEdsdmJrbGtJam9pTXpnM1pXVTJZamt0TlRJd1pDMDBZelV4TFdFNVpUUXRObVZpTW1WbU1UVTRPRGRpSWl3aWNYVnZkR1ZKWkNJNklqTTROMlZsTm1JNUxUVXlNR1F0TkdNMU1TMWhPV1UwTFRabFlqSmxaakUxT0RnM1lTSXNJbkJoZVdWbElqcDdJbkJoY25SNVNXUkpibVp2SWpwN0luQmhjblI1U1dSVWVYQmxJam9pVFZOSlUwUk9JaXdpY0dGeWRIbEpaR1Z1ZEdsbWFXVnlJam9pTWpjM01UTTRNRE01TVRJaUxDSm1jM0JKWkNJNkluQmhlV1ZsWm5Od0luMTlMQ0p3WVhsbGNpSTZleUp3WVhKMGVVbGtTVzVtYnlJNmV5SndZWEowZVVsa1ZIbHdaU0k2SWsxVFNWTkVUaUlzSW5CaGNuUjVTV1JsYm5ScFptbGxjaUk2SWprME56azBOemswTnprME55SXNJbVp6Y0Vsa0lqb2lZWEJ3YkdWaVlXNXJJbjBzSW5CbGNuTnZibUZzU1c1bWJ5STZleUpqYjIxd2JHVjRUbUZ0WlNJNmV5Sm1hWEp6ZEU1aGJXVWlPaUpOWVhSeklpd2liR0Z6ZEU1aGJXVWlPaUpJWVdkdFlXNGlmU3dpWkdGMFpVOW1RbWx5ZEdnaU9pSXhPVGd6TFRFd0xUSTFJbjE5TENKaGJXOTFiblFpT25zaVlXMXZkVzUwSWpvaU1UQWlMQ0pqZFhKeVpXNWplU0k2SWxWVFJDSjlMQ0owY21GdWMyRmpkR2x2YmxSNWNHVWlPbnNpYzJObGJtRnlhVzhpT2lKVVVrRk9VMFpGVWlJc0ltbHVhWFJwWVhSdmNpSTZJbEJCV1VWU0lpd2lhVzVwZEdsaGRHOXlWSGx3WlNJNklrTlBUbE5WVFVWU0luMTkA",
