@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.10](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.9...v0.2.10) (2021-09-02)
+
+
+### Features
+
+* final updates for cdbc hackathon event ([#14](https://github.com/mojaloop/contrib-dev-portal/issues/14)) ([4aa863e](https://github.com/mojaloop/contrib-dev-portal/commit/4aa863ed306ccb767c553d1a360fe57bed0c1b06))
+
 ### [0.2.9](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.8...v0.2.9) (2021-08-25)
 
 
