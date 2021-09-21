@@ -82,8 +82,9 @@ module.exports = {
             title: 'Payments',
             collapsable: false,
             children: [
-              ['/guides/payments/dfsp-p2p', '1. P2P Transfer'],
+              ['/guides/payments/p2p-transfer-sync', '1. P2P Transfer'],
               ['/guides/payments/3ppi-p2p', '2. 3PPI P2P Transfer'],
+              ['/guides/payments/dfsp-p2p', '3. P2P Transfer (Async)'],
 
             ]
           },

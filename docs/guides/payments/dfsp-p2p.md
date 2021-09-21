@@ -1,4 +1,9 @@
-# 2. Peer to Peer Transaction
+# Peer to Peer Transaction (Async)
+
+> Note: This guide uses the [Async Mojaloop API](/apis/async-fspiop), and requires you to set
+> up a server to listen to callbacks from the sandbox, by following this guide: [DFSP Setup](/guides/onboarding/dfsp-setup)
+> </br> </br>
+> If you want to get up and running more quickly, use one of our pre-configured SDK-Scheme-Adapters which use the [Sync P2P Payments API](/apis/sync-p2p.html) instead, and check out this guide: [P2P Transfer Sync](./p2p-transfer-sync.md)
 
 This guide takes you through the process of issuing a Peer to Peer (P2P) transaction from your DFSP to another DFSP.
 
