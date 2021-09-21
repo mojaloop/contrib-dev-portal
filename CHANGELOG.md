@@ -2,6 +2,20 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.12](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.11...v0.2.12) (2021-09-02)
+
+
+### Features
+
+* update transfer payload example ([9f1f211](https://github.com/mojaloop/contrib-dev-portal/commit/9f1f2117fe579961c0cfd6df139a60350dfa1ed7))
+
+### [0.2.11](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.10...v0.2.11) (2021-09-02)
+
+
+### Features
+
+* add 3ppi-account-linking guide ([2b76ed1](https://github.com/mojaloop/contrib-dev-portal/commit/2b76ed1d58cecc68cc13c4913bd57a1d23cae380))
+
 ### [0.2.10](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.9...v0.2.10) (2021-09-02)
 
 
