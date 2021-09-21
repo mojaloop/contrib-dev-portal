@@ -52,29 +52,26 @@ paths:
 
         This method has several modes of operation.
 
-        - If the configuration variables `AUTO_ACCEPT_PARTIES` is set to
-        `"false"` this method will terminate when the payee party has been
-        resolved and return the payee party details.
-          If the payee wishes to proceed with the transfer, then a subsequent `PUT /transfers/{transferId}` request (accepting the payee party) is required to continue the operation.
-          The scheme adapter will then proceed with quotation stage...
+          1. If the configuration variables `AUTO_ACCEPT_PARTIES` is set to `"false"` this method will terminate when the payee party has been resolved and return the payee party details.
+            If the payee wishes to proceed with the transfer, then a subsequent `PUT /transfers/{transferId}` request (accepting the payee party) is required to continue the operation.
+            The scheme adapter will then proceed with quotation stage.
 
-        - If the configuration variable `AUTO_ACCEPT_QUOTES` is set to `"false"`
-        this method will terminate and return the quotation when it has been
-        received from the payee DFSP.
+          2. If the configuration variable `AUTO_ACCEPT_QUOTES` is set to `"false"`
+          this method will terminate and return the quotation when it has been
+          received from the payee DFSP.
           If the payee wished to proceed with the transfer, then a subsequent `PUT /transfers/{transferId}` request (accepting the quote) is required to continue the operation.
           The scheme adapter will then proceed with the transfer state.
 
-        If the configuration variables `AUTO_ACCEPT_PARTIES` and
-        `AUTO_ACCEPT_QUOTES` are both set to `"true"` this method will block
-        until all three transfer stages are complete. Upon completion it will
-        return the entire set of transfer details received during the operation.
-
+          3. If the configuration variables `AUTO_ACCEPT_PARTIES` and
+          `AUTO_ACCEPT_QUOTES` are both set to `"true"` this method will block
+          until all three transfer stages are complete. Upon completion it will
+          return the entire set of transfer details received during the operation.
 
         Combinations of settings for `AUTO_ACCEPT...` configuration variables
         allow the scheme adapter user to decide which mode of operation best
         suits their use cases. i.e. the scheme adapter can be configured to
         "break" the three stage transfer at these points in order to execute
-        backend logic such as party verification, quoted fees assessments etc...
+        backend logic such as party verification, quoted fees assessments etc.
       tags:
         - Transfers
       requestBody:
@@ -82,9 +79,11 @@ paths:
         content:
           application/json:
             schema:
+              # TODO: example
               $ref: '#/components/schemas/transferRequest'
         required: true
       responses:
+        # TODO: example 
         '200':
           $ref: '#/components/responses/transferSuccess'
         '400':
