@@ -2,6 +2,15 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.13](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.12...v0.2.13) (2021-09-21)
+
+
+### Features
+
+* add new sync p2p guide template ([d69b4d2](https://github.com/mojaloop/contrib-dev-portal/commit/d69b4d222553e89890096432ed019da179b764e6))
+* cleaning up swagger stuff ([b39f58e](https://github.com/mojaloop/contrib-dev-portal/commit/b39f58e802c9dc4283d75af61f729e9eb4278e96))
+* update external assets ([649a12e](https://github.com/mojaloop/contrib-dev-portal/commit/649a12e7d1cec959efd72a84fd377279b6e730cc))
+
 ### [0.2.12](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.11...v0.2.12) (2021-09-02)
 
 
