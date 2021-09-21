@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.14](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.13...v0.2.14) (2021-09-21)
+
+
+### Features
+
+* add p2p-sync transfer guide ([6d1b08c](https://github.com/mojaloop/contrib-dev-portal/commit/6d1b08cd6bedff2bee77a3b9c59d66db60fc29c8))
+
 ### [0.2.13](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.12...v0.2.13) (2021-09-21)
 
 
