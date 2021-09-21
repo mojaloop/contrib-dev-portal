@@ -6,6 +6,6 @@ showToc: false
 ---
 
 <ClientOnly>
-  <ApiDocWrapper src="https://raw.githubusercontent.com/mojaloop/sdk-scheme-adapter/master/src/OutboundServer/api.yaml">
+  <ApiDocWrapper src="sdk-scheme-adapter-outbound.yaml">
   </ApiDocWrapper>
 </ClientOnly>
