@@ -27,9 +27,15 @@ The model village is full of different Users, Merchants, Banks, Microfinance Ins
 
 ### Key Details:
 
-- **Currency**: `PHP`
+- **Currencies**: 
+  - `PHP`
+  - `MMK`
+> **Note:** Cross-Currency transfers between PHP and MMK are currently unsupported - but let us know if that's something you want us to work on!
 - **BaseUrl**: `http://sandbox.mojaloop.io`
-- **Supported PartyIdTypes**: `MSISDN`, `ALIAS`, `BUSINESS`
+- **Supported PartyIdTypes**: 
+  - `MSISDN`
+  - `ALIAS` 
+  - `BUSINESS`
 
 ![Lab Overview](./sandbox-overview.png)
 
