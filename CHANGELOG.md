@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.15](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.14...v0.2.15) (2021-10-01)
+
+
+### Features
+
+* add note about MMK currency ([32403ba](https://github.com/mojaloop/contrib-dev-portal/commit/32403ba3b27a893042306c15e96020934dd07e94))
+
 ### [0.2.14](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.13...v0.2.14) (2021-09-21)
 
 
