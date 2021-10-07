@@ -2,6 +2,14 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.16](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.15...v0.2.16) (2021-10-07)
+
+
+### Bug Fixes
+
+* ttk urls ([1096c26](https://github.com/mojaloop/contrib-dev-portal/commit/1096c2602e3a06587da3dc71e1db68863dbaff0b))
+* **vulns:** run npm audit, fix and ignore unfixable low and moderate for 1 month ([#15](https://github.com/mojaloop/contrib-dev-portal/issues/15)) ([fc086d7](https://github.com/mojaloop/contrib-dev-portal/commit/fc086d7fce95bc785cd3cd333bfe0ace72cc6f3c))
+
 ### [0.2.15](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.14...v0.2.15) (2021-10-01)
 
 
