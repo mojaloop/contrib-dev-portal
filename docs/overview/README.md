@@ -52,8 +52,8 @@ The Sandbox has a variety of DFSP simulators, which support different use cases 
 | UnoMFI  | `unomfi`   | A DFSP who also supports 3PPI account linking + payment functions. | [http://sandbox.mojaloop.io/unomfi](http://sandbox.mojaloop.io/unomfi) |
 | JCash   | `jcash`    | A mobile money operator-based DFSP | |
 | SkyBank | `skybank`  | A traditional bank-based DFSP | |
-| eggmm   | `eggmm`    | A mobile money company - testing toolkit only (cannot receive payments) | [eggmm](http://eggmm-ttk.beta.moja-lab.live/admin/monitoring)
-| figgmm   | `eggmm`    | A mobile money company - testing toolkit only (cannot receive payments) | [figmm](http://figmm-ttk.beta.moja-lab.live/admin/monitoring)
+| eggmm   | `eggmm`    | A mobile money company - testing toolkit only (cannot receive payments) | [eggmm](http://eggmm.sandbox.mojaloop.io/admin/monitoring)
+| figgmm   | `eggmm`    | A mobile money company - testing toolkit only (cannot receive payments) | [figmm](http://figmm.sandbox.mojaloop.io/admin/monitoring)
 
 > **💡 Tip!**:
 > </br>
@@ -170,10 +170,10 @@ The [Mojaloop Testing Toolkit](https://github.com/mojaloop/ml-testing-toolkit) i
 We currently have 2 DFSPs hooked up to the testing toolkit: `figmm` and `eggmm`
 
 See:
-- [figmm - monitoring](http://figmm-ttk.beta.moja-lab.live/admin/monitoring) to monitor live requests and callbacks
-- [figmm - send requests](http://figmm-ttk.beta.moja-lab.live/admin/outbound_request) to make live requests _from_ `figmm` to other DFSPs on the network
-- [eggmm - monitoring](http://eggmm-ttk.beta.moja-lab.live/admin/monitoring) to monitor live requests and callbacks
-- [eggmm - send requests](http://eggmm-ttk.beta.moja-lab.live/admin/outbound_request) to make live requests _from_ `eggmm` to other DFSPs on the network
+- [figmm - monitoring](http://figmm.sandbox.mojaloop.io/admin/monitoring) to monitor live requests and callbacks
+- [figmm - send requests](http://figmm.sandbox.mojaloop.io/admin/outbound_request) to make live requests _from_ `figmm` to other DFSPs on the network
+- [eggmm - monitoring](http://eggmm.sandbox.mojaloop.io/admin/monitoring) to monitor live requests and callbacks
+- [eggmm - send requests](http://eggmm.sandbox.mojaloop.io/admin/outbound_request) to make live requests _from_ `eggmm` to other DFSPs on the network
   > Hint: Click "Load Sample" to look through the sample test cases available and load one
 
 

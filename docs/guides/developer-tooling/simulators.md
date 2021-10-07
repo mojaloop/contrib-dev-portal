@@ -119,7 +119,7 @@ curl -X POST http://jcash-backend.beta.moja-lab.live/repository/parties \
 
 And that's it! You can issue a `GET /parties/MSISDN/639563943094` call to ask Mojaloop to look up this party, and then request more informaton from `jcash`:
 
-Let's issue this request "from" the `figmm` DFSP, and look in the TTK for the callback: [http://figmm-ttk.beta.moja-lab.live/admin/monitoring](here).
+Let's issue this request "from" the `figmm` DFSP, and look in the TTK for the callback: [http://figmm.sandbox.mojaloop.io/admin/monitoring](here).
 
 > Note:
 > Feel free to change the `FSPIOP-Source` field to get the sandbox talking to your own DFSP!

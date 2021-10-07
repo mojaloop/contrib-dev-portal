@@ -6,10 +6,10 @@ You can use the Testing Toolkit to send a Peer to Peer transfer with Mojaloop.
 
 For this demo, we will pretend to be the `figmm` DFSP.
 
-> Note, we also have a testing tookit deployed for the `eggmm` DFSP: [here](http://eggmm-ttk.beta.moja-lab.live)
+> Note, we also have a testing tookit deployed for the `eggmm` DFSP: [here](http://eggmm.sandbox.mojaloop.io)
 
 
-Go to the [figmm testing toolkit page](http://figmm-ttk.beta.moja-lab.live)
+Go to the [figmm testing toolkit page](http://figmm.sandbox.mojaloop.io)
 
 ![](../assets/ttk_welcome.png)
 
@@ -87,6 +87,6 @@ If everything is configured correctly, you should see all of the tests passing c
 
 ### Handy Tip!
 
-If you open up the [monitoring page](http://figmm-ttk.beta.moja-lab.live/admin/monitoring) in a different browser window, you will be able to see all of the requests coming in and out of your DFSP in real time. Pretty neat, isn't it?
+If you open up the [monitoring page](http://figmm.sandbox.mojaloop.io/admin/monitoring) in a different browser window, you will be able to see all of the requests coming in and out of your DFSP in real time. Pretty neat, isn't it?
 
 ![](../assets/ttk_requests.png)
