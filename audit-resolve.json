@@ -1,0 +1,21 @@
+{
+  "decisions": {
+    "1002401|serve>boxen>ansi-align>string-width>strip-ansi>ansi-regex": {
+      "decision": "ignore",
+      "madeAt": 1633947336637,
+      "expiresAt": 1636539327108
+    },
+    "1002401|serve>boxen>string-width>strip-ansi>ansi-regex": {
+      "decision": "ignore",
+      "madeAt": 1633947336637,
+      "expiresAt": 1636539327108
+    },
+    "1002401|serve>boxen>widest-line>string-width>strip-ansi>ansi-regex": {
+      "decision": "ignore",
+      "madeAt": 1633947336637,
+      "expiresAt": 1636539327108
+    }
+  },
+  "rules": {},
+  "version": 1
+}
