@@ -2,18 +2,18 @@
   "decisions": {
     "1002401|serve>boxen>ansi-align>string-width>strip-ansi>ansi-regex": {
       "decision": "ignore",
-      "madeAt": 1633602124217,
-      "expiresAt": 1636194117033
+      "madeAt": 1633947455267,
+      "expiresAt": 1636539450623
     },
     "1002401|serve>boxen>string-width>strip-ansi>ansi-regex": {
       "decision": "ignore",
-      "madeAt": 1633602124217,
-      "expiresAt": 1636194117033
+      "madeAt": 1633947455267,
+      "expiresAt": 1636539450623
     },
     "1002401|serve>boxen>widest-line>string-width>strip-ansi>ansi-regex": {
       "decision": "ignore",
-      "madeAt": 1633602124217,
-      "expiresAt": 1636194117033
+      "madeAt": 1633947455267,
+      "expiresAt": 1636539450623
     }
   },
   "rules": {},
