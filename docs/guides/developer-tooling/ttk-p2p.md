@@ -50,8 +50,9 @@ Do the same with the following input values:
 
 - **`toIdValue`**: `4448483173`
 - **`fromFspId`**: `figmm`
-- **`toFspId`**: `duriantech`
+- **`toFspId`**: `skybank`
 - **`payerfsp`**: `figmm`
+- **`currency`**: `PHP`
 
 ## 4. Tweaking the Request
 
