@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.18](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.17...v0.2.18) (2021-10-13)
+
+
+### Bug Fixes
+
+* simulator ui guide ([#17](https://github.com/mojaloop/contrib-dev-portal/issues/17)) ([b838246](https://github.com/mojaloop/contrib-dev-portal/commit/b8382467aae21efc58fc0c8adece9e68cac3669a))
+
 ### [0.2.17](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.16...v0.2.17) (2021-10-11)
 
 ### [0.2.16](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.15...v0.2.16) (2021-10-07)
