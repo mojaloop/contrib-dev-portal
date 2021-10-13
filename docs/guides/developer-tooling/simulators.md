@@ -8,7 +8,7 @@ This sandbox deploys simulators which allow you to:
 2. Send from one Party to another in a simple interface
 ## 1. Set up the Simulator UI(s)
 
-1. Navigate to the Simulator UI page at [simulator-ui.beta.moja-lab.live](http://simulator-ui.beta.moja-lab.live)
+1. Navigate to the Simulator UI page at [simulator-ui.sandbox.mojaloop.io](http://simulator-ui.sandbox.mojaloop.io)
 2. Select "Settings" in the left bar
 
 ## 2. Register a DFSP Backend and check the users list
@@ -19,11 +19,11 @@ Before we go any further, we need to tell the simulator UI to connect to a speci
 
 ![](../assets/register_config.png)
 
-For example, you can register the Applebank Simulator Backend
+For example, you can register the jcash Simulator Backend
 
-- name: `jcash1`
+- name: `jcash`
 - protocol: `http`
-- host: `jcash-backend.beta.moja-lab.live`
+- host: `jcash-backend.sandbox.mojaloop.io`
 - port: `80`
 
 And hit "Save"
@@ -43,7 +43,10 @@ Now you can navigate back to the list of users, and reload your browser. You sho
 2. Leave the editor in "Simple Mode"
 
 
-3. Leave all the fields the same except for the last, and change this to be a MSISDN you can find in [the users list here](/1-overview/#what-s-included-in-environment). For this example, let's enter `32929423`.
+3. Change the following fields:
+
+- Currency: set to a currency the sandbox supports, such as `PHP`
+- To Id Value: change this to be a MSISDN you can find in [the users list here](/1-overview/#parties). For this example, let's enter `329294234`.
 
 4. Select "Send Transfer"
 
@@ -56,16 +59,23 @@ Here's a screenshot of an example response from the Simulator Backend:
 
 ![the transfer response](../assets/transfer_result.png)
 
+> NOTE!
+> You may find your transfer gets stuck at the "WAITING_FOR_PARTY_ACCEPTANCE" stage.
+> This is because of a quirk with the way we have deployed the mojaloop-simulators
+> And to complete the transfer you will need to send your own follow-up http requests
+> See the [P2P Transfer Guide](/guides/payments/p2p-transfer-sync.html#_2-agreement)
+> for more info on how to progress a transfer
+
 ## Handy Snippets:
 ### Listing all of the users for a given simulator:
 
 ```bash
-curl http://<dfspid>-backend.beta.moja-lab.live/repository/parties | jq
+curl http://<dfspid>-backend.sandbox.mojaloop.io/repository/parties | jq
 ```
 
 Example result:
 ```bash
-curl http://payeefsp-backend.beta.moja-lab.live/repository/parties | jq
+curl http://payeefsp-backend.sandbox.mojaloop.io/repository/parties | jq
 [
   {
     "displayName": "Alice Alpaca",
@@ -90,7 +100,7 @@ todo -->
 
 First, tell Mojaloop which DFSP they should ask for this Party with `POST /participants`
 ```bash
-curl -X POST http://beta.moja-lab.live/api/fspiop/participants/MSISDN/639563943094 \
+curl -X POST http://sandbox.mojaloop.io/api/fspiop/participants/MSISDN/639563943094 \
   -H "Accept: application/vnd.interoperability.participants+json;version=1" \
   -H "Content-Type: application/vnd.interoperability.participants+json;version=1.0" \
   -H 'Date: Fri, 15 Jan 2021 00:00:00 GMT' \
@@ -104,7 +114,7 @@ curl -X POST http://beta.moja-lab.live/api/fspiop/participants/MSISDN/6395639430
 Next, we can register the party information with the `jcash` DFSP simulator:
 
 ```bash
-curl -X POST http://jcash-backend.beta.moja-lab.live/repository/parties \
+curl -X POST http://jcash-backend.sandbox.mojaloop.io/repository/parties \
   -H "Content-Type: application/json" \
   -d '{
     "displayName": "Jose R.",
@@ -126,7 +136,7 @@ Let's issue this request "from" the `figmm` DFSP, and look in the TTK for the ca
 > Follow the [DFSP Setup Guide](/guides/onboarding/dfsp-setup/) for instructions on how to do that. 
 
 ```bash
-curl -v beta.moja-lab.live/api/fspiop/parties/MSISDN/639563943094 \
+curl -v sandbox.mojaloop.io/api/fspiop/parties/MSISDN/639563943094 \
   -H 'Accept: application/vnd.interoperability.parties+json;version=1' \
   -H 'Content-Type: application/vnd.interoperability.parties+json;version=1.0' \
   -H 'FSPIOP-Source: figmm' \
