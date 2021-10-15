@@ -2,6 +2,13 @@
 
 All notable changes to this project will be documented in this file. See [standard-version](https://github.com/conventional-changelog/standard-version) for commit guidelines.
 
+### [0.2.19](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.18...v0.2.19) (2021-10-15)
+
+
+### Features
+
+* update async tp api, minor link and typo fixes ([#18](https://github.com/mojaloop/contrib-dev-portal/issues/18)) ([8c5e936](https://github.com/mojaloop/contrib-dev-portal/commit/8c5e936d0a343ee3fb6155dde5b1a0c4f803efe6))
+
 ### [0.2.18](https://github.com/mojaloop/contrib-dev-portal/compare/v0.2.17...v0.2.18) (2021-10-13)
 
 
