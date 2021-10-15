@@ -7,5 +7,5 @@ showToc: false
 ---
 
 
-<ClientOnly><ApiDocWrapper src="https://raw.githubusercontent.com/mojaloop/pisp/master/src/interface/thirdparty-pisp-api.yaml"></ApiDocWrapper></ClientOnly>
+<ClientOnly><ApiDocWrapper src="https://raw.githubusercontent.com/mojaloop/api-snippets/master/thirdparty/openapi3/thirdparty-pisp-api.yaml"></ApiDocWrapper></ClientOnly>
 

@@ -46,13 +46,13 @@ Now you can navigate back to the list of users, and reload your browser. You sho
 3. Change the following fields:
 
 - Currency: set to a currency the sandbox supports, such as `PHP`
-- To Id Value: change this to be a MSISDN you can find in [the users list here](/1-overview/#parties). For this example, let's enter `329294234`.
+- To Id Value: change this to be a MSISDN you can find in [the users list here](/overview/#parties). For this example, let's enter `329294234`.
 
 4. Select "Send Transfer"
 
 ## 4. Transfer Response
 
-Behind the scenes, the DFSP Simulator uses the sdk-scheme-adapter to talk the Async Mojaloop API, and combines the separate Mojaloop Transfer steps (Discovery, Agreement, Transfer) into 1 step. This is a convenience for the Simulator environment, but can be configured depending on your DFSP's requirements (e.g. confirming Payee information with your user).
+Behind the scenes, the DFSP Simulator uses the sdk-scheme-adapter to talk to the Async Mojaloop API, and combines the separate Mojaloop Transfer steps (Discovery, Agreement, Transfer) into 1 step. This is a convenience for the Simulator environment, but can be configured depending on your DFSP's requirements (e.g. confirming Payee information with your user).
 
 Here's a screenshot of an example response from the Simulator Backend:
 

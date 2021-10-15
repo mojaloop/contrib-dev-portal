@@ -6,5 +6,5 @@ editLink: false
 showToc: false
 ---
 
-<ClientOnly><ApiDocWrapper src="https://raw.githubusercontent.com/mojaloop/pisp/master/src/interface/thirdparty-dfsp-api.yaml"></ApiDocWrapper></ClientOnly>
+<ClientOnly><ApiDocWrapper src="https://github.com/mojaloop/api-snippets/raw/master/thirdparty/openapi3/thirdparty-dfsp-api.yaml"></ApiDocWrapper></ClientOnly>
           
