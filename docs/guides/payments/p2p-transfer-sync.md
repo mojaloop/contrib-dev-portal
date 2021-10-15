@@ -35,7 +35,7 @@ Paolo then selects "Continue".
 
 </br>
 
-Note: The Mojaloop SDK allows has a number of internal configuration options which will change the behaviour of the transfer. From the API specification:
+Note: The Mojaloop SDK has a number of internal configuration options which will change the behaviour of the transfer. From the API specification:
 
 > If the configuration variables `AUTO_ACCEPT_PARTIES` is set to `"false"` this method will terminate when the payee party has been resolved and return the payee party details. If the payee wishes to proceed with the transfer, then a subsequent `PUT /transfers/{transferId}` request (accepting the payee party) is required to continue the operation. The scheme adapter will then proceed with quotation stage...
 > </br></br>
